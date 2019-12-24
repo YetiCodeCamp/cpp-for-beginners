@@ -1,0 +1,1 @@
+This folder contains projects that are not part of the C++ for beginenrs video series, but are still fun and sometimes useful way to help you learn the C++ language.
