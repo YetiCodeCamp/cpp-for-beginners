@@ -5,11 +5,13 @@
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
-You can view the videos on my YouTube channel here: 
-
-
-
-[C++ for beginners](https://youtu.be/j8X-HxMxg58)
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
 
 
 
