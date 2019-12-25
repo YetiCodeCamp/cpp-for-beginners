@@ -9,8 +9,13 @@ You can view the videos on my YouTube channel here:
 
 
 
-[C++ for beginenrs](https://youtu.be/j8X-HxMxg58)
+[C++ for beginners](https://youtu.be/j8X-HxMxg58)
 
+
+### Videos
+
+
+#### Lesson 1 - Hello World
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8X-HxMxg58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
