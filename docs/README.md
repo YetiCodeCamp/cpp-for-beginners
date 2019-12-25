@@ -2,6 +2,7 @@
 
 Welcome to the companion website to the C++ for beginners series on YouTube.
 
-You can view the videos on my YouTube channel here: https://youtu.be/j8X-HxMxg58
+You can view the videos on my YouTube channel here: 
+[C++ for beginenrs](https://youtu.be/j8X-HxMxg58)
 
 
