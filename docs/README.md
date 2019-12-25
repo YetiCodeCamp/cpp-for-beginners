@@ -1,7 +1,7 @@
 ![YetiCodeCamp](/images/YetiCodeCampLogo.png)
 
 
-#C++ for Beginners Video Series
+## C++ for Beginners Video Series
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
