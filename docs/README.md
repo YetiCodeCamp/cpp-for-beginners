@@ -5,11 +5,15 @@
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+    return 0;
 }
 ```
 
