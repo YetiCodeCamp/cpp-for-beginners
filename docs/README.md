@@ -1,4 +1,4 @@
-![YetiCodeCamp]/images/YetiCodeCampLogo.png
+![YetiCodeCamp](/images/YetiCodeCampLogo.png)
 
 
 #C++ for Beginners Video Series
