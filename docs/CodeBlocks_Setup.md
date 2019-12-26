@@ -64,13 +64,15 @@ Toward the top of the CodeBlocks main window, you should see a series of tool ic
        
 
 
-Bonus Tips
-    1. Re-format Source Code: Right-click on the source file ⇒ Format this file (AStyle). [Source formatting feature is
-       provided by a plugin called AStyle, which can be accessed via menu "Plugins" ⇒ "Source Code Formatter (AStyle)".
-       To configure the formatting styles, goto "Settings" ⇒ "Editor..." ⇒ "Source Formatter".]
-    2. Auto-Complete: type the initial letters of a keyword/identifier and press Ctrl-space to list the available
-        options.
-    3. Abbreviation: e.g., type "for" and press control-J to get the skeleton of for-loop. The abbreviation list can be
-       configured in "Settings" menu ⇒ "Editor..." ⇒ "Abbreviations".
-    4. Zoom in/out on Editor Panel:
-       Hold the control key and zoom in/out via the mouse scroll wheel.
+Bonus Tips  
+
+
+1. Re-format Source Code: Right-click on the source file ⇒ Format this file (AStyle). [Source formatting feature is provided by a plugin called AStyle, which can be accessed via menu "Plugins" ⇒ "Source Code Formatter (AStyle)".
+To configure the formatting styles, goto "Settings" ⇒ "Editor..." ⇒ "Source Formatter".]
+
+2. Auto-Complete: type the initial letters of a keyword/identifier and press Ctrl-space to list the available options.
+
+3. Abbreviation: e.g., type "for" and press control-J to get the skeleton of for-loop. The abbreviation list can be configured in "Settings" menu ⇒ "Editor..." ⇒ "Abbreviations".
+
+4. Zoom in/out on Editor Panel:
+Hold the control key and zoom in/out via the mouse scroll wheel.
