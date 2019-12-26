@@ -5,7 +5,8 @@
 ## C++ for Beginners Video Series  
 
 
-Welcome to the companion website to the **C++ for Beginners** video series on YouTube.  
+Welcome to the companion website to the **C++ for Beginners** video series on YouTube. This site will contain material to supplemnet the videos and help you learn to programm in C++.  
+
 
 
 [Initial Setup of Code Blocks IDE](https://yeticodecamp.github.io/cpp-for-beginners/CodeBlocks_Setup.html)
