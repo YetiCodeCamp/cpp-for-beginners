@@ -9,8 +9,8 @@ These instructions should help you get Code::Blocks (written as CodeBlocks throu
 setup on your computer where you can follow along with the tutorials in this series. It is written from the perspective
 of a user who has never used CodeBlocks and perhaps never even used a compiler or IDE in general before.
 
-1. Download the latest version from the *Downloads* section of the CodeBlocks website. https://www.codeblocks.org/downloads/26
-       
+1. Download the latest version from the *Downloads* section of the CodeBlocks website. https://www.codeblocks.org/downloads/26 
+
 As of this writing (Dec. 2019) the latest version is 17.12.
 Be sure to select the *codeblocks-17.12mingw-setup.exe* file, as this includes the GCC/G++ compiler and GDB debugger.
        
@@ -30,8 +30,7 @@ Be sure to select the *codeblocks-17.12mingw-setup.exe* file, as this includes t
        
 9. You should now have a CodeBlock’s icon in your start menu and/or desktop.
        
-10. Create a folder to hold your projects, I like to create a new folder right off of my C: (or other) drive called something like C:\C++_Tutorials.
-       
+10. Create a folder to hold your projects, I like to create a new folder right off of my C: (or other) drive called something like C:\C++_Tutorials. 
 Note the underscore in the folder name. Sometimes spaces in folder or filenames can cause issues with CodeBlocks or other compilers you may use. Try to avoid using them if possible, at least with your project folders and filenames.
        
 11. Create your first Program. Double click on the CodeBlocks Icon to launch the program. Once the program has launched, go to *File→New→Project* to create a new project.
@@ -49,7 +48,7 @@ Notice CodeBlocks displays the resulting path/filename at the bottom. Click on *
 15. You can just accept the defaults at this point, and click on *Finish*.
        
 16. After a second or two, your new project should appear. You will notice there is not much to see at first.
-       
+
 On the left you should see a Workspace with your project’s name (MyFirstProject). Underneath the project name you will see a sources folder icon. Double click on it (or click the little +) to expand this folder.
        	
 You should now see a file named main.cpp. Double click on it to open it for editing.
