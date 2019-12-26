@@ -9,11 +9,10 @@ These instructions should help you get Code::Blocks (written as CodeBlocks throu
 setup on your computer where you can follow along with the tutorials in this series. It is written from the perspective
 of a user who has never used CodeBlocks and perhaps never even used a compiler or IDE in general before.
 
-    1. Download the latest version from the *Downloads* section of the CodeBlocks website.
-       https://www.codeblocks.org/downloads/26
+    1. Download the latest version from the *Downloads* section of the CodeBlocks website. https://www.codeblocks.org/downloads/26
        
-       As of this writing (Dec. 2019) the latest version is 17.12. Be sure to select the
-       *codeblocks-17.12mingw-setup.exe* file, as this includes the GCC/G++ compiler and GDB debugger.
+     As of this writing (Dec. 2019) the latest version is 17.12.
+Be sure to select the *codeblocks-17.12mingw-setup.exe* file, as this includes the GCC/G++ compiler and GDB debugger.
        
     2. Go into your downloads folder and *double click* on the *codeblocks-17.12mingw-setup.exe* you just downloaded
        to start the installation process.
