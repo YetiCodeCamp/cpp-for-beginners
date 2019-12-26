@@ -33,19 +33,13 @@ Welcome to the companion website to the **C++ for Beginners** video series on Yo
 
 &nbsp;
 
-&nbsp;
-
-
 
 
 ### Lesson 1 - Hello World
-&nbsp;
-
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8X-HxMxg58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 &nbsp;
-
 
 
 The first video covers downloading, installing, and using the Code::Blocks IDE.
