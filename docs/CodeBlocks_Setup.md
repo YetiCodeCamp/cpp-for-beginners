@@ -2,9 +2,9 @@
 # Initial setup of Code::Blocks 
 
 
-### These instructions should help you get Code::Blocks (written as CodeBlocks throughout the rest of this tutorial)
+These instructions should help you get Code::Blocks (written as CodeBlocks throughout the rest of this tutorial)
 setup on your computer where you can follow along with the tutorials in this series. It is written from the perspective
- of a user who has never used CodeBlocks and perhaps never even used a compiler or IDE in general before.
+of a user who has never used CodeBlocks and perhaps never even used a compiler or IDE in general before.
 
     1. Download the latest version from the *Downloads* section of the CodeBlocks website.
        https://www.codeblocks.org/downloads/26
@@ -74,8 +74,7 @@ setup on your computer where you can follow along with the tutorials in this ser
         At the very top. Congratulations, you have just compiled and ran your first C++ program and more importantly
         verified your CodeBlocks installation is up and running.
        
-       
-       
+
 
 Bonus Tips
     1. Re-format Source Code: Right-click on the source file ⇒ Format this file (AStyle). [Source formatting feature is
