@@ -9,11 +9,13 @@ Welcome to the companion website to the **C++ for Beginners** video series on Yo
 
 
 
-[Initial Setup of Code Blocks IDE](CodeBlocks_Setup.md)
+[Initial Setup of Code Blocks IDE](CodeBlocks_Setup)  
 
 
 
-## Video Playlist
+
+## Video Playlist  
+
 
 
 
@@ -36,6 +38,7 @@ int main()
 }
 ```
 
+  
 
 ### Lesson 2 - Improved Hello World
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vGfnWS1sd0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
