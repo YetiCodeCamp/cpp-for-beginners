@@ -1,5 +1,8 @@
+---
+title: Initial setup of CodeBlocks 
+---
 
-Initial setup of Code::Blocks 
+# Initial setup of CodeBlocks 
 
 
 These instructions should help you get Code::Blocks (written as CodeBlocks throughout the rest of this tutorial)
