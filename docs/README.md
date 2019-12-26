@@ -3,8 +3,6 @@
 
 &nbsp;
 
-&nbsp;
-
 
 
 
@@ -13,8 +11,6 @@
 
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube. This site will contain material to supplemnet the videos and help you learn to programm in C++.  
-
-&nbsp;
 
 &nbsp;
 
