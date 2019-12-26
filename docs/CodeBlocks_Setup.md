@@ -39,13 +39,13 @@ title: Initial setup of CodeBlocks
 
 13. In the Console application window verify `C++` is selected, click on `Next`.
 
-14. In the next window, give your project a name, i.e.: *MyFirstProject*
+14. In the next window, give your project a name, i.e.: `MyFirstProject`.
 
-    Select the folder to create your project in, here you will choose the folder you created above, i.e.: D:\C++\_Tutorials\
+    Select the folder to create your project in, here you will choose the folder you created above, i.e.: `D:\C++\_Tutorials\`
 
-    Notice CodeBlocks displays the resulting path/filename at the bottom. Click on *Next*.
+    Notice CodeBlocks displays the resulting path/filename at the bottom. Click on `Next`.
 
-15. You can just accept the defaults at this point, and click on *Finish*.
+15. You can just accept the defaults at this point, and click on `Finish`.
 
 16. After a second or two, your new project should appear. You will notice there is not much to see at first.
 
@@ -62,16 +62,38 @@ title: Initial setup of CodeBlocks
 18. If all goes well, after a few moments a new console window should appear, with the test Hello World! At the very top. Congratulations, you have just compiled and ran your first C++ program and more importantly verified your  CodeBlocks installation is up and running.
 
 
-
 ### Bonus Tips  
 
 
-1. Re-format Source Code: Right-click on the source file ⇒ Format this file (AStyle). [Source formatting feature is provided by a plugin called AStyle, which can be accessed via menu "Plugins" ⇒ "Source Code Formatter (AStyle)".
+1. Re-format Source Code: Right-click on the source File ⇒ Format this file (AStyle). [Source formatting feature is provided by a plugin called AStyle, which can be accessed via menu "Plugins" ⇒ "Source Code Formatter (AStyle)".
 To configure the formatting styles, goto "Settings" ⇒ "Editor..." ⇒ "Source Formatter".]
 
 2. Auto-Complete: type the initial letters of a keyword/identifier and press Ctrl-space to list the available options.
 
-3. Abbreviation: e.g., type "for" and press control-J to get the skeleton of for-loop. The abbreviation list can be configured in "Settings" menu ⇒ "Editor..." ⇒ "Abbreviations".
+3. Abbreviation: e.g., type "for" and press `control-J` to get the skeleton of a for-loop. The abbreviation list can be configured in `Settings->Editor` and scroll down to the `Abbreviations` pane.
 
-4. Zoom in/out on Editor Panel:
-Hold the control key and zoom in/out via the mouse scroll wheel.
+4. Zoom in/out on Editor Panel: Hold the control key and zoom in/out via the mouse scroll wheel.
+
+Speaking of abbreviations, I usually add a few of my own to help speed up coding of thigs I either type a lot or have a complex setup, such as classes or functions.
+
+Go into `Settings->Editor` and in the left side of the window that opens scroll down to the `Abbreviations` pane and click on it. In the right pane where you see all the default abbreviations, click on Add.
+Give your abbreviation a short, but descriptive name. Then in the code section type the template code and click on Ok at the bottom right to save. The in your editor window, type your abbreviation and hit `control-J` and the editor automatically adds your code template.
+
+A couple abbreviation examples that I use are as follows:
+
+Name: `out`  Code: `std::cout << "text" << std::endl;`
+
+As you can see, once save by simply typing out and entering control-J I get the basic cout statement template ready to customize.
+
+I also do an similar one named: `outn`  with code: `std::cout << "text\n";` I use for output I might not need the endl. For instance say I simply wanted to print a statement `std::cout <<"Hello\n";`.
+
+When using cin you normally want to  prompt the user just before so they know what information you are expecting, like entering their name.
+For this I make a abbreviation named: `in` and use the following code:
+`std::cout << "Enter Prompt: " << std::endl;
+std::cin >> input;`
+
+[Abbreviation Example](images/Abbreviations.jpg)
+
+Now you simply change the text and input variable name to suit your needs.
+
+So hopefully you now can make your own abbreviations and customize the template to whatever works best for you. Do keep in mind though, I only use abbreviations for code I either type a lot over and over or code with more complicated setup, such as classes and function. Also, consider how easy it is to type the code manually, setting a variable for instance `int a = 32;`, is probably just as fast as creating an abbreviation and having to change the variable name and value each time.
