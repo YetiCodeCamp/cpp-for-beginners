@@ -5,7 +5,7 @@ title: Initial setup of CodeBlocks
 # Initial setup of CodeBlocks
 
 
-#### These instructions should help you get CodeBlocks setup on your computer where you can follow along with the tutorials in this series. It is written from the perspective of a user who has never used CodeBlocks and perhaps never even used a compiler or IDE in general before.
+### These instructions should help you get CodeBlocks setup on your computer where you can follow along with the tutorials in this series. It is written from the perspective of a user who has never used CodeBlocks and perhaps never even used a compiler or IDE in general before.
 
 
 
@@ -65,14 +65,16 @@ title: Initial setup of CodeBlocks
 ### Bonus Tips  
 
 
-1. Re-format Source Code: Right-click on the source File ⇒ Format this file (AStyle). [Source formatting feature is provided by a plugin called AStyle, which can be accessed via menu "Plugins" ⇒ "Source Code Formatter (AStyle)".
-To configure the formatting styles, goto "Settings" ⇒ "Editor..." ⇒ "Source Formatter".]
+1. Re-format Source Code: Right-click on the source File and click 'Format this file (AStyle)''.
+To configure the formatting styles, go into `Settings->Editor` and pick `Source Formatter` in the left hand pane..
 
-2. Auto-Complete: type the initial letters of a keyword/identifier and press Ctrl-space to list the available options.
+2. Auto-Complete: Type the initial letters of a keyword/identifier and press Ctrl-space to list the available options.
 
-3. Abbreviation: e.g., type "for" and press `control-J` to get the skeleton of a for-loop. The abbreviation list can be configured in `Settings->Editor` and scroll down to the `Abbreviations` pane.
+3. Abbreviation: e.g., Type "for" and press `control-J` to get the skeleton of a for-loop. The abbreviation list can be configured in `Settings->Editor` and scroll down to the `Abbreviations` pane.
 
-4. Zoom in/out on Editor Panel: Hold the control key and zoom in/out via the mouse scroll wheel.
+4. Zoom in/out on Editor Panel: Hold the control key and zoom in/out via the mouse scroll wheel.  
+
+### Abbreviations
 
 Speaking of abbreviations, I usually add a few of my own to help speed up coding of thigs I either type a lot or have a complex setup, such as classes or functions.
 
