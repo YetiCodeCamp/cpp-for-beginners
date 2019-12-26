@@ -92,7 +92,7 @@ For this I make a abbreviation named: `in` and use the following code:
 `std::cout << "Enter Prompt: " << std::endl;
 std::cin >> input;`
 
-[Abbreviation Example](images/Abbreviations.jpg)
+![Abbreviation Example](images/Abbreviations.jpg)
 
 Now you simply change the text and input variable name to suit your needs.
 
