@@ -7,8 +7,8 @@ Welcome to the companion website to the **C++ for Beginners** video series on Yo
 
 
 {% for post in site.posts %}
-  <a href="_posts\{{ post.url }}">
-    ## {{ post.title }}
+  <a href=" {{ post.url }}">
+    {{ post.title }}
     {{ post.date | date_to_string }}
   </a>
 {% endfor %}
