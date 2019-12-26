@@ -9,7 +9,7 @@ title: Initial setup of CodeBlocks
 
 
 
-1. Download the latest version from the `Downloads` section of the CodeBlocks website. https://www.codeblocks.org/downloads/26
+1. Download the latest version from the `Downloads` section of the CodeBlocks website.    `https://www.codeblocks.org/downloads/26`
 
    As of this writing (Dec. 2019) the latest version is 17.12.
    Be sure to select the `codeblocks-17.12mingw-setup.exe` file, as this includes the GCC/G++ compiler and GDB debugger.
