@@ -5,14 +5,7 @@
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
-
-{% for post in site.posts %}
-  <a href=" {{ post.url }}">
-    {{ post.title }}
-    {{ post.date | date_to_string }}
-  </a>
-{% endfor %}
-
+[Initial Setup of Code Blocks IDE](https://yeticodecamp.github.io/cpp-for-beginners/CodeBlocks_Setup.html)
 
 
 ## Video Playlist
