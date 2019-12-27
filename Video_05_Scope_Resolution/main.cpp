@@ -20,11 +20,9 @@
     /*  Scope
 
         - The first topic I want to cover, is of the concept of scope.
-
         - The noun form of scope is generally defined as an extent, or range, of which something can be viewed or acted upon.
 
         Local Variables - normally accessible only to its local scope, whether that is a function, if statement or other type of block
-
         Global Variables - accessible from any part of the program, they are normally declared at the top of a program.
                            regardless of where they are declare, they must be outside of all other functions or blocks
 
@@ -41,31 +39,31 @@ int a = 50;                     // Global Variable - accessible to entire progra
 class MyClass
 {
 public:
-    static int a;               // This variable 'a' is a member of the MyClass class
+    static int a;               // This variable 'a' is a member of the MyClass class, referenced as:  MyClass::a
 };
 
 namespace red
 {
-    int a = 500;                // This variable 'a' is part of the 'red' name-space.
+    int a = 500;                // This variable 'a' is part of the 'red' name-space, referenced as:  red::a
 
     namespace green
     {
            int a = 3250;        // This variable 'a' is part of the 'green' name-space,
-                                // which is also  part of the red name-space
+                                // which is also  part of the red name-space, referenced as:  red::green::a
     }
 }
 
-int MyClass::a = 100;           // Static members must be explicitly defined
+int MyClass::a = 100;           // Simply assigning a default value of 100 to static class member 'a' in MyClass - Don't worry too much about this line for now
 
 int main()
 {
     int a = 5;                  // Local variable, same as what we been using up to now.
-    int w = MyClass::a;         // MyClass::a refers to the data member a inside MyClass.
+    int w = MyClass::a;         // MyClass::a refers to the data member 'a' inside MyClass.
     //MyClass obj;
     //int w = obj.a;
-    int x = red::green::a;      // red::green::a refers to the name inside green, which is inside red.
+    int x = red::green::a;      // red::green::a refers to the name inside of green, which is also inside of red.
     int y = red::a;             // red::a refers to the name inside the red name-space.
-    int z = ::a;                // ::a refers to the name in the global name-space.
+    int z = ::a;                // ::a refers to the name in the global name-space. Note that by not having an identifier on the left of :: implies the global scope.
 
     std::cout<< a << "\n"  << MyClass::a << "\n" << x << "\n" << red::a << "\n" << z <<std::endl;
 
