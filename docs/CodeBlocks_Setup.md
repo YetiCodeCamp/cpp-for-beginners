@@ -84,7 +84,8 @@ Give your abbreviation a short, but descriptive name. Then in the code section t
 
 A couple of abbreviation examples that I use are as follows:
 
-Name: `out`  Code:
+Name: `out`  
+Code:
 ```cpp
 std::cout << "text" << std::endl;
 ```
@@ -110,6 +111,6 @@ std::cin >> input;
 
 Now the next time you need a basic cin prompt, you can type your abbreviation's name `in`, hit `control-J` and you simply change the prompt text and input variable name to suit your needs.
 
-So hopefully you now can make your own abbreviations and customize the template to whatever works best for you. Do keep in mind though, I only use abbreviations for code I either type a lot over and over or code with more complicated setup, such as classes and function. 
+So hopefully you now can make your own abbreviations and customize the template to whatever works best for you. Do keep in mind though, I only use abbreviations for code I either type a lot, over and over, or code with more a complicated setup, such as classes and functions. 
 
-Also, consider how easy it is to type the code manually, setting a variable for instance `int a = 32;`, is probably just as fast as creating an abbreviation and having to change the variable name and value each time.
+Also, consider how easy it is to type the code in manually, setting a variable for instance `int a = 32;`, is probably just as fast (or faster) then creating an abbreviation and having to change the variable's name and value each time.
