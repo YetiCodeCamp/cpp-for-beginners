@@ -65,29 +65,30 @@ title: Initial setup of CodeBlocks
 ### Bonus Tips  
 
 
-1. Re-format Source Code: Right-click on the source File and click 'Format this file (AStyle)''.
+1. Re-format Source Code: Right-click on the source file and click 'Format this file (AStyle)'.
 To configure the formatting styles, go into `Settings->Editor` and pick `Source Formatter` in the left hand pane..
 
-2. Auto-Complete: Type the initial letters of a keyword/identifier and press Ctrl-space to list the available options.
+2. Auto-Complete: Type the initial letters of a keyword/identifier and press `Ctrl-space` to list the available options. This may already be on by default is CodeBlocks.
 
-3. Abbreviation: e.g., Type "for" and press `control-J` to get the skeleton of a for-loop. The abbreviation list can be configured in `Settings->Editor` and scroll down to the `Abbreviations` pane.
+3. Abbreviation: e.g., Type 'for' and press `control-J` to get the skeleton of a for-loop. The abbreviation list can be configured in `Settings->Editor` and scroll down to the `Abbreviations` pane.
 
-4. Zoom in/out on Editor Panel: Hold the control key and zoom in/out via the mouse scroll wheel.  
+4. Zoom in/out in the code editor: Hold the control key down and zoom in/out via the mouse scroll wheel.  
 
 ### Abbreviations
 
-Speaking of abbreviations, I usually add a few of my own to help speed up coding of thigs I either type a lot or have a complex setup, such as classes or functions.
+Speaking of abbreviations, I usually add a few of my own to help speed up coding of things I either type a lot or have a complex setup, such as classes or functions.
 
 Go into `Settings->Editor` and in the left side of the window that opens scroll down to the `Abbreviations` pane and click on it. In the right pane where you see all the default abbreviations, click on Add.
-Give your abbreviation a short, but descriptive name. Then in the code section type the template code and click on Ok at the bottom right to save. The in your editor window, type your abbreviation and hit `control-J` and the editor automatically adds your code template.
 
-A couple abbreviation examples that I use are as follows:
+Give your abbreviation a short, but descriptive name. Then in the code section type the template code and click on Ok at the bottom right to save. Now in your editor window, type your abbreviation and hit `control-J` and the editor automatically adds your code template.
+
+A couple of abbreviation examples that I use are as follows:
 
 Name: `out`  Code: `std::cout << "text" << std::endl;`
 
-As you can see, once save by simply typing out and entering control-J I get the basic cout statement template ready to customize.
+As you can see, once this new abbreviation saved, by simply typing out and entering control-J I get the basic cout statement template ready to customize.
 
-I also do an similar one named: `outn`  with code: `std::cout << "text\n";` I use for output I might not need the endl. For instance say I simply wanted to print a statement `std::cout <<"Hello\n";`.
+I also do an similar one named: `outn`  with code: `std::cout << "text\n";` I use for output where I might not need the endl. For instance, say I simply wanted to print a statement `std::cout <<"Hello\n";`.
 
 When using cin you normally want to  prompt the user just before so they know what information you are expecting, like entering their name.
 For this I make a abbreviation named: `in` and use the following code:
@@ -98,4 +99,6 @@ std::cin >> input;`
 
 Now the next time you need a basic cin prompt, you can type your abbreviation's name `in`, hit `control-J` and you simply change the prompt text and input variable name to suit your needs.
 
-So hopefully you now can make your own abbreviations and customize the template to whatever works best for you. Do keep in mind though, I only use abbreviations for code I either type a lot over and over or code with more complicated setup, such as classes and function. Also, consider how easy it is to type the code manually, setting a variable for instance `int a = 32;`, is probably just as fast as creating an abbreviation and having to change the variable name and value each time.
+So hopefully you now can make your own abbreviations and customize the template to whatever works best for you. Do keep in mind though, I only use abbreviations for code I either type a lot over and over or code with more complicated setup, such as classes and function. 
+
+Also, consider how easy it is to type the code manually, setting a variable for instance `int a = 32;`, is probably just as fast as creating an abbreviation and having to change the variable name and value each time.
