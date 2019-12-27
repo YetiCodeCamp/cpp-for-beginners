@@ -2,7 +2,7 @@
 #include <string>
 #include <windows.h>
 
-// An slightly more advanced  version of the Hello World program.
+// An slightly more advanced version of the Hello World program.
 
 std::string getName();
 
