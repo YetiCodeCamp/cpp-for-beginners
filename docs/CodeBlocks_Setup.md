@@ -84,16 +84,27 @@ Give your abbreviation a short, but descriptive name. Then in the code section t
 
 A couple of abbreviation examples that I use are as follows:
 
-Name: `out`  Code: `std::cout << "text" << std::endl;`
+Name: `out`  Code:
+```cpp
+std::cout << "text" << std::endl;
+```
 
 As you can see, once this new abbreviation saved, by simply typing out and entering control-J I get the basic cout statement template ready to customize.
 
-I also do an similar one named: `outn`  with code: `std::cout << "text\n";` I use for output where I might not need the endl. For instance, say I simply wanted to print a statement `std::cout <<"Hello\n";`.
+I also do an similar one named: `outn`  with code:
+```cpp
+std::cout << "text\n";
+``` 
+that I use for output where I might not need the endl. 
+
+For instance, say I simply wanted to print a statement `std::cout <<"Hello\n";`.
 
 When using cin you normally want to  prompt the user just before so they know what information you are expecting, like entering their name.
 For this I make a abbreviation named: `in` and use the following code:
-`std::cout << "Enter Prompt: " << std::endl;
-std::cin >> input;`
+```cpp
+std::cout << "Enter Prompt: " << std::endl;
+std::cin >> input;
+```
 
 ![Abbreviation Example](images/Abbreviations.jpg)
 
