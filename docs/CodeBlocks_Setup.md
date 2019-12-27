@@ -20,18 +20,18 @@ title: Initial setup of CodeBlocks
 
 4. Click `Next` in Welcome to CodeBlocks setup window.
 
-5. Click `I Agree`, if you agree to the License Agreement (you cannot install or use the program if you do not).
+5. Click `I Agree`, if you agree to the License Agreement (note that you cannot install or use the program if you do not).
 
 6. Select `Full` (everything selected) in the drop-down inside the Choose Components window.
 
-7. Select `Install` in the Choose Install Location window. Note that you can choose a different path here if you wish. By default is uses: `C:\Program Files (x86)\CodeBlocks`
+7. Select `Install` in the Choose Install Location window. Note that you can choose a different path here if you wish. By default CodeBlocks uses: `C:\Program Files (x86)\CodeBlocks`
 
 8. Follow any remaining prompts until installation is complete.
 
-9. You should now have a CodeBlocks icon in your start menu and/or desktop.
+9. You should now have a CodeBlocks icon in your start menu and/or on your desktop.
 
-10. Create a folder to hold your projects, I like to create a new folder right off of my C: (or other) drive called something like `C:\C++\_Tutorials`
-    Note the underscore in the folder name. Sometimes spaces in folder or filenames can cause issues with CodeBlocks or other compilers you may use. Try to avoid using them if possible, at least with your project folders and filenames.
+10. Create a folder to hold your projects, I like to create a new folder right off of my C:\ (or other) drive called something like `C:\C++\_Tutorials`
+    Note the underscore in the folder name. Sometimes spaces in folder or filenames can cause issues with CodeBlocks, or with other compilers that you may use. Try to avoid using space in your naming if possible, at least with your project folders and filenames.
 
 11. Create your first Program. Double click on the CodeBlocks Icon to launch the program. Once the program has launched, go to `File→New→Project` to create a new project.
 
@@ -49,7 +49,7 @@ title: Initial setup of CodeBlocks
 
 16. After a second or two, your new project should appear. You will notice there is not much to see at first.
 
-    On the left you should see a Workspace with your project’s name (MyFirstProject). Underneath the project name you will see a sources folder icon. Double click on it (or click the little +) to expand this folder.
+    In the left panel you should see a Workspace with your project's name (MyFirstProject). Underneath the project name you will see a "sources" folder icon. Double click on it (or click the little +) to expand this folder.
 
     You should now see a file named main.cpp. Double click on it to open it for editing.
 
@@ -57,9 +57,9 @@ title: Initial setup of CodeBlocks
 
 17. You can go ahead and compile and run this code to check to see if your installation is working.
 
-    Toward the top of the CodeBlocks main window, you should see a series of tool icons. One of them looks like a little gear with a green triangle. If you hover you mouse over it for a second, it should indicate that it is the Build and run function. Notice also there is separate versions of each of these functions just to the left of this icon. For now we want to use the Build and run, go ahead and click on the icon.
+    Toward the top of the CodeBlocks main window, you should see a series of tool icons. One of them looks like a little gear with a green triangle. If you hover you mouse over it for a second, it should indicate that it is the "Build and run" function. Notice also there are separate versions of each of these functions just to the left of this icon. For now we want to use the combined "Build and run", go ahead and click on the icon.
 
-18. If all goes well, after a few moments a new console window should appear, with the test Hello World! At the very top. Congratulations, you have just compiled and ran your first C++ program and more importantly verified your  CodeBlocks installation is up and running.
+18. If all goes well, after a few moments a new console window should appear, with the text "Hello World!" at the very top. Congratulations, you have just compiled and ran your first C++ program and more importantly verified that your CodeBlocks installation is up and running.
 
 
 ### Bonus Tips  
@@ -90,7 +90,7 @@ Code:
 std::cout << "text" << std::endl;
 ```
 
-As you can see, once this new abbreviation saved, by simply typing out and entering control-J I get the basic cout statement template ready to customize.
+As you can see, once this new abbreviation is saved, by simply typing out and entering control-J I get the basic cout statement template ready to customize.
 
 I also do an similar one named: `outn`  with code:
 ```cpp
