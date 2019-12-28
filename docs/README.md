@@ -20,7 +20,7 @@ For an overview of the CodeBlocks installation process and a few setup tips/tric
 
 [Initial Setup of Code Blocks IDE](CodeBlocks_Setup)
 
-[A word on Comments](\pages\1.2_Comments) 
+[A word on Comments](/pages/1.2_Comments) 
 
 &nbsp;
 
