@@ -9,7 +9,7 @@
 ## C++ for Beginners Video Series  
 
 
-Welcome to the companion website to the **C++ for Beginners** video series on YouTube. 
+Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
 This site will contain material to supplement the videos and help you learn to programm in C++.  
 
@@ -18,7 +18,9 @@ This site will contain material to supplement the videos and help you learn to p
 
 For an overview of the CodeBlocks installation process and a few setup tips/tricks, refer to:  
 
-[Initial Setup of Code Blocks IDE](CodeBlocks_Setup)  
+[Initial Setup of Code Blocks IDE](CodeBlocks_Setup)
+
+[A word on Comments](\pages\1.2_Comments) 
 
 &nbsp;
 
