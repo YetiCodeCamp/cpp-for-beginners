@@ -5,3 +5,4 @@ description: Companion website for the C++ for Beginners YouTube video series. T
 show_downloads: "false"
 twitter_username: YetiCode
 github_username: YetiCodeCamp
+include: ['_pages']
