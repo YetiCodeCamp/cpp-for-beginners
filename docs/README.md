@@ -18,7 +18,7 @@ This site will contain material to supplement the videos and help you learn to p
 
 For an overview of the CodeBlocks installation process and a few setup tips/tricks, refer to:  
 
-[Initial Setup of Code Blocks IDE](CodeBlocks_Setup)
+[Initial Setup of Code Blocks IDE](codeblocks-setup)
 
 [A Word on Comments](comments)
 
