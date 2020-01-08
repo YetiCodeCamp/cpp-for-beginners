@@ -1,0 +1,54 @@
+---
+title: 1.1 Additional IDE Setup and Troubleshooting
+permalink: /IDE2
+---
+# Additional IDE Setup and Troubleshooting
+&nbsp;
+
+<p>This page will cover some additional settings and troubleshooting in case you encounter problems trying to compile and run your programs. For most people, the settings on the previous page will work fine.</p>
+
+### Setting the Language Standard
+
+
+<p>There are many different versions of the C++ language standard available to choose from (C++98, C++03, C++11, C++14, C++17, C++20 and so on) and some compilers may choose an earlier, or later version by default.</p>
+
+<p>For the C++ for Beginners series, we will be using the C++14 language standard in our programs. While I think most of these early example programs will work fine with older versions, if you seem to be running into issues check your settings to verify you are using C++14.</p>
+
+<p>Using a newer version shouldn't cause issues, but there are always exceptions, so again if you are having issues with nay of the examples and don't think its your code, double check the C++ language version.</p>
+
+<p align="center">
+<img width="500" height="381" src="images\use_C++14.jpg" title="CodeBlocks Language Standard Setup">
+</p>
+
+<p>In the Code Blocks IDE, shown above, you can simply go to Settings->Compiler and the setting is avaiable on the first window that appears. Check the box next to the C++14 entry as shown above.</p>
+
+<p>If you are using GCC/G++ from the command prompt, you can use the compiler flag  -std=c++14 when you buiild your program.</p>
+
+
+### Troubleshooing
+
+A few of the more common problems new programmers may encoutner are listed here.
+
+
+#### Missing Include Statements
+```c++
+#include <iostream>
+#include <string>
+```
+<p>If you get all kinds of errors with messages about unresolved, or not defined, double check to see if oyu have all the required headers included in your program. While the first several programs we make will get along fine with just ths tandard <iostream> that CodeBlocks automaticaaly adds for new projects, we will quickly be incorporating others, so be sure to doublecheck with the lesson, or source code avaiable on the github page.</p>
+
+#### Console Window Immediatly Closes
+<p>If you try running your executables outside of the CodeBlocks IDE from their project folder, you may notice they appear and close almost instantaniously.This is because you need to insert some type of pause to keep the window open. Windows users can make use of the system("pause") (which requires \#include <stdlib.h>), but for a more cleaner implmentation you can use the following code at the end of main jsut before the return statement.</p>
+
+```cpp
+std::cin.clear();
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+std::cin.get();
+```
+This code simply clears any error flags and ignroes any characters in the cin buffer, in order to wait for the user to hit enter before moving on to the next line, which is return 0; that ends main, thus closing the program. So it's our very own built in pause function.</p>
+
+#### Errors appear when using cin, cout, or endl
+
+First double check for \#include <iostream> at the top of your program.
+
+Next, did you prefix them with "std::" , be sure there are two colons or if you are a "using namespace std;"" type of programmer, be sure it is typed correctly and at the top of your program right after your includes.
