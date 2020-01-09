@@ -1,8 +1,7 @@
-![YetiCodeCamp](/images/YetiCodeCampLogo.png)  
+![YetiCodeCamp](/images/YetiCodeCampLogoNew480.png)  
 &nbsp;
 
 &nbsp;
-
 
 
 
@@ -25,7 +24,6 @@ For an overview of the CodeBlocks installation process and a few setup tips/tric
 &nbsp;
 
 &nbsp;
-
 
 
 
