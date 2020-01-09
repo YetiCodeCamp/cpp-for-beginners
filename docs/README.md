@@ -15,11 +15,15 @@ This site will contain material to supplement the videos and help you learn to p
 &nbsp;
 
 
-For an overview of the CodeBlocks installation process and a few setup tips/tricks, refer to:  
+For an overview of the CodeBlocks installation process and a few other setup tips/tricks, refer to:  
 
 [Initial Setup of Code Blocks IDE](codeblocks)
 
 [A Word on Comments](comments)
+
+[Compile from the Windows command line](gcc)
+
+[Using the Vim Text Editor](vim)
 
 &nbsp;
 
