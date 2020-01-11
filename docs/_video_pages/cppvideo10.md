@@ -4,21 +4,36 @@ permalink: /cppvideo10
 ---
 
 # This is the companion page for the C++ for Beginners Video 10 – Multidimensional Arrays and Intro to Vectors
-
+<br/>
+<br/>
 In this 10th video of the C++ for beginners series we will look at using multidimensional arrays. I will also be covering the auto keyword for data types, and utilizing the range-based for statement. We wrap up with a quick intro to vectors. I will be covering vectors more in-depth in the next video.
+<br/>
+<br/>
+## Multidimensional Arrays
+<br/>
+![Multidimensional 2D Array Example](images\videos\Cpp10\Lesson10_Multi_Array.jpg)
+<br/>
+Multidimensional Arrays allow us to store and utilize data in more ways that resemble real world usage. You can think of a two dimensional array as sort of a table of data, with rows and columns making up the array elements.
+<br/>
+```cpp
+int arr[3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
+```
 
-![Multidimensional Array Example](images\videos\Cpp10\Lesson10_Multi_Array.jpg)
-
-Multidimensional Arrays allow us to store and utilize data in more ways that resemble real world usage. You can think of a two dimensional array as sort of a table of data, with rows and columns making up the array elements. We will be going over a two-dimensional array example and how we can access the data inside.
-
+The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 5 columns, like you would a table of data.
+<br/>
+You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 8 in the above example.
+Note that the square brackets set the size only during declaration, afterward they refer to the index positions we want to access.
+<br/>
+<br/>
 ## The auto Keyword
-
+<br/>
 ![auto Keyword](images\videos\Cpp10\Lesson10_Auto_Keyword.jpg)
 
 Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine.
 
 The auto keyword allows us to forgo a specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
-
+<br/>
+<br/>
 For example:
 ```cpp
 auto x = 17;
@@ -27,10 +42,12 @@ The compiler will deduce x should be an integer based upon the fact we assigned 
 ```cpp
 auto pi = 3.14159;
 ```
+<br/>
 The compiler will deduce pi should be a double based upon the fact we assigned it a floating point value, in this case 3.14159.
-
+<br/>
+<br/>
 ## The decltype Keyword
-
+<br/>
 The decltype (Declared Type) keyword derives the data type from the declared type of a variable or an expression. While the auto keyword allows you to declare a variable with particular type based upon initialization, decltype lets you extract the type from the variable.
 
 Sounds complicated, but this example basically shows what's going on:
@@ -43,11 +60,14 @@ pi is auto set to type double as it was assigned a floating point number.
 r is auto set to type int as it was assigned an integral number.
 cirArea is also set to double, as the datatype is extracted from pi, which of course is of type double.
 
+<br/>
+<br/>
 
 ## Range-based for
-
+<br/>
 ![Range-based for statement](images\videos\Cpp10\Lesson10_Ranged_for_Statement.jpg)
-
+<br/>
+<br/>
 ```cpp
 for(auto v : vec)
     std::cout << v << " ";            
@@ -61,7 +81,10 @@ The name you use in the "range-declaration" portion of the for statement is 'loc
 
 The auto keyword is preferred in the "range-declaration" portion of the statement.
 
+<br/>
+<br/>
 ## Vectors
+<br/>
 
 ![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
 
@@ -69,3 +92,6 @@ The auto keyword is preferred in the "range-declaration" portion of the statemen
 ```cpp
 vector<int> v {1,2,3,4,5};
 ```
+
+<br/>
+<br/>
