@@ -7,13 +7,17 @@ permalink: /cppvideo10
 
 In this 10th video of the C++ for beginners series we will look at using multidimensional arrays. I will also be covering the auto keyword for data types, and utilizing the range-based for statement. We wrap up with a quick intro to vectors. I will be covering vectors more in-depth in the next video.
 
-![Multidimensional Array Example](videos\Cpp10\Lesson10_Multi_Array.jpg)
+![Multidimensional Array Example](images\videos\Cpp10\Lesson10_Multi_Array.jpg)
 
 Multidimensional Arrays allow us to store and utilize data in more ways that resemble real world usage. You can think of a two dimensional array as sort of a table of data, with rows and columns making up the array elements. We will be going over a two-dimensional array example and how we can access the data inside.
 
-The auto Keyword
+## The auto Keyword
 
-I also briefly go over the auto keyword. The auto keyword allows us to forgo a specifying a data type declaration for variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
+![auto Keyword](images\videos\Cpp10\Lesson10_Auto_Keyword.jpg)
+
+Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine.
+
+The auto keyword allows us to forgo a specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
 
 For example:
 ```cpp
@@ -24,8 +28,44 @@ The compiler will deduce x should be an integer based upon the fact we assigned 
 auto pi = 3.14159;
 ```
 The compiler will deduce pi should be a double based upon the fact we assigned it a floating point value, in this case 3.14159.
-Range-based for statement
 
-Similar to the ‘for’ loop, the range-based for statement allows us an easy way to iterate through a collection of items, like lists, arrays, or vectors. I will be going over an example and will begin utilizing this format over the standard for loop, especially when it comes to iterating over objects to print their output. Regular for loops still have their place, however, so don’t think of it as a replacement as much as an alternative in certain situations.
+## The decltype Keyword
 
-Finally, the video will wrap up with a quick introduction to vectors. We will cover creating a simple vector example and showing a few different methods to access the vector elements and print them out to the screen. The next video will more extensively cover vectors, but I just wanted to give a quick introduction before moving into more complex explanations.
+The decltype (Declared Type) keyword derives the data type from the declared type of a variable or an expression. While the auto keyword allows you to declare a variable with particular type based upon initialization, decltype lets you extract the type from the variable.
+
+Sounds complicated, but this example basically shows what's going on:
+```cpp
+auto pi = 3.141592653589
+auto r = 5;
+decltype(pi) cirArea = pi * r * r;
+```
+pi is auto set to type double as it was assigned a floating point number.
+r is auto set to type int as it was assigned an integral number.
+cirArea is also set to double, as the datatype is extracted from pi, which of course is of type double.
+
+
+## Range-based for
+
+![Range-based for statement](images\videos\Cpp10\Lesson10_Ranged_for_Statement.jpg)
+
+```cpp
+for(auto v : vec)
+    std::cout << v << " ";            
+```
+
+Similar to the ‘for’ loop, the range-based for statement allows us an easy way to iterate through a collection of items, like lists, arrays, or vectors.
+
+Regular for loops still have their place, however, so don’t think of it as a replacement as much as an alternative in certain situations.
+
+The name you use in the "range-declaration" portion of the for statement is 'local' to the for statement and cannot be re-declared in "range_expression" or "statement" sections of the loop. For example, the 'v" in the above code snippet cannot be reused again within the for body.
+
+The auto keyword is preferred in the "range-declaration" portion of the statement.
+
+## Vectors
+
+![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
+
+
+```cpp
+vector<int> v {1,2,3,4,5};
+```
