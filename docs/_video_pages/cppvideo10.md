@@ -6,6 +6,10 @@ permalink: /cppvideo10
 # This is the companion page for the C++ for Beginners Video 10 – Multidimensional Arrays and Intro to Vectors
 <br/>
 <br/>
+
+<iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/U30xCSerpXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br/>
+<br/>
 In this 10th video of the C++ for beginners series we will look at using multidimensional arrays. I will also be covering the auto keyword for data types, and utilizing the range-based for statement. We wrap up with a quick intro to vectors. I will be covering vectors more in-depth in the next video.
 <br/>
 <br/>
