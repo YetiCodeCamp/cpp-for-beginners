@@ -5,7 +5,7 @@ permalink: /cppvideo10
 
 # This is the companion page for the C++ for Beginners Video 10 – Multidimensional Arrays and Intro to Vectors
 <br/>
-<br
+<br/>
 <p align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U30xCSerpXM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
