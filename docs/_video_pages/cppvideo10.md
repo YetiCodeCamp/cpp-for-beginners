@@ -13,13 +13,15 @@ In this 10th video of the C++ for beginners series we will look at using multidi
 <br/>
 ![Multidimensional 2D Array Example](images\videos\Cpp10\Lesson10_Multi_Array.jpg)
 <br/>
+<br/>
 Multidimensional Arrays allow us to store and utilize data in more ways that resemble real world usage. You can think of a two dimensional array as sort of a table of data, with rows and columns making up the array elements.
+<br/>
 <br/>
 ```cpp
 int arr[3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
 ```
-
 The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 5 columns, like you would a table of data.
+<br/>
 <br/>
 You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 8 in the above example.
 Note that the square brackets set the size only during declaration, afterward they refer to the index positions we want to access.
@@ -28,9 +30,10 @@ Note that the square brackets set the size only during declaration, afterward th
 ## The auto Keyword
 <br/>
 ![auto Keyword](images\videos\Cpp10\Lesson10_Auto_Keyword.jpg)
-
+<br/>
+<br/>
 Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine.
-
+<br/>
 The auto keyword allows us to forgo a specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
 <br/>
 <br/>
@@ -38,11 +41,12 @@ For example:
 ```cpp
 auto x = 17;
 ```
+<br/>
+<br/>
 The compiler will deduce x should be an integer based upon the fact we assigned it a literal integral value, in this case 17.
 ```cpp
 auto pi = 3.14159;
 ```
-<br/>
 The compiler will deduce pi should be a double based upon the fact we assigned it a floating point value, in this case 3.14159.
 <br/>
 <br/>
@@ -85,13 +89,47 @@ The auto keyword is preferred in the "range-declaration" portion of the statemen
 <br/>
 ## Vectors
 <br/>
-
+<br/>
 ![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
-
+<br/>
+<br/>
+A vector is declared in the form of: vector<datatype>name_of_vector
 
 ```cpp
 vector<int> v {1,2,3,4,5};
 ```
+Vectors are part of the standard namespace, so if you are not the "using namespace std;" at the top of your program, you need to prefix vector with std:: liek you would with cout.
+```cpp
+std::vector<int> v1 {1,2,3,4,5};
 
+
+The following program creates a vector, assigns some initial values, then it uses the pushback function to add 3 more data items, and finally uses a range-based for statement to print the contents to the screen.
+
+``cpp
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main()
+{
+    std::vector<int> v1 {1,2,3,4,5};
+
+    v1.push_back(97);
+    v1.push_back(98);
+    v1.push_back(99);
+
+    for(auto &v : v1)
+        std::cout << v << " ";
+    std::cout << std::endl;
+
+    return 0;
+}
+
+Output: 1 2 3 4 5 97 98 99
+
+Much more information on Vectors will be available with Video 11 in the series.
+
+<br/>
 <br/>
 <br/>
