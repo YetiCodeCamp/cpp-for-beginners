@@ -1,6 +1,7 @@
-title: Video 10 - Multidimensional Arrays and Introduction to vectors
+---
+title: Video 10 - Multidimensional Arrays and Introduction to Vectors
 permalink: /cppvideo10
-
+---
 
 # This is the companion page for the C++ for Beginners Video 10 – Multidimensional Arrays and Intro to Vectors
 
