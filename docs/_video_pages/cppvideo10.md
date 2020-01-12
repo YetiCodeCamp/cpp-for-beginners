@@ -28,11 +28,40 @@ int arr[3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
 The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 5 columns, like you would a table of data.
 <br/>
 <br/>
-| index | 0  | 1  | 2  | 3  | 4  |
-|:-----:|----|----|----|----|----|
-|   0   | 1  | 2  | 3  | 4  | 5  |
-|   1   | 6  | 7  | 8  | 9  | 10 |
-|   2   | 11 | 12 | 13 | 14 | 15 |
+<table>
+  <tr>
+    <th>index</th>
+    <th>0</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>6</td>
+    <td>7</td>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+    <td>15</td>
+  </tr>
+</table>
 <br/>
 You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 8 in the above example.
 Note that the square brackets set the size only during declaration, afterward they refer to the index positions we want to access.
