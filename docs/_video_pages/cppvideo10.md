@@ -64,9 +64,32 @@ The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 
 </table>
 <br/>
 You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 13 in the above example. You go down to the index 2 row, and over to index 2 column, remembering to start with 0 for each (0,0 is an valid element and contains 1).
+<br/><br/>
+You can extract the contents of the array using a for loop as shown in this example:
+
+```cpp
+std::cout << "\nDisplay Array contents using a standard 'for loop':" << std::endl;
+for(int row=0;row<3; row++)                           // Outer loop controls which row we read
+{
+    for(int col=0; col<3; col++)                      // Inner loop controls which column we read from
+        std::cout << arr[col][row] << " ";
+    std::cout << std::endl;
+}
+```
+<br/>
+By using nested for loops we can easily get the entire contents of an 2D array.
+
+The first loop starts at zero, this is used as the first parameter in the output line where we are calling the array with arr[0][], so we want the 0 row.
+
+The inner loop then iterates through the columns within that row. So again the loop starts at 0, so we fill in the second parameter with 0 as: arr[0][0] which then returns the value located at element 1,1 in the array and we print it to the screen using cout.
+
+Then the inner loop increments again and the value changes to arr[0][1], and so on until it ends, which with this example would be at index 2 because we set the loop to col<3.
+
+After the last column in row 0 prints out, the inner loop terminates, thus jumping back to the outer loop. The outer loop increments by 1 and sets arr[1][] then jumps to the inner loop again to repeat the entire process printing out all the elements in row 1.
+
 <br/>
 <br/>
-Note that the square brackets set the size only during declaration, afterward they refer to the index positions of the array that we want to access.
+Note that the square brackets are used to set the size only during declaration of an array, afterward they are used to refer to the index positions of the array that we want to access.
 <br/>
 <br/>
 ## The auto Keyword
@@ -74,9 +97,9 @@ Note that the square brackets set the size only during declaration, afterward th
 ![auto Keyword](images\videos\Cpp10\Lesson10_Auto_Keyword.jpg)
 <br/>
 <br/>
-Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine. You can double check in CodeBlocks by going to Settings->Compiler and making sure use C++14 is checked.
+Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work as expected if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine. You can double check in CodeBlocks by going to Settings->Compiler and making sure use C++14 box is checked.
 <br/><br/>
-The auto keyword allows us to forgo a specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
+The auto keyword allows us to forgo specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
 <br/>
 <br/>
 For example:
@@ -85,11 +108,13 @@ auto x = 17;
 ```
 <br/>
 <br/>
-The compiler will deduce x should be an integer based upon the fact we assigned it a literal integral value, in this case 17.
+The compiler will deduce x should be an integer based upon the fact we assigned it an integral value, in this case 17.
 ```cpp
 auto pi = 3.14159;
 ```
 The compiler will deduce pi should be a double based upon the fact we assigned it a floating point value, in this case 3.14159.
+
+Do keep in mind though, the auto keyword is a placeholder for a data type the compiler will automatically determine, but auto is not a data type itself..
 <br/>
 <br/>
 ## The decltype Keyword
@@ -109,9 +134,9 @@ cirArea is also set to double, as the datatype is extracted from pi, which of co
 <br/>
 <br/>
 
-## Range-based for
+## Range-based for Statement
 <br/>
-![Range-based for statement](images\videos\Cpp10\Lesson10_Ranged_for_Statement.jpg)
+![Range-based for Statement](images\videos\Cpp10\Lesson10_Ranged_for_Statement.jpg)
 <br/>
 <br/>
 ```cpp
@@ -123,9 +148,27 @@ Similar to the ‘for’ loop, the range-based for statement allows us an easy w
 
 Regular for loops still have their place, however, so don’t think of it as a replacement as much as an alternative in certain situations.
 
-The name you use in the "range-declaration" portion of the for statement is 'local' to the for statement and cannot be re-declared in "range_expression" or "statement" sections of the loop. For example, the 'v" in the above code snippet cannot be reused again within the for body.
+You can think of the range_delcaration simply as a variable used to hold the value of the element and range_expression being the object we are iterating though, such as an array name.
 
-The auto keyword is preferred in the "range-declaration" portion of the statement.
+The name you use in the "range-declaration" (or variable) portion of the for statement is 'local' to the for statement and cannot be re-declared in the "range_expression" or "statement" sections of the loop. For example, the 'v" in the above code snippet cannot be reused again within the body of the for statement. So if your vector was named v you could not use:
+```cpp
+for(auto v : v) // NOT ALLOWED
+```
+For hopefully obvious reasons. You could however use something like:
+```cpp
+for(auto v1 : v) // Allowed but could be confusing
+
+for(auto v : v1) // Better by renaming vector.
+```
+
+Of course, you should probably give you vectors a more meaningful name in a real program, but I will often use simple v1, v2, v3 vector names for these example programs.
+
+It is also recommended to use the auto keyword in the "range-declaration" portion of the statement instead of a specific data type.
+```cpp
+for(int v : v1) // Work but limited to only integers
+
+for(auto v : v1) // Better as it allows compiler to deduce proper data type
+```
 
 <br/>
 <br/>
