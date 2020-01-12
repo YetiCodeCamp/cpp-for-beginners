@@ -65,6 +65,7 @@ The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 
 <br/>
 You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 13 in the above example. You go down to the index 2 row, and over to index 2 column, remembering to start with 0 for each (0,0 is an valid element and contains 1).
 <br/>
+<br/>
 Note that the square brackets set the size only during declaration, afterward they refer to the index positions of the array that we want to access.
 <br/>
 <br/>
@@ -74,7 +75,7 @@ Note that the square brackets set the size only during declaration, afterward th
 <br/>
 <br/>
 Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine. You can double check in CodeBlocks by going to Settings->Compiler and making sure use C++14 is checked.
-<br/>
+<br/><br/>
 The auto keyword allows us to forgo a specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
 <br/>
 <br/>
