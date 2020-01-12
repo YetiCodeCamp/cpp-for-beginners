@@ -28,12 +28,11 @@ int arr[3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
 The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 5 columns, like you would a table of data.
 <br/>
 <br/>
-              columns
-  | index | 0  | 1  | 2  | 3  | 4  |
-r |:-----:|----|----|----|----|----|
-o |   0   | 1  | 2  | 3  | 4  | 5  |
-w |   1   | 6  | 7  | 8  | 9  | 10 |
-2 |   2   | 11 | 12 | 13 | 14 | 15 |
+| index | 0  | 1  | 2  | 3  | 4  |
+|:-----:|----|----|----|----|----|
+|   0   | 1  | 2  | 3  | 4  | 5  |
+|   1   | 6  | 7  | 8  | 9  | 10 |
+|   2   | 11 | 12 | 13 | 14 | 15 |
 <br/>
 You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 8 in the above example.
 Note that the square brackets set the size only during declaration, afterward they refer to the index positions we want to access.
