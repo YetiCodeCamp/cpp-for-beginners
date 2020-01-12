@@ -28,6 +28,13 @@ int arr[3][5] { {1,2,3,4,5},{6,7,8,9,10},{11,12,13,14,15} };
 The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 5 columns, like you would a table of data.
 <br/>
 <br/>
+              columns
+  | index | 0  | 1  | 2  | 3  | 4  |
+r |:-----:|----|----|----|----|----|
+o |   0   | 1  | 2  | 3  | 4  | 5  |
+w |   1   | 6  | 7  | 8  | 9  | 10 |
+2 |   2   | 11 | 12 | 13 | 14 | 15 |
+<br/>
 You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 8 in the above example.
 Note that the square brackets set the size only during declaration, afterward they refer to the index positions we want to access.
 <br/>
@@ -37,7 +44,7 @@ Note that the square brackets set the size only during declaration, afterward th
 ![auto Keyword](images\videos\Cpp10\Lesson10_Auto_Keyword.jpg)
 <br/>
 <br/>
-Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine.
+Starting with C++11, the "auto" keyword instructs the compiler to deduce the type of a declared variable from its initialization expression. Before this auto had a different purpose and thus will not work if you are using an earlier version of C++. In our videos we are using C++14 for the introductory series, so you should be fine. You can double check in CodeBlocks by going to Settings->Compiler and making sure use C++14 is checked.
 <br/>
 The auto keyword allows us to forgo a specifying a data type during the declaration of variables and lets the compiler assign it at compile time. The compiler does this type inference by looking at the value(s) assigned to the variable or object.
 <br/>
