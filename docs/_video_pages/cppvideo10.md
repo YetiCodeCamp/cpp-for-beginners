@@ -63,8 +63,9 @@ The above example makes a 2D array of 3 by 5 elements. Think of it as 3 rows of 
   </tr>
 </table>
 <br/>
-You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 8 in the above example.
-Note that the square brackets set the size only during declaration, afterward they refer to the index positions we want to access.
+You can access the data using the form: array\[row index][column index] where index starts at 0. So arr[2][2], refers to 13 in the above example. You go down to the index 2 row, and over to index 2 column, remembering to start with 0 for each (0,0 is an valid element and contains 1).
+<br/>
+Note that the square brackets set the size only during declaration, afterward they refer to the index positions of the array that we want to access.
 <br/>
 <br/>
 ## The auto Keyword
