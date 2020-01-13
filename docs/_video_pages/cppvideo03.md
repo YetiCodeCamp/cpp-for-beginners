@@ -3,14 +3,15 @@ title: Video 03 - Variables and Functions
 permalink: /cppvideo03
 ---
 
-# This is the companion page for the C++ for Beginners Video 03 –  Variables and Functions
+## This is the companion page for the C++ for Beginners Video 03 –  Variables and Functions
 <br/>
 <br/>
 
 ### Lesson 3 - Variables and Functions
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NGI_fB9uP0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-
-&nbsp;
+</p>
+<br/>
 
 ```cpp
 Logical Operators:  && AND,  || OR,  ! NOT

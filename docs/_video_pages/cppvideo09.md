@@ -3,7 +3,7 @@ title: Video 09 - Arrays
 permalink: /cppvideo09
 ---
 
-# This is the companion page for the C++ for Beginners Video 09 –  Arrays
+## This is the companion page for the C++ for Beginners Video 09 –  Arrays
 <br/>
 <br/>
 <p align="center">

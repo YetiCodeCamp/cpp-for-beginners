@@ -3,12 +3,12 @@ title: Video 01 - Hello World
 permalink: /cppvideo01
 ---
 
-# This is the companion page for the C++ for Beginners Video 01 –  Hello World
+## This is the companion page for the C++ for Beginners Video 01 –  Hello World
 <br/>
 <br/>
-
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8X-HxMxg58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</p>
 <br/>
 
 
