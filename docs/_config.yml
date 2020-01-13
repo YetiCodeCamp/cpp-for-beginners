@@ -6,6 +6,4 @@ show_downloads: "false"
 twitter_username: YetiCode
 github_username: YetiCodeCamp
 include: ['_pages', '_video_pages']
-favicon: images/YetiCodeCampfavicon.png
-image_path: images
 timezone: America/Chicago
