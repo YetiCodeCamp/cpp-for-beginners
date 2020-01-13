@@ -10,6 +10,7 @@ header h1:before {
   text-decoration: none!important;
 }
 
+$body-background url("../images/bkg1.png") 0 0;
 body {
 
   background: $body-background url("images/bkg1.png") 0 0 !important;
