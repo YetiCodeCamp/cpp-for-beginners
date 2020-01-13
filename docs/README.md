@@ -1,7 +1,3 @@
----
-title: C++ for Beginners
-permalink: /
----
 
 <p align="center">
 <img width="600" height="407" src="/images/YetiCodeCampLogoNew480.png" title="YetiCodeCamp">
