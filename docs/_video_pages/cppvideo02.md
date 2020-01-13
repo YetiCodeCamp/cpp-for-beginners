@@ -14,9 +14,8 @@ permalink: /cppvideo02
 </p>
 <br/><br/>
 
-
-<p align="center">
 ### Lesson 2.1 - Improved Hello World (part 2)
+<p align="center">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/auRpqlvHmDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 <br/><br/>
