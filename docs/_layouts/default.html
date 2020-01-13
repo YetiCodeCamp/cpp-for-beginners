@@ -11,6 +11,10 @@
     <link rel="shortcut icon" sizes="196x196" href="/images/icon-196x196.png">
     <link rel="apple-touch-icon" href="/images/icon-196x196.png">
 
+    <style>
+      a:link{text-decoration: none!important; cursor: pointer;}
+    </style>
+
 {% seo %}
   </head>
 
@@ -18,7 +22,7 @@
 
     <header>
       <div class="container">
-        <a id="a-title" style="text-decoration: none" href="{{ '/' | relative_url }}">
+        <a id="a-title" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
