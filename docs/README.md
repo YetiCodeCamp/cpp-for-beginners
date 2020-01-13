@@ -7,7 +7,7 @@
 
 
 
-# C++ for Beginners Video Series  
+## C++ for Beginners Video Series  
 <br/>
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
