@@ -15,7 +15,9 @@ $conifer: #004bf9!important;
 
 .body {background-image: url('images/bkg1.png');}
 
-
+$header: #004bf9 !default;
+.header {border-bottom: 1px dashed #004bf9;}
+.header h1: {color: #004bf9; }
 $burnt-orange: #ff5706;
 $conifer: #004bf9;
 
