@@ -2,28 +2,25 @@
 ---
 
 header h1:before {
-  content: "  "!important;
+  content: "  " !important;
   font-size: 24px;
 }
 
-header {
-  color: #1c21f7 !important;
-}
-
 #a-title {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
-$conifer: #004bf9!important;
 @import "{{ site.theme }}";
 
 .body {background-image: url('images/bkg1.png');}
 
-$header: #004bf9 !default;
-.header {border-bottom: 1px dashed #004bf9;}
+.header {border-bottom: 1px dashed #004bf9 !important;}
+
+
+h1 { color: #1c21f7 !important; }
+h2 { color: #1c21f7 !important; }
 
 $burnt-orange: #ff5706;
-$conifer: #004bf9;
 
 #main_content h7 {
   font-weight: normal;
