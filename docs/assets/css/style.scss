@@ -13,10 +13,7 @@ header h1:before {
 
 @import "{{ site.theme }}";
 
-body {
-
-  background: $body-background url("images/bkg1.png") 0 0 !important;
-}
+.body {background-image: url('images/bkg1.png');}
 
 
 $burnt-orange: #ff5706;
