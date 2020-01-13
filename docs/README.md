@@ -4,20 +4,20 @@ permalink: /
 ---
 
 <p align="center">
-<img width="700" height="407" src="/images/YetiCodeCampLogoNew480.png" title="YetiCodeCamp">
+<img width="600" height="407" src="/images/YetiCodeCampLogoNew480.png" title="YetiCodeCamp">
 </p>
 
 <br/><br/>
 
 
 # C++ for Beginners Video Series  
-<br/><br/>
+<br/>
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
 This site will contain material to supplement the videos and help you learn to program in C++.  
 
-<br/><br/>
+<br/>
 
 For an overview of the CodeBlocks installation process and a few other setup tips/tricks, refer to:  
 
@@ -35,9 +35,10 @@ For an overview of the CodeBlocks installation process and a few other setup tip
 
 ## Video Playlist  
 
-<br/><br/>
+<br/>
 
-I am currently working on developing a separate page for each video, currently I have [Video 09 - Arrays](cppvideo09) and [Video10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10) content on their own pages.
+I am currently working on developing a separate page for each video, currently I have:
+[Video 09 - Arrays](cppvideo09) and [Video10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10) content on their own pages.
 
 The rest of the series is listed below for now.
 
