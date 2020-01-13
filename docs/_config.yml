@@ -2,7 +2,6 @@ theme: jekyll-theme-hacker
 title: YetiCodeCamp - C++ for Beginners
 email: yeticodecamp@gmail.com
 description: Companion website for the C++ for Beginners YouTube video series. This site will contain all the code shown in the videos along with additonal resources to help you learn how to program in the C++ language.
-show_downloads: false
 twitter_username: YetiCode
 github_username: YetiCodeCamp
 include: ['_pages', '_video_pages']
