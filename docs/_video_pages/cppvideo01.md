@@ -3,7 +3,8 @@ title: Video 01 - Hello World
 permalink: /cppvideo01
 ---
 
-## This is the companion page for the C++ for Beginners Video 01 –  Hello World
+## This is the companion page for the C++ for Beginners  
+## Video 01 – Hello World
 <br/>
 <br/>
 <p align="center">

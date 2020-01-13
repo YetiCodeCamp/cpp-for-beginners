@@ -3,7 +3,8 @@ title: Video 03 - Variables and Functions
 permalink: /cppvideo03
 ---
 
-## This is the companion page for the C++ for Beginners Video 03 –  Variables and Functions
+## This is the companion page for the C++ for Beginners  
+## Video 03 –  Variables and Functions
 <br/>
 <br/>
 

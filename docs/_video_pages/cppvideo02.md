@@ -3,7 +3,8 @@ title: Video 02 - Improved Hello World
 permalink: /cppvideo02
 ---
 
-## This is the companion page for the C++ for Beginners Video 02 –  Improved Hello World parts 1 & 2
+## This is the companion page for the C++ for Beginners  
+## Video 02 –  Improved Hello World parts 1 & 2
 <br/>
 <br/>
 
