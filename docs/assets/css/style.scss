@@ -10,6 +10,11 @@ header h1:before {
   text-decoration: none!important;
 }
 
+body {
+
+  background: $body-background url("../images/bkg.png") 0 0 !important;
+}
+
 @import "{{ site.theme }}";
 
 
