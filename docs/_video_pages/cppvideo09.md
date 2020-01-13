@@ -17,13 +17,22 @@ An example might be if we were writing a program to work on some type of weather
 
 Note, I was originally planning to do this video and the next lesson on Vectors all in one video, but it quickly became too long. Instead I have broke them it out into separate videos, Video 9 Arrays, Video 10 Multidimensional Arrays and Introduction to Vectors, and Video 11 Vectors.
 
-In this video I discuss memory addressing in the context of using arrays. We will cover memory more in-depth in a later video, but for now I just want to give the basics of using hexadecimal in case you are confused on the memory addresses being in hex.
+I should also note that for this video I made an exception to my rule of avoiding using namespace std. I felt the code looks a bit clearer to understand, and by now I am sure you understand the namespace concept and know what's going on.
+
+Also note that besides the usual cout, endl, the sort and greater functions are also part of the standard namespace, so be sure to prefix them with std:: if you want to try using them the normal way.
+
+<br/><br/>
 
 ## Hexadecimal
+<br/><br/>
+In this video I discuss memory addressing in the context of using arrays. We will cover memory more in-depth in a later video, but for now I just want to give the basics of using hexadecimal in case you are confused on the memory addresses being in hex.
 
 We normally use a decimal, or a base 10, numbering system in our daily life. You probably don’t give much thought to it anymore, but it basically works by using placeholders.
-
-![Decimal Number System](images\videos\Cpp09\decimal.jpg)
+<br/><br/>
+<p align="center">
+<img width="700" height="407" src="images\videos\Cpp09\decimal.jpg" title="Decimal Number System">
+</p>
+<br/><br/>
 
 In decimal, we can write up to the number 9 in a single column, but when we go to 10 we need to move over one column to the left, insert a 1 and start the right column over again at 0. We need to use the 0 as a placeholder to indicate this is 10 and not 1. We repeat this pattern every time a column overflows, at 100, 1000, etc.
 
@@ -74,17 +83,14 @@ Also, since our digits only go up to 9, we need to represent values 10, 11, 12, 
 
 So using the example from the video, when we went from 1008 to 100C, we were moving up 4 addresses, or 4 bytes. Going up from 100C another 4 bytes, we need to shift a digit into the left column, and start over at 0 in the right, so we went to address 1010.
 
-I should also note that for this video I made an exception to my rule of never using namespace std:
-I felt the code looks a bit clearer to understand, and by now I am sure you understand the namespace concept and know what's going on.
 
-Also note that besides the usual cout, endl, the sort and greater functions are also part of the standard namespace, so be sure to prefix them with std:: if you want to try using them the normal way.
 <br/>
 <br/>
 
 ## Arrays
-
+<br/><br/>
 ![C++ Arrays](images\videos\Cpp09\C++-Arrays.jpg)
-
+<br/><br/>
 In C++ we can use arrays to store multiple values of similar data within one structure, so we can refer to one entity instead of multiple individual variables.
 
 So using the weather program example from earlier, instead of creating 365 variables to hold daily high temperatures, we can create a single array called something like "dailyHighs".
@@ -103,9 +109,9 @@ dailyHighs[30] = 72.9;
 ```
 This would assign 42.9 to the 30th index position in the array, which in our example represents day 31 for the year, January 31st.
 
-
+<br/><br/>
 ![C++ Arrays](images\videos\Cpp09\myFirstArrayExample.jpg)
-
+<br/><br/>
 Using the array example we used in the video (shown above) we can see when we create an array we are defining a contiguous block of memory space to hold the array elements. In the above slide, we declared an 10 element array of type integer(int), which reserves 4 bytes per element or 40 bytes in total. In our fictional dailyHigh array in the section just above, we used a data type of double which is 8 bytes in size, and we would need 365 x 8 bytes, or 2920 bytes (2.92 Kbyte) of memory to hold the array.
 
 Using the myFirstArray slide example for simplicity, we see the address of the first element is using memory address 1000, the second element uses 1004 and so on. The forth element displays as 100C, as memory address are expressed in hexadecimal unit's, so this would equate to 12 addresses from the start of the array.

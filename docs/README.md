@@ -1,19 +1,23 @@
-![YetiCodeCamp](/images/YetiCodeCampLogoNew480.png)  
-&nbsp;
+---
+title: C++ for Beginners
+permalink: /
+---
 
-&nbsp;
+<p align="center">
+<img width="700" height="407" src="/images/YetiCodeCampLogoNew480.png" title="YetiCodeCamp">
+</p>
+
+<br/><br/>
 
 
-
-## C++ for Beginners Video Series  
-
+# C++ for Beginners Video Series  
+<br/><br/>
 
 Welcome to the companion website to the **C++ for Beginners** video series on YouTube.
 
-This site will contain material to supplement the videos and help you learn to programm in C++.  
+This site will contain material to supplement the videos and help you learn to program in C++.  
 
-&nbsp;
-
+<br/><br/>
 
 For an overview of the CodeBlocks installation process and a few other setup tips/tricks, refer to:  
 
@@ -21,21 +25,23 @@ For an overview of the CodeBlocks installation process and a few other setup tip
 
 [A Word on Comments](comments)
 
-[Compile from the Windows command line](gcc)
+[Compile Programs from the Windows Command Line](gcc)
 
 [Using the Vim Text Editor](vim)
 
-&nbsp;
-
-&nbsp;
+<br/><br/>
 
 
 
 ## Video Playlist  
 
-&nbsp;
+<br/><br/>
 
+I am currently working on developing a separate page for each video, currently I have [Video 09 - Arrays](cppvideo09) and [Video10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10) content on their own pages.
 
+The rest of the series is listed below for now.
+
+<br/><br/>
 
 ### Lesson 1 - Hello World
 
@@ -62,9 +68,7 @@ int main()
     return 0;
 }
 ```
-&nbsp;
-
-&nbsp;
+<br/><br/>
 
 
 
@@ -72,18 +76,14 @@ int main()
 ### Lesson 2 - Improved Hello World
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vGfnWS1sd0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-&nbsp;
-
-&nbsp;
+<br/><br/>
 
 
 
 ### Lesson 2.1 - Improved Hello World (part 2)
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/auRpqlvHmDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-&nbsp;
-
-&nbsp;
+<br/><br/>
 
 
 
@@ -138,9 +138,7 @@ The 'if' statement is used to execute a block of C++ code if a condition evaluat
 
 ```
 
-&nbsp;
-
-&nbsp;
+<br/><br/>
 
 
 
@@ -148,9 +146,7 @@ The 'if' statement is used to execute a block of C++ code if a condition evaluat
 ### Lesson 4 - Running Executables outside of CodeBlocks
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SrhMH-j5vXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-&nbsp;
-
-&nbsp;
+<br/><br/>
 
 
 
@@ -158,7 +154,4 @@ The 'if' statement is used to execute a block of C++ code if a condition evaluat
 ### Lesson 5 - Blocks, Scopes, and the Scope Resolution Operator
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_NsGvVgLv2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
-&nbsp;
-
-
-&nbsp;
+<br/><br/>
