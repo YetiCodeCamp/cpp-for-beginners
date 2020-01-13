@@ -10,7 +10,7 @@ header h1:before {
   text-decoration: none!important;
 }
 
-
+$conifer: #004bf9;
 @import "{{ site.theme }}";
 
 .body {background-image: url('images/bkg1.png');}
