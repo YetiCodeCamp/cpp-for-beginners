@@ -1,0 +1,13 @@
+---
+---
+
+header h1:before {
+  content: " ";
+  font-size: 24px;
+}
+
+#a-title {
+  text-decoration: none!important;
+}
+
+@import "{{ site.theme }}";
