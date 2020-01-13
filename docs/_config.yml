@@ -6,3 +6,4 @@ twitter_username: YetiCode
 github_username: YetiCodeCamp
 include: ['_pages', '_video_pages']
 timezone: America/Chicago
+background: bkg1.png
