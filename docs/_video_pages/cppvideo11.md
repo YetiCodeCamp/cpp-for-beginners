@@ -3,17 +3,15 @@ title: Video 11 - C++ Vectors
 permalink: /cppvideo11
 ---
 
-# This is the companion page for the C++ for Beginners Video 11 – C++ Vectors
+## This is the companion page for the C++ for Beginners  
+## Video 11 – C++ Vectors
 <br/>
 <br/>
-
-
-
 
 While we were introduced to vectors in the last video, since this one is dedicated strictly to vectors I thought a quick review was in order. This also helps anyone just coming in straight to this video.
-
+<br/>
 ![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
-
+<br/>
 Vectors are part of the C++ Standard Template Library or often referred to as simply STL. They are also part of the standard namespace, so you need to prefix they keyword vector with std:: as we do with cout.
 
 Vectors have member functions available to them to make working with them easy.
@@ -21,31 +19,32 @@ Vectors have member functions available to them to make working with them easy.
 Be sure to #include <vector> at the top of your program.
 
 Vectors are declared with keyword vector, the data type of the elements, and a name. We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.
-
+<br/>
 We can initialize vectors upon declaration like in this example:
 ```cpp
 std::vector<int> myVector = {1,2,3,4,5};
 ```
+<br/>
 We can declare and initialize vectors at separate times, for example:
 ```cpp
 std::vector<int> v1;
 v1 = {1,2,3,4,5};
 ```
-
+<br/><br/>
 ![Vector Review](images\videos\Cpp11\Lesson11_Vector_Review.jpg)
-
+<br/>
 We can create a vector to hold the daily high temperatures for the last year, month or week. Here is a simple example showing a vector holding 7 temperature values.
 ```cpp
 std::vector<double> dailyHigh {72.5, 75.6, 82.3, 85.7, 78.4, 81.9, 88.5};
 ```
-
+<br/>
 We can access the contents of the array by referencing the elements index:
 
 ```cpp
 std::cout << dailyHigh[3];    //prints out 85.7
 std::cout << dailyHigh.at(2); // prints out 82.3
 ```
-
+<br/>
 Here is a complete example program that compile and will print out the example dailyHigh vector using a range-based for statement:
 ```cpp
 #include <iostream>
@@ -61,7 +60,7 @@ int main()
 }
 ```
 
-
+<br/><br/>
 
 
 
@@ -91,12 +90,14 @@ void prtVec(const std::vector<auto> &vec, std::string n="")
         std::cout << "\n" <<std::endl;
 }
 ```
-
+<br/><br/>
+### Times Table
+<br/>
 Final form of the timesTable() function. Remember to declare it above main with:
 ```cpp
 void timesTable(int x = 10, int y = 10);
 ```
-
+<br/><br/>
 Put actual function definition below main:
 ```cpp
 void timesTable(int x, int y)
