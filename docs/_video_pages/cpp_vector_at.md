@@ -15,7 +15,7 @@ v1.at(p);
 ```
 Returns the value in the element at position p.
 <br/>
-![Vector.at() Example](images\videos\cpp11\vector_at.jpg)
+![Vector.at() Example](images\videos\Cpp11\vector_at.jpg)
 
 The following example uses a vector v1, and a position p to return a specific element.
 ```cpp
