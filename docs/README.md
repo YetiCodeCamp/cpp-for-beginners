@@ -36,11 +36,11 @@ The latest videos each have their own separate companion page:
 
 [Video 11 - C++ Vectors](cppvideo11)
 
-[Video10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10)
+[Video 10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10)
 
 [Video 09 - Arrays](cppvideo09)
 
-
+<br/><br/>
 The rest of the series is listed below for now.
 
 <br/><br/>
