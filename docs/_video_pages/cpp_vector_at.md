@@ -30,7 +30,7 @@ cout << v1.at(p);
 Output: 14
 <br/><br/><br/>
 
-This example is a complete program using at() to print the contents of a vector. We are also using the size() to determine the number of elements in the vector to iterate through.
+This example is a complete program using vector at() function to print the contents of a vector. We are also using the vector size() function to determine the number of elements in the vector to iterate through.
 
 ```cpp
 #include<iostream>  

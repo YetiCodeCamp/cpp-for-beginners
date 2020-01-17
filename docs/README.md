@@ -32,8 +32,14 @@ For an overview of the CodeBlocks installation process and a few other setup tip
 ## Video Playlist  
 <br/>
 
-I am currently working on developing a separate page for each video, currently I have:  
-[Video 09 - Arrays](cppvideo09) and [Video10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10) content on their own pages.
+The latest videos each have their own separate companion page:
+
+[Video 11 - C++ Vectors](cppvideo11)
+
+[Video10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10)
+
+[Video 09 - Arrays](cppvideo09)
+
 
 The rest of the series is listed below for now.
 
