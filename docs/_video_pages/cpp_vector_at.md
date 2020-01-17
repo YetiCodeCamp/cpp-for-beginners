@@ -14,8 +14,10 @@ Example, using a vector "v1" and position "p".
 v1.at(p);
 ```
 Returns the value in the element at position p.
-<br/>
+<br/><br/>
+
 ![Vector.at() Example](images\videos\Cpp11\vector_at.jpg)
+<br/><br/>
 
 The following example uses a vector v1, and a position p to return a specific element.
 ```cpp
@@ -24,7 +26,7 @@ vector<int> v1 {11,12,13,14,15};
 cout << v1.at(p);
 ```
 Output: 14
-
+<br/><br/>
 
 This example is a complete program using at() to print the contents of a vector. We are also using the size() to determine the number of elements in the vector to iterate through.
 
