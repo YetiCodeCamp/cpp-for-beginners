@@ -40,6 +40,8 @@ The latest videos each have their own separate companion page:
 
 [Video 09 - Arrays](cppvideo09)
 
+[Video 08 - Menu Program and Switch Statement](cppvideo08)
+
 <br/><br/>
 The rest of the series is listed below for now.
 
