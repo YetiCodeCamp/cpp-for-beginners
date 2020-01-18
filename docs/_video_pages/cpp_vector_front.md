@@ -15,6 +15,7 @@ Example, using a vector "v1".
 v1.front();
 ```
 Returns the value in the first element of the vector.
+
 <br/><br/>
 <p align="center">
 <img width="681" height="293" src="images\videos\Cpp11\vector_front.jpg" title="Vector.front() Example">
