@@ -60,7 +60,7 @@ for( v : v1 )
     std::cout << v1 << " ";
 ```
 Output: 42 42 42 42 42 42 42 42 42 42
-br/><br/>
+<br/><br/>
 
 ```cpp
 std::vector<int> v1 {1,2,3,4,5};
@@ -70,7 +70,7 @@ for( v : v2 )
     std::cout << v2 << " ";
 ```
 Output: 1 2 3 4 5
-br/><br/>
+<br/><br/>
 
 ```cpp
 std::vector<int> v1 {1,2,3,4,5};
@@ -79,3 +79,5 @@ for( v : v1 )
     std::cout << v1 << " ";
 ```
 Output: 5 6 7 8 9
+
+<br/><br/>
