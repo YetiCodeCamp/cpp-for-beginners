@@ -5,19 +5,24 @@ permalink: /cppvideo11
 
 ## This is the companion page for the C++ for Beginners  
 ## Video 11 – C++ Vectors
-<br/>
+<br/><br/>
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2O6494hpWVo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<br/><br/>
 
 While we were introduced to vectors in the last video, since this one is dedicated strictly to vectors I thought a quick review was in order. This also helps anyone just coming in straight to this video.
 <br/><br/>
 
 ![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
-<br/>
+<br/><br/>
 Vectors are part of the C++ Standard Template Library or often referred to as simply STL. They are also part of the standard namespace, so you need to prefix they keyword vector with std:: as we do with cout.
 
 Vectors have member functions available to them to make working with them easy.
 
 Be sure to #include \<vector> at the top of your program.
 <br/><br/>
+
 Vectors are declared with keyword vector, the data type of the elements, and a name. We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.
 <br/>
 We can initialize vectors upon declaration like in this example:
