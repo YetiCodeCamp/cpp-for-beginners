@@ -18,7 +18,7 @@ Swaps the contents of v1 with that of v2.
 
 <br/><br/>
 <p align="center">
-<img width="681" height="293" src="images\videos\Cpp11\vector_swap.jpg" title="Vector.swap() Example">
+<img width="681" height="738" src="images\videos\Cpp11\vector_swap.jpg" title="Vector.swap() Example">
 </p>
 <br/><br/>
 

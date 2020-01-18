@@ -18,7 +18,7 @@ Deletes the last element of v1 and reduces its size by one.
 
 <br/><br/>
 <p align="center">
-<img width="681" height="293" src="images\videos\Cpp11\vector_pop_back.jpg" title="Vector.pop_back() Example">
+<img width="681" height="346" src="images\videos\Cpp11\vector_pop_back.jpg" title="Vector.pop_back() Example">
 </p>
 <br/><br/>
 

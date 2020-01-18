@@ -18,7 +18,7 @@ Adds a new element with a value of "99" to the end of the vector.
 
 <br/><br/>
 <p align="center">
-<img width="681" height="293" src="images\videos\Cpp11\vector_push_back.jpg" title="Vector.push_back() Example">
+<img width="681" height="339" src="images\videos\Cpp11\vector_push_back.jpg" title="Vector.push_back() Example">
 </p>
 <br/><br/>
 
