@@ -32,17 +32,23 @@ This example is a complete program using the vector pop_back() function to remov
 int main()
 {
 std::vector<int> numbers{1,2,3,4,5,6,7,8,9,10};
+
 std::cout << numbers.size() << "\n";
+
 numbers.pop_back();
 
 for( v : numbers)
     std::cout << v << " ";
+
 std::cout << "\n" << numbers.size();
 
 return 0;
 }
 ```
 Output:
-10
-1 2 3 4 5 6 7 8 9
+10 <br/>
+1 2 3 4 5 6 7 8 9 <br/>
 9
+
+
+<br/><br/>
