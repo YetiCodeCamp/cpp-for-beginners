@@ -15,7 +15,11 @@ v1.back();
 ```
 Returns the value in the last element of the vector.
 
-
+<br/><br/>
+<p align="center">
+<img width="681" height="293" src="images\videos\Cpp11\vector_back.jpg" title="Vector.back() Example">
+</p>
+<br/><br/>
 
 
 This example is a complete program using the vector back() function to return the value of the last element in a vector.
