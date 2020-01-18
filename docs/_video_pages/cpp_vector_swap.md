@@ -25,7 +25,7 @@ Swaps the contents of v1 with that of v2.
 
 
 
-This example is a complete program using the vector swapk() function to swap the contents of v1 with v2.
+This example is a complete program using the vector swap() function to swap the contents of v1 with v2.
 ```cpp
 #include<iostream>
 #include<vector>
