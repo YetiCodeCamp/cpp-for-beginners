@@ -18,144 +18,155 @@ While we were introduced to vectors in the last video, since this one is dedicat
 <br/><br/>
 Vectors are part of the C++ Standard Template Library or often referred to as simply STL. They are also part of the standard namespace, so you need to prefix they keyword vector with std:: as we do with cout.
 
+Be sure to #include \<vector> at the top of your program.
+
 Vectors have member functions available to them to make working with them easy.
 
-Be sure to #include \<vector> at the top of your program.
 <br/><br/>
 
 
-<table>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#aabcfe;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#669;background-color:#e8edff;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#aabcfe;color:#039;background-color:#b9c9fe;}
+.tg .tg-cly1{text-align:left;vertical-align:middle}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-yla0{font-weight:bold;text-align:left;vertical-align:middle}
+.tg .tg-nrix{text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
   <tr>
-    <th>Function</th>
-    <th>Description</th>
+    <th class="tg-yla0">Function</th>
+    <th class="tg-yla0">Description</th>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-assign">assign()</a></td>
-    <td>Assigns new values to a vector replacing any existing elements.<br></td>
+    <td class="tg-nrix"><a href="https://yeticode.dev/cpp-vector-assign">assign()</a></td>
+    <td class="tg-cly1">Assigns new values to a vector replacing any existing elements.<br></td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-at">at()</a><br></td>
-    <td>Returns the value of the element specified.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-at">at()</a><br></td>
+    <td class="tg-0lax">Returns the value of the element specified.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-back">back()</a><br></td>
-    <td>Returns the value of the last element in a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-back">back()</a><br></td>
+    <td class="tg-0lax">Returns the value of the last element in a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-begin">begin()</a><br></td>
-    <td>Returns an iterator to the first element in a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-begin">begin()</a><br></td>
+    <td class="tg-0lax">Returns an iterator to the first element in a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-capacity">capacity()</a></td>
-    <td>Returns the current memory allocation of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-capacity">capacity()</a></td>
+    <td class="tg-0lax">Returns the current memory allocation of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-cbegin">cbegin()</a><br></td>
-    <td>Returns a const iterator to the first element in a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-cbegin">cbegin()</a><br></td>
+    <td class="tg-0lax">Returns a const iterator to the first element in a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-cend">cend()</a><br></td>
-    <td>Returns an iterator to just beyond the last element of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-cend">cend()</a><br></td>
+    <td class="tg-0lax">Returns an iterator to just beyond the last element of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-clear">clear()</a><br></td>
-    <td>Clears (erases) the contents of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-clear">clear()</a><br></td>
+    <td class="tg-0lax">Clears (erases) the contents of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-crbegin">crbegin()</a><br></td>
-    <td>Returns a const iterator to the first element in a reversed vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-crbegin">crbegin()</a><br></td>
+    <td class="tg-0lax">Returns a const iterator to the first element in a reversed vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-crend">crend()</a><br></td>
-    <td>Returns a const iterator to the end of a reversed vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-crend">crend()</a><br></td>
+    <td class="tg-0lax">Returns a const iterator to the end of a reversed vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-data">data()</a></td>
-    <td>Returns a pointer to the first element in the vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-data">data()</a></td>
+    <td class="tg-0lax">Returns a pointer to the first element in the vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-emplace">emplace()</a><br></td>
-    <td>It inserts a new element just before the position specified.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-emplace">emplace()</a><br></td>
+    <td class="tg-0lax">It inserts a new element just before the position specified.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-emplace-back">emplace_back()</a><br></td>
-    <td>It inserts a new element at the end of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-emplace-back">emplace_back()</a><br></td>
+    <td class="tg-0lax">It inserts a new element at the end of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-empty">empty()</a><br></td>
-    <td>Boolean check if the vector is empty.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-empty">empty()</a><br></td>
+    <td class="tg-0lax">Boolean check if the vector is empty.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-end">end()</a><br></td>
-    <td>Returns a iterator to the end of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-end">end()</a><br></td>
+    <td class="tg-0lax">Returns a iterator to the end of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-erase">erase()</a><br></td>
-    <td>Removes one or more elements from a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-erase">erase()</a><br></td>
+    <td class="tg-0lax">Removes one or more elements from a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-front">front()</a></td>
-    <td>Returns the value of the first element in a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-front">front()</a></td>
+    <td class="tg-0lax">Returns the value of the first element in a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-get-allocator">get_allocator()</a></td>
-    <td>Returns an object to the allocator class used by a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-get-allocator">get_allocator()</a></td>
+    <td class="tg-0lax">Returns an object to the allocator class used by a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-get-insert">insert()</a></td>
-    <td>Inserts one or moreelements into the vector at the specified position.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-get-insert">insert()</a></td>
+    <td class="tg-0lax">Inserts one or moreelements into the vector at the specified position.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-get-max-size">max_size()</a></td>
-    <td>Returns the maximum length of the vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-get-max-size">max_size()</a></td>
+    <td class="tg-0lax">Returns the maximum length of the vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-get-max-operator">operator[]</a></td>
-    <td></td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-get-max-operator">operator[]</a></td>
+    <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-operator">operator=</a></td>
-    <td></td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-operator">operator=</a></td>
+    <td class="tg-0lax"></td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-pop-back">pop_back()</a></td>
-    <td>Deletes the last element of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-pop-back">pop_back()</a></td>
+    <td class="tg-0lax">Deletes the last element of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-push-back">push_back()</a></td>
-    <td>Adds an element to the end of a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-push-back">push_back()</a></td>
+    <td class="tg-0lax">Adds an element to the end of a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-rbegin">rbegin()</a></td>
-    <td>Returns an iterator to the first element in a reversed vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-rbegin">rbegin()</a></td>
+    <td class="tg-0lax">Returns an iterator to the first element in a reversed vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-rend">rend()</a></td>
-    <td>Returns an iterator to the end of a reversed vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-rend">rend()</a></td>
+    <td class="tg-0lax">Returns an iterator to the end of a reversed vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-reserve">reserve()</a></td>
-    <td>Reserves a minimum length of storage for a vector object.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-reserve">reserve()</a></td>
+    <td class="tg-0lax">Reserves a minimum length of storage for a vector object.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-resize">resize()</a></td>
-    <td>Specifies a new size for a vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-resize">resize()</a></td>
+    <td class="tg-0lax">Specifies a new size for a vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-shrink">shrink_to_fit()</a></td>
-    <td>Reduces the vector capacity by settings it to the current size of the vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-shrink">shrink_to_fit()</a></td>
+    <td class="tg-0lax">Reduces the vector capacity by settings it to the current size of the vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-size">size()</a></td>
-    <td>Returns the number of elements in the vector.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-size">size()</a></td>
+    <td class="tg-0lax">Returns the number of elements in the vector.</td>
   </tr>
   <tr>
-    <td><a href="https://yeticode.dev/cpp-vector-swap">swap()</a></td>
-    <td>Swaps the elements of two vectors.</td>
+    <td class="tg-baqh"><a href="https://yeticode.dev/cpp-vector-swap">swap()</a></td>
+    <td class="tg-0lax">Swaps the elements of two vectors.</td>
   </tr>
 </table>
 
-
+<br/><br/>
 
 Vectors are declared with keyword vector, the data type of the elements, and a name. We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.
 <br/>
