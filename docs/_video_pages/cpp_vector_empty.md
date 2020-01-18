@@ -15,7 +15,7 @@ Example, using a vector "v1".
 v1.empty();
 ```
 Returns boolean false if v1 is empty, otherwise returns true.
-
+<br/><br/>
 
 ```cpp
 std::vector<int> v1;
