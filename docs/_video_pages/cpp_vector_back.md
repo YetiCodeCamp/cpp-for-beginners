@@ -32,7 +32,10 @@ int main()
 std::vector<std::string> month{"Jan","Feb","Mar","Apr","May","Jun",
                                "Jul","Aug","Sep","Oct","Nov","Dec"};
 std::cout<<month.back();
+
 return 0;
 }  
 ```
 Output: Dec
+
+<br/><br/>

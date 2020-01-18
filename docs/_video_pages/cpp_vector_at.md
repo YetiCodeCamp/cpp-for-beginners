@@ -39,9 +39,11 @@ This example is a complete program using vector at() function to print the conte
 
 int main()  
 {  
-  std::vector<int> v1{1,2,3,4,5,6};  
+  std::vector<int> v1{1,2,3,4,5,6};
+
   for(int i=0;i<v1.size();i++)  
-      std::cout<<v1.at(i) << " ";  
+      std::cout<<v1.at(i) << " ";
+        
   return 0;   
 }  
 ```

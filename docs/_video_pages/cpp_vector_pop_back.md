@@ -45,7 +45,7 @@ std::cout << "\n" << numbers.size();
 return 0;
 }
 ```
-Output:
+Output: <br/>
 10 <br/>
 1 2 3 4 5 6 7 8 9 <br/>
 9

@@ -15,7 +15,13 @@ Example, using a vector "v1", and a value to be inserted of "99".
 v1.push_back(99);
 ```
 Adds a new element with a value of "99" to the end of the vector.
+
 <br/><br/>
+<p align="center">
+<img width="681" height="293" src="images\videos\Cpp11\vector_push_back.jpg" title="Vector.push_back() Example">
+</p>
+<br/><br/>
+
 
 
 
