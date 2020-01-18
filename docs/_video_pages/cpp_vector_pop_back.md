@@ -6,6 +6,7 @@ permalink: /cpp-vector-pop-back
 ## C++ Vector pop_back() Function
 <br/>
 The C++ vector.pop_back() function deletes the element at the end of a vector and reduces the size of the vector by one. This function does not take a parameter.
+<br/><br/>
 
 Syntax:
 
@@ -14,7 +15,7 @@ Example, using a vector "v1".
 v1.pop_back();
 ```
 Deletes the last element of v1 and reduces its size by one.
-
+<br/><br/>
 
 
 

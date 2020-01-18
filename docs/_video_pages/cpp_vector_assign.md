@@ -6,6 +6,7 @@ permalink: /cpp-vector-assign
 ## C++ Vector assign() Function
 <br/>
 The C++ vector.assign() function assigns new values to the vector replacing any existing values.
+<br/><br/>
 
 Syntax:
 

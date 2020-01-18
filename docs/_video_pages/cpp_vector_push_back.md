@@ -6,6 +6,7 @@ permalink: /cpp-vector-push-back
 ## C++ Vector push_back() Function
 <br/>
 The C++ vector.push_back() function adds a new element at the end of a vector. This function takes a single parameter which is the value to be inserted at the end of the vector.
+<br/><br/>
 
 Syntax:
 
@@ -14,7 +15,7 @@ Example, using a vector "v1", and a value to be inserted of "99".
 v1.push_back(99);
 ```
 Adds a new element with a value of "99" to the end of the vector.
-
+<br/><br/>
 
 
 

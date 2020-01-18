@@ -6,6 +6,7 @@ permalink: /cpp-vector-at
 ## C++ Vector at() Function
 <br/>
 The C++ vector.at() returns a reference to an element within the vector.
+<br/><br/>
 
 Syntax:
 
