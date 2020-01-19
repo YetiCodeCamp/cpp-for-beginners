@@ -17,12 +17,10 @@ While we were introduced to vectors in the last video, since this one is dedicat
 ![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
 <br/><br/>
 Vectors are part of the C++ Standard Template Library or often referred to as simply STL. They are also part of the standard namespace, so you need to prefix they keyword vector with std:: as we do with cout.
-
-Be sure to #include \<vector> at the top of your program.
+<br/>
 
 Vectors have member functions available to them to make working with them easy.
-
-<br/><br/>
+<br/>
 
 
 <table>
@@ -158,7 +156,9 @@ Vectors have member functions available to them to make working with them easy.
 
 <br/><br/>
 
-Vectors are declared with keyword vector, the data type of the elements, and a name. We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.
+Vectors are declared with keyword vector, the data type of the elements, and a name. Be sure to #include \<vector> at the top of your program.
+
+We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.
 <br/>
 We can initialize vectors upon declaration like in this example:
 ```cpp
@@ -213,7 +213,7 @@ int main()
 
 
 
-### prtVec()
+## prtVec()
 
 Instead of writing out a bunch of cout statements to display the vector element values all the time, cluttering up the code, let’s utilize a function.
 
@@ -233,7 +233,7 @@ void prtVec(const std::vector<auto> &vec, std::string n="")
 }
 ```
 <br/><br/>
-### Times Table
+## Times Table
 <br/>
 Final form of the timesTable() function. Remember to declare it above main with:
 ```cpp
