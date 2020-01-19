@@ -5,9 +5,7 @@ permalink: /cpp-vector-capacity
 
 ## C++ Vector capacity() Function
 <br/><br/>
-
 The C++ vector.capacity() function returns the number of elements the vector has allocated room for in memory. The function does not take a parameter.
-
 <br/><br/>
 
 Syntax:
@@ -17,7 +15,6 @@ Example, using a vector "v1".
 v1.capacity();
 ```
 Returns the elements the vector v1 could contain without allocating more memory space.
-
 <br/><br/>
 
 This example is a complete program using the vector capacity() function to return the number of elements a vector is currently sized for in memory.
@@ -58,7 +55,7 @@ int main()
         << v1.capacity( ) << std::endl;
 }
 ```
-Output:
+Output: <br/>
 Number of current elements v1 has allocated in memory: 1  
 Number of current elements v1 has allocated in memory: 2  
 Number of current elements v1 has allocated in memory: 4  

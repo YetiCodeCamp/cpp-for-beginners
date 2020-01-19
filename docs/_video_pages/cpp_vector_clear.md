@@ -6,9 +6,7 @@ permalink: /cpp-vector-clear
 ## C++ Vector clear() Function
 <br/><br/>
 
-
 The C++ vector.clear() function removes (erases) the elements of the vector.
-
 <br/><br/>
 
 Syntax:
@@ -18,7 +16,6 @@ Example, using a vector "v1".
 v1.clear();
 ```
 Erases the elements of the vector v1.
-
 <br/><br/>
 
 This example is a complete program using the vector clear() function to remove the elements in a vector.
