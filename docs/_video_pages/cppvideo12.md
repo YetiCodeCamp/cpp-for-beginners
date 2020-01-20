@@ -13,7 +13,7 @@ permalink: /cppvideo12
 
 In this video we will go over C++ pointers, what they are and how we can use them.
 
-First, remember that every variable or object will have a memory address associated with it. When we learned about arrays back in video, we briefly illustrated this concept.
+First, remember that every variable or object will have a memory address associated with it. When we learned about arrays back in video 8, we briefly illustrated this concept.
 
 <br/><br/>
 <p align="center">
@@ -46,7 +46,7 @@ Asterisk "\*" symbol - Besides being used as an operator in multiplication, when
 
 The avoid confusion, keep in mind the * serves two different purposes when used with pointers.
 
-- When used in a declaration (double* ptr), it creates a pointer variable that holds an address.
+- When used in a declaration `double* ptr`, it creates a pointer variable that holds an address.
 - When not being used in a declaration, it acts as a dereference operator to return the value at an address.  
 
 
@@ -65,7 +65,7 @@ Notice they both return the same address location.<br/>
 
 The  Ampersand & symbol also has two meanings depending on where it is used:
 
-- When used in a declaration (int& ref), it creates a reference to a variable.
+- When used in a declaration `int& ref`, it creates a reference to a variable.
 - When used outside of a declaration it means "the address of" the variable or object.
 
 ```cpp
