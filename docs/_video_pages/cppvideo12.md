@@ -1,5 +1,5 @@
 ---
-title: Video 11 - C++ Pointers
+title: Video 12 - C++ Pointers
 permalink: /cppvideo12
 ---
 
