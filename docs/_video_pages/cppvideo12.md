@@ -35,7 +35,6 @@ A pointer is denoted by using the * symbol as shown below.
 ```cpp
 int  *  i_ptr;    // pointer to an integer
 double *d_ptr;    // pointer to a double
-char*   ch_prt    // pointer to character
 ```
 Note that the position of the asterisk can very, as long as it is between the datatype and variable name it's a valid form of declaring a pointer.
 
