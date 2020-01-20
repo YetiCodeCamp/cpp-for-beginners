@@ -17,18 +17,18 @@ First, remember that every variable or object will have a memory address associa
 
 <br/><br/>
 <p align="center">
-<img width="600" height="423" src="images\videos\Cpp12\address.jpg" title="Address & Example">
+<img width="600" height="423" src="images\videos\Cpp12\address01.jpg" title="Address & Example">
 </p>
 <br/><br/>
 
 
 A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
 
-    to allocate new objects on the heap,
-    to pass functions to other functions
-    to iterate over elements in arrays or other data structures.
+  to allocate new objects on the heap,
+  to pass functions to other functions
+  to iterate over elements in arrays or other data structures.
 
-    Like a variable, a pointer must be declared with the datatype of the variable or object it will point to, this is known as its base-type.
+Like a variable, a pointer must be declared with the datatype of the variable or object it will point to, this is known as its base-type.
 
 A pointer is denoted by using the * symbol as shown below.
 
