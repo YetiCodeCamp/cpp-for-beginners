@@ -16,8 +16,8 @@ While we were introduced to vectors in the last video, since this one is dedicat
 
 ![Vectors](images\videos\Cpp10\Lesson10_Vectors.jpg)
 <br/><br/>
-Vectors are part of the C++ Standard Template Library or often referred to as simply STL. They are also part of the standard namespace, so you need to prefix they keyword vector with std:: as we do with cout.
-<br/>
+Vectors are part of the C++ Standard Template Library or often referred to as simply STL. They are also part of the standard namespace, so you need to prefix the keyword vector with std:: as we do with cout.
+<br/><br/>
 
 Vectors have member functions available to them to make working with them easy.
 <br/>
@@ -267,3 +267,4 @@ void timesTable(int x, int y)
     }
 }
 ```
+<br/><br/>
