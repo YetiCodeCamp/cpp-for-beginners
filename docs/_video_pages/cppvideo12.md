@@ -35,15 +35,16 @@ Like a variable, a pointer must be declared with the datatype of the variable or
 A pointer is denoted by using the * symbol as shown below.
 
 ```cpp
+char* ch_ptr;     // pointer to a character
 int  *  i_ptr;    // pointer to an integer
 double *d_ptr;    // pointer to a double
 ```
 Note that the position of the asterisk can vary, as long as it is between the datatype and variable name it's a valid form of declaring a pointer.
 
-It is somewhat of a convention to place the * right after the datatype such as `int* p;` when declaring a pointer to be able to more easily differentiate it from its usage as a dereference operator `*p` when we want to obtain "the value of" a pointers address reference.
+It is somewhat of a convention to place the * right after the datatype such as `int* ptr;` when declaring a pointer to be able to more easily differentiate it from its usage as a dereference operator `*ptr` when we want to obtain "the value of" a pointers address reference.
 <br/><br/>
 
-Symbols used with pointers
+Symbols used with pointers:
 
 <br/><br/>
 <p align="center">
@@ -63,7 +64,7 @@ The avoid confusion, keep in mind the * serves two different purposes when used 
 
 ```cpp
 int num = 547;
-int * p = & num;
+int* p = & num;
 std::cout << "The address of num is: " << p << std::endl;
 std::cout << "The address of num is: " << &num << std::endl;
 ```
@@ -89,5 +90,22 @@ Output: <br/>
 The address of num is: 0x6dfee8 <br/>
 The address of ref is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location. By making a reference, we are simply making an alias of the variable we are referencing, in this case the variable num. We can now also refer to it using the name ref. Unlike pointers than can change, once a reference is declared it is static.
+
+
+Also note that using a pointer with a char datatype requires the casting of the char pointer to type void if we want to print its address due to operator overloading of the cout <<. We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out an char pointer address.
+
+```cpp
+#include<iostream>
+
+int main()
+{
+    char ch = 'h';
+    char* ch_ptr = &ch;
+    // To print the address of a char pointer, you need to cast it as void*
+    std::cout << (void*) ch_ptr;
+
+    return 0;
+}
+```
 
 <br/><br/>
