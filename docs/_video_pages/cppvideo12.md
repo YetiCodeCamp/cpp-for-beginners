@@ -39,6 +39,8 @@ int  *  i_ptr;    // pointer to an integer
 double *d_ptr;    // pointer to a double
 ```
 Note that the position of the asterisk can vary, as long as it is between the datatype and variable name it's a valid form of declaring a pointer.
+
+It is somewhat of a convention to place the * right after the datatype such as `int* p;` when declaring a pointer to be able to more easily differentiate it from its usage as a dereference operator `*p` when we want to obtain "the value of" a pointers address reference.
 <br/><br/>
 
 Symbols used with pointers
@@ -48,9 +50,10 @@ Symbols used with pointers
 <img width="700" height="401" src="images\videos\Cpp12\address04.jpg" title="Address & Example">
 </p>
 
-
+<br/>
 Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as 'the address of" operator.
 Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator.
+
 
 The avoid confusion, keep in mind the * serves two different purposes when used with pointers.
 
@@ -86,3 +89,5 @@ Output: <br/>
 The address of num is: 0x6dfee8 <br/>
 The address of ref is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location. By making a reference, we are simply making an alias of the variable we are referencing, in this case the variable num. We can now also refer to it using the name ref. Unlike pointers than can change, once a reference is declared it is static.
+
+<br/><br/>
