@@ -7,7 +7,7 @@ permalink: /cppvideo12
 ## Video 12 – C++ Pointers
 <br/><br/>
 <p align="center">
-  {youtube video code goes here}
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/i9UMcaMADTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 <br/><br/>
 
@@ -20,7 +20,9 @@ First, remember that every variable or object will have a memory address associa
 <img width="600" height="423" src="images\videos\Cpp12\address01.jpg" title="Address & Example">
 </p>
 <br/><br/>
+In the above image we can see we have two variables, 'i' an integer and 'd' a double. They both have a memory address associated with them that points to the first byte of data they occupy. Variable 'i' uses 4 bytes of data and variable 'd' uses 8 bytes since it is of type double.
 
+We have up until now mainly accessed a variable by it's name. Using the above example we would access the value located at memory location 0x1100 by referencing the name we gave the variable, in this case 'i'. We can use the ampersand symbol to return variable 'i's address instead of it's value.
 
 A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
 
@@ -36,11 +38,11 @@ A pointer is denoted by using the * symbol as shown below.
 int  *  i_ptr;    // pointer to an integer
 double *d_ptr;    // pointer to a double
 ```
-Note that the position of the asterisk can very, as long as it is between the datatype and variable name it's a valid form of declaring a pointer.
+Note that the position of the asterisk can vary, as long as it is between the datatype and variable name it's a valid form of declaring a pointer.
 
 Symbols used with pointers:
 
-Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object.
+Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as 'the address of" operator.
 Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator.
 
 The avoid confusion, keep in mind the * serves two different purposes when used with pointers.
