@@ -34,6 +34,8 @@ For an overview of the CodeBlocks installation process and a few other setup tip
 
 The latest videos each have their own separate companion page:
 
+[Video 12 - Pointers](cppvideo12)
+
 [Video 11 - C++ Vectors](cppvideo11)
 
 [Video 10 - Multidimensional Arrays and Introduction to Vectors](cppvideo10)
