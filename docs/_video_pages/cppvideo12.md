@@ -20,7 +20,7 @@ First, remember that every variable or object will have a memory address associa
 <img width="600" height="423" src="images\videos\Cpp12\address01.jpg" title="Address & Example">
 </p>
 <br/><br/>
-In the above image we can see we have two variables, 'i' an integer and 'd' a double. They both have a memory address associated with them that points to the first byte of data they occupy. Variable 'i' uses 4 bytes of data and variable 'd' uses 8 bytes since it is of type double.
+In the above image we can see we have two variables, 'i' an integer and 'd' a double. They both have a memory address associated with them that points to the first byte of memory they occupy. Variable 'i' uses 4 bytes of memory to hold its data and variable 'd' uses 8 bytes of memory since it is of data type double.
 
 We have up until now mainly accessed a variable by it's name. Using the above example we would access the value located at memory location 0x1100 by referencing the name we gave the variable, in this case 'i'. We can use the ampersand symbol to return variable 'i's address instead of it's value.
 
@@ -36,7 +36,7 @@ A pointer is a variable that stores the memory address of an object. Pointers ar
 Like a variable, a pointer must be declared with the datatype of the variable or object it will point to, this is known as its base-type.
 <br/><br/>
 
-A pointer is denoted by using the * symbol as shown below.
+A pointer variable is denoted by using the * symbol as shown below.
 
 ```cpp
 char* ch_ptr;     // pointer to a character
@@ -46,6 +46,11 @@ double *d_ptr;    // pointer to a double
 Note that the position of the asterisk can vary, as long as it is between the datatype and variable name it's a valid form of declaring a pointer.
 
 It is somewhat of a convention to place the * right after the datatype such as `int* ptr;` when declaring a pointer to be able to more easily differentiate it from its usage as a dereference operator `*ptr` when we want to obtain "the value of" a pointers address reference.
+<br/><br/>
+
+There is also a void* pointer that is a special type of pointer that has no associated data type with it. A void pointer can hold the address of any data type and can be type-casted to any type.  
+
+However, void pointers cannot be dereferenced and do not normally allow for the use of pointer arithmetic operations. They are normally reserved for use in special situations. One such usage is with the char datatype, an example of which is provided later on in this article.
 <br/><br/>
 
 Symbols used with pointers:
@@ -94,7 +99,7 @@ Output: <br/>
 The address of num is: 0x6dfee8 <br/>
 The address of ref is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location. By making a reference, we are simply making an alias of the variable we are referencing, in this case the variable num. We can now also refer to it using the name ref. Unlike pointers than can change, once a reference is declared it is static.
-
+<br/><br/>
 
 Also note that using a pointer with a char datatype requires the casting of the char pointer to type void pointer (void*) if we want to print its address due to operator overloading of the cout <<.
 
