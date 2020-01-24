@@ -92,7 +92,7 @@ The address of ref is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location. By making a reference, we are simply making an alias of the variable we are referencing, in this case the variable num. We can now also refer to it using the name ref. Unlike pointers than can change, once a reference is declared it is static.
 
 
-Also note that using a pointer with a char datatype requires the casting of the char pointer to type void if we want to print its address due to operator overloading of the cout <<. We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out an char pointer address.
+Also note that using a pointer with a char datatype requires the casting of the char pointer to type void pointer (void*) if we want to print its address due to operator overloading of the cout <<. We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out an char pointer address.
 
 ```cpp
 #include<iostream>
@@ -109,3 +109,55 @@ int main()
 ```
 
 <br/><br/>
+
+
+
+## Pointer Arithmetic
+
+
+<br/><br/>
+<p align="center">
+<img width="700" height="153" src="images\videos\Cpp12\Address_Elements.jpg" title="Address Example">
+</p>
+
+In the video we went over a simple example of pointer arithmetic using a simple increment and decrement demonstration. There are actually 5 different methods we can employ to perform arithmetic with pointers.
+  1. Pointer Increment:  p++;
+  2. Pointer Decrement:  p--;
+  3. Constant Addition:  p = p + k; Where k is a constant value, 1,2,3, etc.
+  4. Constant Subtraction: p = p - k;
+  5. Subtraction of one pointer from another: m = p - q;
+
+  Referencing the image above, we can demonstrate these arithmetic operations, Assume the image is an array named arr.
+```cpp
+#include <iostream>
+
+int main()
+{
+int arr[10] = {4,11,18,18,23,30,54,66,80,92};
+int* p = &arr[0];
+int* q = &arr[8];
+std::cout << "Initial values of pointer p:\t\taddress: " << p << ", value: " << \*p << std::endl;
+std::cout << "Initial values of pointer q:\t\taddress: " << q << ", value: " << \*q << std::endl;
+p++;
+std::cout << "\nValue after incrementing p by one:\taddress: " << p << ", value: " << \*p << std::endl;
+p=p+5;
+std::cout << "\nValue after adding 5 to p:\t\taddress: " << p << ", value: " << \*p << std::endl;
+p--;
+std::cout << "\nValue after decrementing p by one:\taddress: " << p << ", value: " << \*p << std::endl;
+p=p-2;
+std::cout << "\nValue after subtracting 2 from p:\taddress: " << p << ", value: " << \*p << std::endl;
+std::cout << "\nResult of subtracting p from q:\t\t" << q-p << std::endl;
+
+return 0;
+}
+```
+Output:<br/>
+Initial values of pointer p:            address: 0x6dfec0, value: 4 <br/>
+Initial values of pointer q:            address: 0x6dfee0, value: 80 <br/><br/>
+Value after incrementing p by one:      address: 0x6dfec4, value: 11 <br/><br/>
+Value after adding 5 to p:              address: 0x6dfed8, value: 54 <br/><br/>
+Value after decrementing p by one:      address: 0x6dfed4, value: 30 <br/><br/>
+Value after subtracting 2 from p:       address: 0x6dfecc, value: 18 <br/><br/>
+Result of subtracting p from q:         5 <br/><br/>
+
+Note that the last arithmetic operation subtracting p from q returns the number of integer (4 byte) units between the two pointers, in this case 5 units.  
