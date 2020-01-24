@@ -24,6 +24,9 @@ In the above image we can see we have two variables, 'i' an integer and 'd' a do
 
 We have up until now mainly accessed a variable by it's name. Using the above example we would access the value located at memory location 0x1100 by referencing the name we gave the variable, in this case 'i'. We can use the ampersand symbol to return variable 'i's address instead of it's value.
 
+`std::cout << &i << std::endl;`  would output 0x1100 using the example above.
+<br/>
+
 A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
 
 - to allocate new objects on the heap  
@@ -31,6 +34,7 @@ A pointer is a variable that stores the memory address of an object. Pointers ar
 - to iterate over elements in arrays or other data structures  
 
 Like a variable, a pointer must be declared with the datatype of the variable or object it will point to, this is known as its base-type.
+<br/>
 
 A pointer is denoted by using the * symbol as shown below.
 
@@ -54,7 +58,7 @@ Symbols used with pointers:
 <br/>
 Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as "the address of" operator.
 Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator.
-
+<br/>
 
 The avoid confusion, keep in mind the * serves two different purposes when used with pointers.
 
@@ -75,7 +79,7 @@ Notice they both return the same address location.<br/>
 (Note: the actual address returned will be different on your computer depending on the memory location set aside to hold the variable num.)
 <br/><br/>
 
-The  Ampersand & symbol also has two meanings depending on where it is used:
+The Ampersand & symbol also has two meanings depending on where it is used:
 
 - When used in a declaration `int& ref`, it creates a reference to a variable.
 - When used outside of a declaration it means "the address of" the variable or object.
@@ -92,7 +96,9 @@ The address of ref is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location. By making a reference, we are simply making an alias of the variable we are referencing, in this case the variable num. We can now also refer to it using the name ref. Unlike pointers than can change, once a reference is declared it is static.
 
 
-Also note that using a pointer with a char datatype requires the casting of the char pointer to type void pointer (void*) if we want to print its address due to operator overloading of the cout <<. We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out an char pointer address.
+Also note that using a pointer with a char datatype requires the casting of the char pointer to type void pointer (void*) if we want to print its address due to operator overloading of the cout <<.
+
+We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out an char pointer address.
 
 ```cpp
 #include<iostream>
@@ -120,7 +126,7 @@ In the video we went over a basic example of pointer arithmetic using a simple i
 There are actually 5 different methods we can employ to perform arithmetic with pointers.
   1. Pointer Increment:   `p++;`
   2. Pointer Decrement:   `p--;`
-  3. Constant Addition:   `p = p + k;` Where k is a constant value, 1,2,3, etc.
+  3. Constant Addition:   `p = p + k;`  where k is a constant value, 1,2,3,4 etc.
   4. Constant Subtraction:  `p = p - k;`
   5. Subtraction of one pointer from another:  `m = p - q;`
 
