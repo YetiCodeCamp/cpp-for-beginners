@@ -58,7 +58,7 @@ There is also a void* pointer that is a special type of pointer that has no asso
 However, void pointers cannot be dereferenced and do not normally allow for the use of pointer arithmetic operations. They are normally reserved for use in special situations. One such usage is with the char datatype, an example of which is provided later on in this article.
 <br/><br/>
 
-Symbols used with pointers:
+### Symbols used with pointers:
 
 <br/><br/>
 <p align="center">
@@ -66,8 +66,9 @@ Symbols used with pointers:
 </p>
 
 <br/>
-Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as "the address of" operator.
-Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator.
+Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as "the address of" operator.  
+<br/>
+Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator. When used as a dereference operator you can think of it as "the value of" operator.
 <br/><br/>
 
 The avoid confusion, keep in mind the * serves two different purposes when used with pointers.
