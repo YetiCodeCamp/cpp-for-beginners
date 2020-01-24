@@ -48,7 +48,7 @@ Note that the position of the asterisk can vary, as long as it is between the da
 It is somewhat of a convention to place the * right after the datatype such as `int* ptr;` when declaring a pointer to be able to more easily differentiate it from its usage as a dereference operator `*ptr` when we want to obtain "the value of" a pointers address reference.
 <br/><br/>
 
-There is also a void* pointer that is a special type of pointer that has no associated data type with it. A void pointer can hold the address of any data type and can be type-casted to any type.  
+There is also a void* pointer that is a special type of pointer that has no associated data type with it. A void pointer can hold the address of any data type and can be type-cast to any other data type.  
 
 However, void pointers cannot be dereferenced and do not normally allow for the use of pointer arithmetic operations. They are normally reserved for use in special situations. One such usage is with the char datatype, an example of which is provided later on in this article.
 <br/><br/>
@@ -82,6 +82,12 @@ The address of num is: 0x6dfee8 <br/>
 The address of num is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location.<br/>
 (Note: the actual address returned will be different on your computer depending on the memory location set aside to hold the variable num.)
+
+Also it can be easy to become confused if the asterisk is being used as an arithmetic operator or as a dereference operator.
+
+One thing to help is to keep in mind when used as a dereference operator, the asterisk is unary, or used with one variable ` *p `.
+
+When being used as a mathematical operator, it is used with two or more factors, i.e.: ` a * b  or z = w * x * y`.
 <br/><br/>
 
 The Ampersand & symbol also has two meanings depending on where it is used:
@@ -101,9 +107,9 @@ The address of ref is: 0x6dfee8 <br/><br/>
 Notice they both return the same address location. By making a reference, we are simply making an alias of the variable we are referencing, in this case the variable num. We can now also refer to it using the name ref. Unlike pointers than can change, once a reference is declared it is static.
 <br/><br/>
 
-Also note that using a pointer with a char datatype requires the casting of the char pointer to type void pointer (void*) if we want to print its address due to operator overloading of the cout <<.
+Also note that using a pointer with a char datatype requires the casting of the char pointer to a void pointer (void*) if we want to print its address, due to operator overloading of the cout <<.
 
-We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out an char pointer address.
+We will cover operator overloading in a later lesson, but for now the following example code shows how you can print out a char pointer address.
 
 ```cpp
 #include<iostream>
@@ -112,7 +118,7 @@ int main()
 {
     char ch = 'h';
     char* ch_ptr = &ch;
-    // To print the address of a char pointer, you need to cast it as void*
+    // To print the address of a char pointer, you need to type-cast it as void*
     std::cout << (void*) ch_ptr;
 
     return 0;
@@ -135,7 +141,7 @@ There are actually 5 different methods we can employ to perform arithmetic with 
   4. Constant Subtraction:  `p = p - k;`
   5. Subtraction of one pointer from another:  `m = p - q;`
 
-Also remember that the pointer takes on the base type of the variable address we are pointing to. In the case of an integer variable, the pointer will be of base type int which takes up 4 bytes of memory on most modern PCs.
+Also remember that the pointer takes on the base type of the variable address we are pointing to. In the case of an integer variable, the pointer will be of base type 'int' which takes up 4 bytes of memory on most modern PCs.
 
 So when we perform arithmetic on a pointer, the size in bytes of the base type is used, meaning when we increment a int pointer (p++) the increment will move the pointer forward 4 bytes in memory. If we add 4 to a pointer (p=p+4) we will move the pointer 4 base units or 16 bytes forward in memory.
 
