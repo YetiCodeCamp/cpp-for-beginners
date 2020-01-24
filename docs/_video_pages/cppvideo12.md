@@ -52,7 +52,7 @@ Symbols used with pointers:
 </p>
 
 <br/>
-Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as 'the address of" operator.
+Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as "the address of" operator.
 Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator.
 
 
@@ -113,21 +113,28 @@ int main()
 
 
 ## Pointer Arithmetic
+<br/>
 
+In the video we went over a basic example of pointer arithmetic using a simple increment and decrement demonstration.
+
+There are actually 5 different methods we can employ to perform arithmetic with pointers.
+  1. Pointer Increment:   `p++;`
+  2. Pointer Decrement:   `p--;`
+  3. Constant Addition:   `p = p + k;` Where k is a constant value, 1,2,3, etc.
+  4. Constant Subtraction:  `p = p - k;`
+  5. Subtraction of one pointer from another:  `m = p - q;`
+
+Also remember that the pointer takes on the base type of the variable address we are pointing to. In the case of an integer variable, the pointer will be of base type int which takes up 4 bytes of memory on most modern PCs.
+
+So when we perform arithmetic on a pointer, the size in bytes of the base type is used, meaning when we increment a int pointer (p++) the increment will move the pointer forward 4 bytes in memory. If we add 4 to a pointer (p=p+4) we will move the pointer 4 base units or 16 bytes forward in memory.
 
 <br/><br/>
 <p align="center">
 <img width="700" height="153" src="images\videos\Cpp12\Address_Elements.jpg" title="Address Example">
 </p>
+<br/><br/>
 
-In the video we went over a simple example of pointer arithmetic using a simple increment and decrement demonstration. There are actually 5 different methods we can employ to perform arithmetic with pointers.
-  1. Pointer Increment:  p++;
-  2. Pointer Decrement:  p--;
-  3. Constant Addition:  p = p + k; Where k is a constant value, 1,2,3, etc.
-  4. Constant Subtraction: p = p - k;
-  5. Subtraction of one pointer from another: m = p - q;
-
-  Referencing the image above, we can demonstrate these arithmetic operations, Assume the image is an array named arr.
+Referencing the image above, we can demonstrate these arithmetic operations, assume the image is an array named arr.
 ```cpp
 #include <iostream>
 
@@ -161,3 +168,5 @@ Value after subtracting 2 from p:       address: 0x6dfecc, value: 18 <br/><br/>
 Result of subtracting p from q:         5 <br/><br/>
 
 Note that the last arithmetic operation subtracting p from q returns the number of integer (4 byte) units between the two pointers, in this case 5 units.  
+
+<br/><br/>
