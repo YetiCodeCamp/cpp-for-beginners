@@ -37,6 +37,7 @@ A pointer is a variable whose value holds the memory address of another variable
 - to dynamically allocate memory  
 - to pass functions to other functions  
 - to traverse iterable data structures such as elements in arrays
+<br/><br/>
 
 Like a variable, a pointer must be declared with the datatype of the variable or object whose address it will point to, this is known as the pointer's base-type.
 <br/><br/>
@@ -49,6 +50,7 @@ int  *  i_ptr;    // pointer to an integer
 double *d_ptr;    // pointer to a double
 ```
 Note that the position of the asterisk can vary, as long as it is in-between the datatype and pointer variable's name, it's a valid form of declaring a pointer.
+
 
 It is somewhat of a convention to place the * right after the datatype such as `int* ptr;` when declaring a pointer to be able to more easily differentiate it from its other usage as a dereference operator `*ptr` when we want to obtain "the value of" a pointers address reference.
 <br/><br/>
@@ -195,14 +197,16 @@ Note that the last arithmetic operation subtracting p from q returns the number 
 <br/><br/>
 
 
-Common pitfalls to avoid while working with pointers
+### Common pitfalls to avoid while working with pointers
+
 
 For example, let's say you want to assign pointer ptr to point to the address of x:
 ```cpp
-int x, * ptr;
+int x;
+int * ptr;
 ptr = x;   // Incorrect, you are assigning the value of x to ptr, not x's address.
-*ptr = &x; // Incorrect, *ptr is the dereferenced value at the address ptr points to, whereas &x is an address.
+*ptr = &x; // Incorrect, *ptr is the value at the address ptr points to, whereas &x is an address.
 ptr = &x;  // Correct, here we are assigning the address of x to the ptr variable.
-*ptr = x;  // Correct, *ptc is the dereferenced value at the address ptr points to, and, x is also a value.
+*ptr = x;  // Correct, *ptr is the value at the address ptr points to, and, x is also a value.
 ```
 <br/><br/>
