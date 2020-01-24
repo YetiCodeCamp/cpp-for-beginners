@@ -143,16 +143,16 @@ int main()
 int arr[10] = {4,11,18,18,23,30,54,66,80,92};
 int* p = &arr[0];
 int* q = &arr[8];
-std::cout << "Initial values of pointer p:\t\taddress: " << p << ", value: " << \*p << std::endl;
-std::cout << "Initial values of pointer q:\t\taddress: " << q << ", value: " << \*q << std::endl;
+std::cout << "Initial values of pointer p:\t\taddress: " << p << ", value: " << * p << std::endl;
+std::cout << "Initial values of pointer q:\t\taddress: " << q << ", value: " << * q << std::endl;
 p++;
-std::cout << "\nValue after incrementing p by one:\taddress: " << p << ", value: " << \*p << std::endl;
+std::cout << "\nValue after incrementing p by one:\taddress: " << p << ", value: " << * p << std::endl;
 p=p+5;
-std::cout << "\nValue after adding 5 to p:\t\taddress: " << p << ", value: " << \*p << std::endl;
+std::cout << "\nValue after adding 5 to p:\t\taddress: " << p << ", value: " << * p << std::endl;
 p--;
-std::cout << "\nValue after decrementing p by one:\taddress: " << p << ", value: " << \*p << std::endl;
+std::cout << "\nValue after decrementing p by one:\taddress: " << p << ", value: " << * p << std::endl;
 p=p-2;
-std::cout << "\nValue after subtracting 2 from p:\taddress: " << p << ", value: " << \*p << std::endl;
+std::cout << "\nValue after subtracting 2 from p:\taddress: " << p << ", value: " << * p << std::endl;
 std::cout << "\nResult of subtracting p from q:\t\t" << q-p << std::endl;
 
 return 0;
