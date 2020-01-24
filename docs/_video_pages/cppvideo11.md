@@ -3,7 +3,7 @@ title: Video 11 - C++ Vectors
 permalink: /cppvideo11
 ---
 
-## This is the companion page for the C++ for Beginners  
+## This is the companion page for the C++ for Beginners Series
 ## Video 11 – C++ Vectors
 <br/><br/>
 <p align="center">

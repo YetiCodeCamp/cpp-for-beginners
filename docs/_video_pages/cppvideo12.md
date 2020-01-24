@@ -3,7 +3,7 @@ title: Video 12 - C++ Pointers
 permalink: /cppvideo12
 ---
 
-## This is the companion page for the C++ for Beginners
+## This is the companion page for the C++ for Beginners Series
 ## Video 12 – C++ Pointers
 <br/><br/>
 <p align="center">
@@ -198,6 +198,7 @@ Note that the last arithmetic operation subtracting p from q returns the number 
 
 
 ### Common pitfalls to avoid while working with pointers
+<br/>
 
 
 For example, let's say you want to assign pointer ptr to point to the address of x:
@@ -207,6 +208,6 @@ int * ptr;
 ptr = x;   // Incorrect, you are assigning the value of x to ptr, not x's address.
 *ptr = &x; // Incorrect, *ptr is the value at the address ptr points to, whereas &x is an address.
 ptr = &x;  // Correct, here we are assigning the address of x to the ptr variable.
-*ptr = x;  // Correct, *ptr is the value at the address ptr points to, and, x is also a value.
+*ptr = x;  // Correct, *ptr is the value at the address ptr points to, and x is also a value.
 ```
 <br/><br/>

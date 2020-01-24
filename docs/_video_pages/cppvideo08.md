@@ -3,7 +3,8 @@ title: Video 08 - Menu Project and Introduction to the Switch Statement
 permalink: /cppvideo08
 ---
 
-## This is the companion page for the C++ for Beginners Video 08 - Menu Project and Introduction to the Switch Statement
+## This is the companion page for the C++ for Beginners Series
+## Video 08 - Menu Project and Introduction to the Switch Statement
 <br/>
 <br/>
 <p align="center">
