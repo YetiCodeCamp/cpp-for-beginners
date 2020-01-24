@@ -25,7 +25,7 @@ In the above image we can see we have two variables, 'i' an integer and 'd' a do
 We have up until now mainly accessed a variable by it's name. Using the above example we would access the value located at memory location 0x1100 by referencing the name we gave the variable, in this case 'i'. We can use the ampersand symbol to return variable 'i's address instead of it's value.
 
 `std::cout << &i << std::endl;`  would output 0x1100 using the example above.
-<br/>
+<br/><br/>
 
 A pointer is a variable that stores the memory address of an object. Pointers are used extensively in both C and C++ for three main purposes:
 
@@ -34,7 +34,7 @@ A pointer is a variable that stores the memory address of an object. Pointers ar
 - to iterate over elements in arrays or other data structures  
 
 Like a variable, a pointer must be declared with the datatype of the variable or object it will point to, this is known as its base-type.
-<br/>
+<br/><br/>
 
 A pointer is denoted by using the * symbol as shown below.
 
@@ -58,7 +58,7 @@ Symbols used with pointers:
 <br/>
 Ampersand "&" symbol - Address Operator - Used to obtain the memory address of a variable or object. You can think of it as "the address of" operator.
 Asterisk "\*" symbol - Besides being used as an operator in multiplication, when used with pointers it is used to create a pointer variable and as a dereference operator.
-<br/>
+<br/><br/>
 
 The avoid confusion, keep in mind the * serves two different purposes when used with pointers.
 
