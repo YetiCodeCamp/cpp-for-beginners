@@ -9,11 +9,6 @@ permalink: /cpp-vector-begin
 The C++ vector.begin() function returns an iterator to the first element of a vector. This function takes no parameters.
 
 If the vector is empty, the returned iterator will be equal to end().
-
-<br/><br/>
-<p align="center">
-<img width="700" height="202" src="images\videos\Cpp11\vector_begin_end.jpg" title="Vector.begin() Example">
-</p>
 <br/><br/>
 
 Syntax:
@@ -21,6 +16,11 @@ Syntax:
 v1.begin();
 ```
 Returns an iterator to the first element of a vector
+
+<br/><br/>
+<p align="center">
+<img width="700" height="202" src="images\videos\Cpp11\vector_begin_end.jpg" title="Vector.begin() Example">
+</p>
 <br/><br/>
 
 This example uses the assign function with the first and last parameters to assign the value of another vector (v1) to vector v2. We are using the vector begin and end functions to retrieve the starting and ending elements of vector v1 and using them in the vector assign() parameter list.
