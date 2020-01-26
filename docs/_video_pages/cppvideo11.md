@@ -102,7 +102,7 @@ Vectors have member functions available to them to make working with them easy.
   </tr>
   <tr>
     <td><a href="https://yeticode.dev/cpp-vector-get-insert">insert()</a></td>
-    <td>Inserts one or moreelements into the vector at the specified position.</td>
+    <td>Inserts one or more elements into the vector at the specified position.</td>
   </tr>
   <tr>
     <td><a href="https://yeticode.dev/cpp-vector-get-max-size">max_size()</a></td>
@@ -156,9 +156,10 @@ Vectors have member functions available to them to make working with them easy.
 
 <br/><br/>
 
-Vectors are declared with keyword vector, the data type of the elements, and a name. Be sure to #include \<vector> at the top of your program.
+Vectors are declared with the keyword vector, the data type of the elements, and a name. To be able to use vectors, be sure to #include \<vector> at the top of your program.
 
-We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.
+We do not need to give it a size right away like we did with arrays. Vectors can be resized in memory as needed.<br/>
+
 <br/>
 We can initialize vectors upon declaration like in this example:
 ```cpp
