@@ -23,7 +23,7 @@ It returns a pointer to the first element in the array used internally by vector
 </p>
 <br/><br/>
 
-The following example uses a vector v1, and a pointer ptr to display the value of two different elements within the vector.
+The following example uses a vector v1, and a pointer 'ptr' to display the value of two different elements within the vector.
 ```cpp
 std::vector<int> v1 {11,12,13,14,15};
 int* ptr = v1.data();
@@ -53,21 +53,20 @@ int main()
 
   int* ptr = v1.data();
 
-  * ptr = 11;
-  * (ptr + 1) = 22;
-  * (ptr + 2) = 33;
-  * (ptr + 3) = 44;
-  * (ptr + 4) = 55;
+  \*ptr = 11;
+  \*(ptr + 1) = 22;
+  \*(ptr + 2) = 33;
+  \*(ptr + 3) = 44;
+  \*(ptr + 4) = 55;
 
   for(v:v1)
   {
-      std::cout << * ptr << " ";
+      std::cout << \*ptr << " ";
       ptr++;
   }
 
   return 0;
 }
-
 ```
 Output: <br/>
 5 6 7 8 9 <br/>
