@@ -14,6 +14,7 @@ Example, using a vector "v1" and pointer "ptr".
 ```cpp
 int* ptr = v1.data();
 ```
+
 It returns a pointer to the first element in the array used internally by vector v1.
 
 <br/><br/>
@@ -33,9 +34,11 @@ Output:<br/>
 11<br/>
 14
 
+The pointer "ptr" is assigned the address of the first element in the vector , which we can then print out the dereferenced value. In the second output statement we add three to the ptr to increment the address by three integer units (4 bytes each) to output the 4th element's value, again using the dereference operator.
+
 <br/><br/><br/>
 
-This example is a complete program using vector data() function to assign the address of the first element to a pointer. We then use the pointer to change the vector element values and then to print the contents of a vector.
+This next example is a complete program using the vector data() function to assign the address of the vector v1's first element to a pointer (ptr). We then use the pointer to change the vector element values and then to print out the changed contents of a vector.
 
 ```cpp
 #include<iostream>
