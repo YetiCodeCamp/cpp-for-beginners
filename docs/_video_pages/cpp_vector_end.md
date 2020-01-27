@@ -5,7 +5,6 @@ permalink: /cpp-vector-end
 
 ## C++ Vector end() Function
 <br/><br/>
-
 The C++ vector.end() function returns an iterator to "just past" the last element of a vector. This function takes no parameters.
 
 The "just past the end" element is the theoretical element that would follow the last element in the vector. It does not point to an actual element, and thus shall not be dereferenced.
