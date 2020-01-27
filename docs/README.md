@@ -44,6 +44,9 @@ The latest videos each have their own separate companion page:
 
 [Video 08 - Menu Program and Switch Statement](cppvideo08)
 
+[Video 07 - Multiple Files](cppvideo07)
+
+
 <br/><br/>
 The rest of the series is listed below for now.
 
