@@ -13,32 +13,32 @@ permalink: /vbwin10
 
 
 The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Windows 10 Virtual Machine installation.
-<br/>
+<br/><br/>
 
-Before we start, I want to quickly go over a few items.
+Before we start, I want to quickly go over a few items:
 
-To follow along with this guide you should have a HDD (SSD preferred) with at least 200 GB of free space, but more is better. Alternatively, you could use an external drive with similar free capacity, it will be a bit slower but still workable.
+To follow along with this guide you should have a HDD (SSD preferred) with at least 200 GB of free space, but more is better. Alternatively, you could use an external drive with a similar free space capacity, it will be a bit slower but still workable.
 
-If you do not already have a Windows ISO image file, you will also need a high speed Internet connection as we will be downloading a ~4 GB Windows ISO image file.
+If you do not already have a Windows ISO image file, you will also need a high speed Internet connection as we will be downloading a ~4 GB Windows ISO image file. On a 100 Mbps connection it takes roughly 6 minutes for the download portion, so you can use that as a base reference (i.e. a 10 Mbps connection will take 60 minutes and so on).
 
 Finally, if you wish to make your Windows 10 VM a more permanent installation, you will also need to have a valid Windows 10 Product key. This is optional as you can also take a snapshot of your finished VM install and simply revert back to its initial state once the grace period is over.
 <br/>
 
 There are also a few terms I wish to clarify: VM, VB, host system and guest system.
 
-- VM is short for Virtual Machine, a general term describing a computer environment that is virtualized.
+- VM is short for Virtual Machine, a general term describing a computer environment that is virtualized. The VM is the virtual "guest" system that will run on your host.
 
-- VB is short for the VirtualBox software we are using to create and run our VM (Virtual Machines).
+- VB is short for the Oracle VirtualBox software we are using to create and run our VM (Virtual Machines).
 
 - The ‘host system’ is the physical PC you are probably using right now that you intend to install the VB software on to run the virtual guest machine.
 
-- The ‘guest system’ then is the Virtual Machine that you will be running within the VB software, in this case the virtual Windows 10 system.
+- The ‘guest system’ then is the Virtual Machine that you will be running using the VB software, in this case the virtual Windows 10 system we will be installing.
 
 <br/>
 ## Download Windows 10 ISO
 <br/>
 
-To begin we will need to get a Windows 10 ISO image.
+To begin we will need to get a Microsoft Windows 10 ISO image.
 
 Go to the [Windows 10 Download Tool](https://www.microsoft.com/en-us/software-download/windows10) page.
 
@@ -55,7 +55,7 @@ Under the Create Windows 10 installation media section, click on Download tool n
 You should get a popup asking you to save the file, go ahead and click on Save File.
 <br/><br/>
 
-Once the file has downloaded, open up you downloads folder and double click on the MediaCreationToolxxxx.exe to begin installation of the tool.
+Once the file has downloaded, open up your downloads folder and double click on the MediaCreationToolxxxx.exe to begin installation of the tool.
 
 Note the xxxx is the current version of Windows that the tool will download, and its value will change over time. As of this writing it is version 1909.
 
@@ -180,7 +180,7 @@ Click on Yes to continue.
 <img width="600" height="451" src="images\videos\VirtualBox\VB-Install.jpg" title="VirtualBox Ready to Install">
 </p>
 
-You will then be presented with a Ready to Install screen informing you the wizard is about to start the custom installation. Now is the time to make any changes if you need.
+You will then be presented with a Ready to Install screen informing you the wizard is about to start the custom installation. Now is the time to make any changes by using the "Back" button if you need.
 
 Click on Install to continue.
 
@@ -190,7 +190,7 @@ Click on Install to continue.
 </p>
 You may get one or more install device driver prompts during installation.
 
-I usually just check the trust software from Oracle box and click on Install.
+I usually just check the trust software from Oracle box and click on Install to avoid further prompts.
 
 <br/><br/><br/>
 <p align="center">
@@ -206,6 +206,7 @@ Click on Finish.
 ## Create a Virtual Machine
 <br/><br/>
 If you are following along in the guide step by step and you left the box checked in the previous step you should already have the screen shown below on your PC. If not, or if you unchecked the box, find the VirtualBox icon or executable and launch the program at this time.
+<br/><br/>
 
 <p align="center">
 <img width="700" height="444" src="images\videos\VirtualBox\VB-Welcome.jpg" title="VirtualBox Welcome">
@@ -273,26 +274,26 @@ This will take you back to the home screen. You now have a Virtual Machine that 
 ## Configuring Virtual Machine for Windows Install
 <br/>
 
-First though, we want to go into the settings and review and adjust anything we may have missed or wish to change.
+Before we can install the OS we need to go into the settings for the VM we just created and review and adjust anything we may have missed or wish to change. We also need to setup the virtual optical drive to point to our Windows 10 ISO image we downloaded earlier.
 
-Click on Settings.
+Making sure the Win10 VM is selected in the left pane, click on Settings near the top.
 
 <br/><br/><br/>
 <p align="center">
 <img width="700" height="443" src="images\videos\VirtualBox\Win10_Settings.jpg" title="VirtualBox Win10 VM Settings">
 </p>
 
-Review the basic settings under general, they should match what you selected earlier.
+Review the basic settings under general, they should match what you entered earlier.
 
-Click on system in the left pane.
+Click on System in the left pane.
 
 <br/><br/><br/>
 <p align="center">
 <img width="600" height="494" src="images\videos\VirtualBox\VB-System-MB.jpg" title="VirtualBox Win10 VM System CPU">
 </p>
-Under the motherboard tab, verify the memory allocation, you can change it here if you need to.
+Under the Motherboard tab, verify the memory allocation you configured earlier, you can also change it here if you need to.
 
-I also uncheck Floppy from the boot order menu, but leave Optical and Hard Disk checked.
+In the Boot Order section, I uncheck Floppy from the boot order menu, but leave the Optical and Hard Disk selections checked.
 
 Leave PIIX3 under chipset, and you can choose PS/2 for mouse unless you are using a touch screen.
 
@@ -302,7 +303,7 @@ Click on the Processor tab
 
 <br/><br/><br/>
 <p align="center">
-<img width="700" height="446" src="images\videos\VirtualBox\VB-System-CPU.jpg" title="VirtualBox Win10 VM Display Settings">
+<img width="600" height="446" src="images\videos\VirtualBox\VB-System-CPU.jpg" title="VirtualBox Win10 VM Display Settings">
 </p>
 If you have more than one core, you can increase it here. Like with memory I would advise to choose no more than ½ of your actual cores. I usually choose 2 cores on a multi-core (4+ core) host.
 
@@ -314,60 +315,125 @@ Leave everything at the default settings on the acceleration tab.
 <p align="center">
 <img width="700" height="446" src="images\videos\VirtualBox\Win10_Settings_Display.jpg" title="VirtualBox Win10 VM Display Settings">
 </p>
-
 Under Display, ensure that Video Memory is set to 128 MB and VboxSVGA is selected. You can leave 3D acceleration unchecked unless you plan to use it in some way, but most 3D applications don’t work too well in a VM environment.
 
-Under Storage we will select the image file for the OS you wish to run. This can be Linux or Windows, but since in this guide we are installing Windows, we will use the Windows 10 ISO file we downloaded earlier.
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="391" src="images\videos\VirtualBox\Win10_Settings_Storage-2.jpg" title="VirtualBox Win10 VM Storage Settings">
+</p>
+Under Storage we will need to select the image file for the OS you wish to run. This can be Linux or Windows, but since in this guide we are installing Windows, we will use the Windows 10 ISO file we downloaded earlier. This will act as the installation media, the same as if we had a Windows 10 setup DVD inserted within the optical drive.
 
-Click on the DVD icon under Controller SATA, it should say empty. Over in the right half of the window click the disk icon and then choose disk file. Browse to the Windows 10 ISO image you downloaded, click on its name to select it and then click on open.
+Click on the DVD icon under Controller SATA, it should say empty at this point. Over in the right half of the window click the disk icon and then choose disk file.
 
-Your screen should now show Windows.iso underneath the Win10.vdi disk.
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="303" src="images\videos\VirtualBox\Win10_Settings_Storage-3.jpg" title="VirtualBox Win10 VM Storage Settings">
+</p>
+Browse to the Windows 10 ISO image you downloaded earlier. Click on its name to select it and make sure it is entered into the File Name field as shown above, then click on open.
 
-The rest of the settings should be fine for now. We will look at setting up shared folders later on once the VM has been setup.
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="490" src="images\videos\VirtualBox\Win10_Settings_Storage.jpg" title="VirtualBox Win10 VM Storage Settings">
+</p>
 
-Go down to the network section just to be sure Enable network adapter and Attached to Nat are selected, we can then hit OK to leave the settings window.
+Your screen should now show Windows.iso underneath the Win10.vdi disk, as shown in the image above. Now that we have our installation media configured we are almost ready to begin installing Windows on our VM.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="491" src="images\videos\VirtualBox\Win10_Settings_Network.jpg" title="VirtualBox Win10 VM Network  Settings">
+</p>
+Go down to the Network section just to be sure Enable network adapter and Attached to Nat are both selected.
+
+The rest of the settings should be fine for now. We will look at setting up Shared Folders later on once Windows 10 has been installed on the VM.
+
+You can now click on OK to leave the settings window and save your changes.
+<br/><br/>
 
 ## Installing Windows 10 on your Virtual Machine
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="342" src="images\videos\VirtualBox\Win10_Start.jpg" title="VirtualBox Win10 Start">
+</p>
 With the settings we made above in place, you can now go ahead and click on start to start the Win10 VM.
 
-If you pointed to the Windows disk image as shown above in the guide, your VM should boot and the Windows 10 Setup process should begin.
+If you pointed to the Windows disk image as shown earlier in the guide, your VM should boot and the Windows 10 Setup process should begin.
 
-After a little bit, you will be presented with the Windows setup screen.
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="574" src="images\videos\VirtualBox\Win10_VM_Install.jpg" title="VirtualBox Win10 Install">
+</p>
+After a little bit, you will be presented with the Windows setup screen as shown above.
 
 Unless you have a need to change these options, you can accept the defaults and click on Next.
 
-Then click on Install Now.
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="514" src="images\videos\VirtualBox\Win10_VM_Install-Now.jpg" title="VirtualBox Win10 Install Now">
+</p>
+You will then see the Install Now screen, click on Install Now to start the installation.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="450" src="images\videos\VirtualBox\Win10_VM_Activate_Win.jpg" title="Windows 10 Enter Product Key">
+</p>
 The Setup process will begin. After a short wait you will be prompted for your product key. You can enter it now if you have one, otherwise just click on I don’t have a product key to continue the setup.
 
 You can always add a product key later if you intend this to be a permanent installation, or you can just simply take a snapshot and restore the image once the grace period ends.
 
 Click on Next.
 
-
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="449" src="images\videos\VirtualBox\Win10_VM_Select_Version.jpg" title="Windows 10 Select Version">
+</p>
 If you choose I don't have a product key on the previous page Setup will ask which version of Windows you want to install. If you have a key you intend to enter later, choose the version the key is valid for, otherwise choose Windows 10 Pro and click on Next.
 
 If you did enter a product key on the previous step you may not see this dialog at all as the key will determine your correct product version.
 
-You will then be presented with a license agreement which you must accept in order to continue. Check I accept the license terms checkbox and click on Next.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="448" src="images\videos\VirtualBox\Win10_VM_Accept_License.jpg" title="Windows 10 Accept License">
+</p>
+You will then be presented with a license agreement which you must accept in order to continue. Check on the I accept the license terms checkbox and click on Next.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="448" src="images\videos\VirtualBox\Win10_VM_Install_Type.jpg" title="Windows 10 Install Type">
+</p>
 On the which installation do you want, choose the lower Custom: Install Windows only option.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="448" src="images\videos\VirtualBox\Win10_VM_HDD.jpg" title="Windows 10 Confirm Hard Disk">
+</p>
 On the next screen you should see the hard drive space you allocated in the VM settings earlier. Verify it is the correct capacity. In my example I set mine to120 GB.
 
 Click on Next.
 
 Setup will begin copying over files and setting up the Windows installation.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="491" src="images\videos\VirtualBox\Win10_VM_Setup_Finishing-up.jpg" title="Windows 10 Setup Finish">
+</p>
 After awhile depending upon the speed of the Hard Disk you choose, on a SSD its only takes a few minutes, on an external drive it can take 15-20 minutes, you will be presented with another series of questions on finalizing the windows setup.
 
 I won’t go through all of them here as they are pretty straightforward and you can usually accept the defaults for most of them. Just pick and choose your preferences as the setup program walks you through the remaining setup.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="489" src="images\videos\VirtualBox\Win10_VM_Offline-Acct.jpg" title="Windows 10 Setup Offline Account">
+</p>
 One setting I will cover though is where it asks you to sign-in. For a VM install I usually pick an offline account and use a local username and password.
 
 You need to choose the Offline Account option on the lower left of the screen, and after a few moments Windows asks you again to sign up, you need to choose Limited experience in the lower left.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="492" src="images\videos\VirtualBox\Win10_VM_User.jpg" title="Windows 10 Setup Username">
+</p>
 Then you can enter a name, either your own or something generic like VM User depending on how you plan to use the virtual machine. For my example I am just going with the later.
 
 Then you can choose a password.
@@ -378,7 +444,7 @@ Depending on your needs this may or may not be a wise decision. If you plan to u
 
 Then you will be asked some questions on your privacy settings. Choose whichever you prefer. I usually choose no to Cortana since this is a VM and turn off all the other options.
 
-After another few moments of setup you should finally be presented with the Windows desktop. You may want to go ahead and check out the network operation by opening Microsoft Edge and see if you have internet connectivity.
+After another few moments of setup you should finally be presented with the Windows desktop. You may want to go ahead and check out the network operation by opening Microsoft Edge and see if you have internet connectivity by browsing to a website.
 
 Assuming everything is ok we can finish up with a few other settings.
 
@@ -388,20 +454,43 @@ The first thing you will probably want to do is change the display settings by r
 
 The next thing we want to do is to install the Guest Additions CD.
 
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="546" src="images\videos\VirtualBox\Win10_VM_Guest_Additons.jpg" title="VirtualBox Guest Additions">
+</p>
 Go up to devices at the top of your VM Window and choose Insert Guest Additions CD.
 
-Then in the guest OS (the VM) open up windows explorer, select This PC and you should see you hard disk and a CD drive icon with what looks like a guest additions CD inserted. Double click on the guest additions CD to open it, and then we will want to install VboxWindowsAdditons by double clicking on the filename.
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="532" src="images\videos\VirtualBox\Win10_VM_Guest_Additons2.jpg" title="VirtualBox Guest Additions">
+</p>
+Then in the guest OS (the VM) open up windows explorer, select This PC and you should see you hard disk and a CD drive icon with what looks like a guest additions CD inserted.
+
+Double click on the guest additions CD to open it, and then we will want to install VboxWindowsAdditons by double clicking on the filename.
 
 Click on Yes to allow the program to make changes.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="464" src="images\videos\VirtualBox\Win10_VM_Guest_Additons3.jpg" title="VirtualBox Guest Additions">
+</p>
 Then click on next to begin the install, on the next screen just accept the default. Do note though that it is referring to the C drive of your guest OS or VM, not your actual host for the file location. The C drive in this case is actually the VM hard disk space we allocated earlier.
 
 Click on Next.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="466" src="images\videos\VirtualBox\Win10_VM_Guest_Additons4.jpg" title="VirtualBox Guest Additions">
+</p>
 
 Keep all the defaults and click on Install.
 
 You may get prompted to install a device driver from Oracle, go ahead and click on accept or install.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="467" src="images\videos\VirtualBox\Win10_VM_Guest_Additons5.jpg" title="VirtualBox Guest Additions Reboot">
+</p>
 When the process is finished you will be prompted to reboot the VM. Go ahead and do so now by clicking on Finish. This will reboot the VM.
 
 ## Create a Shared Folder
