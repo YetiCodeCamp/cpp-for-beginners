@@ -15,7 +15,7 @@ permalink: /vbwin10
 The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Windows 10 Virtual Machine installation.
 <br/><br/>
 
-This is a rather long and thorough guide, so I have include an index of major topics:<br/>
+This is a rather long and thorough guide, so I have included an index of the major topics:<br/>
 [Recommendations and Key Terms](#recommendations-and-key-terms)<br/>
 [Download Windows 10 ISO](#download-windows-10-iso)<br/>
 [Download and Install VirtualBox Software](#download-and-install-virtualxox-software)<br/>
@@ -50,7 +50,9 @@ There are also a few terms I wish to clarify: VM, VB, host system and guest syst
 
 - The ‘guest system’ then is the Virtual Machine that you will be running using the VB software, in this case the virtual Windows 10 system we will be installing.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+<p align="center">  
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
+</p>
 
 <br/>
 ## Download Windows 10 ISO
