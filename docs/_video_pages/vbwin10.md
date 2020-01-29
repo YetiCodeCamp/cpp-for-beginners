@@ -15,8 +15,16 @@ permalink: /vbwin10
 The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Windows 10 Virtual Machine installation.
 <br/><br/>
 
-This is a rather long and thorough guide, so I have include an index of major topics:
-[Download Windows 10 ISO](##download-windows-10-iso)
+This is a rather long and thorough guide, so I have include an index of major topics:<br/>
+[Recommendations and Key Terms](#recommendations-and-key-terms)<br/>  
+[Download Windows 10 ISO](#download-windows-10-iso)<br/>
+[Download and Install VirtualBox Software](#download-and-install-virtualxox-software)<br/>
+[Create a Virtual Machine](#create-a-virtual-machine)<br/>
+[Configuring Virtual Machine for Windows Install](#configuring-virtual-machine-for-windows-install)<br/>
+[Installing Windows 10 on your Virtual Machine](#installing-windows-10-on-your-virtual-machine)<br/>
+[Installing Guest Additions](#installing-guest-additions)<br/>
+[Create a Shared Folder](#create-a-shared-folder)<br/>
+[Create a Initial Snapshot Image](#create-a-initial-snapshot-image)<br/>
 
 
 <br/><br/>
