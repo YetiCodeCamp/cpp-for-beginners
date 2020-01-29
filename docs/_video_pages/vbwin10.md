@@ -38,7 +38,7 @@ To follow along with this guide you should have a HDD (SSD preferred) with at le
 If you do not already have a Windows ISO image file, you will also need a high speed Internet connection as we will be downloading a ~4 GB Windows ISO image file. On a 100 Mbps connection it takes roughly 6 minutes for the download portion, so you can use that as a base reference (i.e. a 10 Mbps connection will take 60 minutes and so on).
 
 Finally, if you wish to make your Windows 10 VM a more permanent installation, you will also need to have a valid Windows 10 Product key. This is optional as you can also take a snapshot of your finished VM install and simply revert back to its initial state once the grace period is over.
-<br/>
+<br/><br/>
 
 There are also a few terms I wish to clarify: VM, VB, host system and guest system.
 
@@ -49,7 +49,7 @@ There are also a few terms I wish to clarify: VM, VB, host system and guest syst
 - The ‘host system’ is the physical PC you are probably using right now that you intend to install the VB software on to run the virtual guest machine.
 
 - The ‘guest system’ then is the Virtual Machine that you will be running using the VB software, in this case the virtual Windows 10 system we will be installing.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -224,7 +224,7 @@ It has the option to Launch the Oracle VM VirtualBox after installation checked 
 
 Click on Finish.
 
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -296,7 +296,7 @@ File location and size. This is where your Virtual Machines hard drive will live
 Once done adjusting these settings to meet your needs, click on Create.
 
 This will take you back to the home screen. You now have a Virtual Machine that is the equivalent to a bare metal PC. At this stage it still needs an OS installed to be useful.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -377,7 +377,7 @@ Go down to the Network section just to be sure Enable network adapter and Attach
 The rest of the settings should be fine for now. We will look at setting up Shared Folders later on once Windows 10 has been installed on the VM.
 
 You can now click on OK to leave the settings window and save your changes.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -483,7 +483,7 @@ After another few moments of setup you should finally be presented with the Wind
 Assuming everything is ok we can finish up with a few other settings.
 
 The first thing you will probably want to do is change the display settings by right clicking on the guest desktop and choose Display Settings. Choose a resolution that works for you. Note on a 4k host monitor you might have some issues with limited resolution choices until we install guest additions, which is the next step.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -532,7 +532,7 @@ You may get prompted to install a device driver from Oracle, go ahead and click 
 <img width="600" height="467" src="images\videos\VirtualBox\Win10_VM_Guest_Additons5.jpg" title="VirtualBox Guest Additions Reboot">
 </p>
 When the process is finished you will be prompted to reboot the VM. Go ahead and do so now by clicking on Finish. This will reboot the VM.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -543,30 +543,58 @@ When the process is finished you will be prompted to reboot the VM. Go ahead and
 
 Now is a good time to setup shared folders. On your host PC, create a new shared folder somewhere. I usually do this right off of my C drive or other drive.
 
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="94" src="images\videos\VirtualBox\VM_Shared.jpg" title="Shared Folder">
+</p>
 In this example I am creating a folder called VM_Shared on my D: drive, so D:\VM_Shared.
 
-Once the VM reboots, go to the top menu in the VM window and select Devices, then Shared Folders → Shared Folder Settings.
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="219" src="images\videos\VirtualBox\VM_Shared_Folder_Settings.jpg" title="Shared Folder Settings">
+</p>
+Go to the top menu in the VM window and select Devices, then Shared Folders → Shared Folder Settings.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="432" src="images\videos\VirtualBox\VM_Shared_Folder_Settings2.jpg" title="Shared Folder Settings">
+</p>
 Then in the window that opens click on the little folder with the green + sign off to the right.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="488" src="images\videos\VirtualBox\VM_Shared_Folder_Settings3.jpg" title="Shared Folder Settings">
+</p>
 In the Add Share window that opens click on the down arrow by folder path and click on other.
 
 Browse to the VM_Shared folder you just created. Note that this dialog is actually browsing your host system file structure.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="489" src="images\videos\VirtualBox\VM_Shared_Folder_Settings4.jpg" title="Shared Folder Settings">
+</p>
 Uncheck Read-only, check Auto-mount and Make Permanent so the shared folder remains intact on successive reboots. You don’t need to worry about the Mount point as the system will automatically take care of that.
 
 Click on OK when finished with these settings, then OK again.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="450" src="images\videos\VirtualBox\VM_Shared_Folder_Settings5.jpg" title="Shared Folder Settings">
+</p>
 Now if you open up Windows Explorer on the guest OS (the VM) and click on This PC, you should see a new network location VM_Shared or whatever name you chose mapped as a Z drive.
 
 Go ahead and double click on this new share, then right click on an empty area inside the folder and select new text document. Give it a name such as test and hit enter.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="277" src="images\videos\VirtualBox\VM_Shared_Folder_Settings6.jpg" title="Shared Folder Settings">
+</p>
 Now on your host system, open up your file explorer and open the VM_Shared folder and you should see your test text document.
 
 If this all is working correctly you should now be setup to easily share files between your host and guest OS.
 
 One precaution, if you intend this VM to be used as a sandbox to test possibly dubious or infected software, I would recommend against using the shared folders feature.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
@@ -580,7 +608,7 @@ Now at this point, you may want to take an initial snapshot of your installation
 Give it a name and description and click on OK. Now you can restore your VM to the present state if anything happens later on.
 
 If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your program are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
-<br/>
+<br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
