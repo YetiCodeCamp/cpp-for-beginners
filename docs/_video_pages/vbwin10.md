@@ -16,7 +16,7 @@ The video and this guide will walk you through step-by-step of setting up a Virt
 <br/><br/>
 
 This is a rather long and thorough guide, so I have include an index of major topics:<br/>
-[Recommendations and Key Terms](#recommendations-and-key-terms)<br/>  
+[Recommendations and Key Terms](#recommendations-and-key-terms)<br/>
 [Download Windows 10 ISO](#download-windows-10-iso)<br/>
 [Download and Install VirtualBox Software](#download-and-install-virtualxox-software)<br/>
 [Create a Virtual Machine](#create-a-virtual-machine)<br/>
@@ -29,7 +29,8 @@ This is a rather long and thorough guide, so I have include an index of major to
 
 <br/><br/>
 ## Recommendations and Key Terms
-<br/><br/>
+<br/>
+
 Before we start, I want to quickly go over a few items:
 
 To follow along with this guide you should have a HDD (SSD preferred) with at least 200 GB of free space, but more is better. Alternatively, you could use an external drive with a similar free space capacity, it will be a bit slower but still workable.
@@ -48,6 +49,8 @@ There are also a few terms I wish to clarify: VM, VB, host system and guest syst
 - The ‘host system’ is the physical PC you are probably using right now that you intend to install the VB software on to run the virtual guest machine.
 
 - The ‘guest system’ then is the Virtual Machine that you will be running using the VB software, in this case the virtual Windows 10 system we will be installing.
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
 
 <br/>
 ## Download Windows 10 ISO
@@ -129,6 +132,9 @@ The image will begin the downloading process, depending on your Internet connect
 Once the download has completed you will see the Burn ISO file to DVD finish screen. Since we are just interested in the ISO image for our VB install, you just go ahead and click finish.
 
 While you can burn the image to a DVD if you so choose, if you want a copy of Windows for re-imaging a physical machine, you would be better served running the tool again and choosing a USB image.
+<br/><br/>
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
 <br/><br/>
 
 ## Download and Install VirtualBox Software
@@ -217,6 +223,8 @@ It has the option to Launch the Oracle VM VirtualBox after installation checked 
 
 Click on Finish.
 
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+
 <br/>
 ## Create a Virtual Machine
 <br/><br/>
@@ -284,6 +292,8 @@ File location and size. This is where your Virtual Machines hard drive will live
 Once done adjusting these settings to meet your needs, click on Create.
 
 This will take you back to the home screen. You now have a Virtual Machine that is the equivalent to a bare metal PC. At this stage it still needs an OS installed to be useful.
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
 
 <br/>
 ## Configuring Virtual Machine for Windows Install
@@ -362,6 +372,9 @@ Go down to the Network section just to be sure Enable network adapter and Attach
 The rest of the settings should be fine for now. We will look at setting up Shared Folders later on once Windows 10 has been installed on the VM.
 
 You can now click on OK to leave the settings window and save your changes.
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+
 <br/><br/>
 
 ## Installing Windows 10 on your Virtual Machine
@@ -465,7 +478,12 @@ Assuming everything is ok we can finish up with a few other settings.
 
 The first thing you will probably want to do is change the display settings by right clicking on the guest desktop and choose Display Settings. Choose a resolution that works for you. Note on a 4k host monitor you might have some issues with limited resolution choices until we install guest additions, which is the next step.
 
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+
+<br/><br/>
+
 ## Installing Guest Additions
+<br/.<br/>
 
 The next thing we want to do is to install the Guest Additions CD.
 
@@ -507,6 +525,9 @@ You may get prompted to install a device driver from Oracle, go ahead and click 
 <img width="600" height="467" src="images\videos\VirtualBox\Win10_VM_Guest_Additons5.jpg" title="VirtualBox Guest Additions Reboot">
 </p>
 When the process is finished you will be prompted to reboot the VM. Go ahead and do so now by clicking on Finish. This will reboot the VM.
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+
 <br/><br/>
 
 ## Create a Shared Folder
@@ -537,6 +558,9 @@ Now on your host system, open up your file explorer and open the VM_Shared folde
 If this all is working correctly you should now be setup to easily share files between your host and guest OS.
 
 One precaution, if you intend this VM to be used as a sandbox to test possibly dubious or infected software, I would recommend against using the shared folders feature.
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+
 <br/><br/>
 
 ## Create a Initial Snapshot Image
@@ -547,3 +571,7 @@ Now at this point, you may want to take an initial snapshot of your installation
 Give it a name and description and click on OK. Now you can restore your VM to the present state if anything happens later on.
 
 If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your program are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
+
+<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+
+<br/><br/>
