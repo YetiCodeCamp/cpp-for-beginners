@@ -50,7 +50,7 @@ Under the Create Windows 10 installation media section, click on Download tool n
 
 <br/><br/>
 <p align="center">
-<img width="600" height="265" src="images\videos\VirtualBox\Windows10_Download_Dialog.jpg" title="Confirm Download Dialog">
+<img width="400" height="176" src="images\videos\VirtualBox\Windows10_Download_Dialog.jpg" title="Confirm Download Dialog">
 </p>
 You should get a popup asking you to save the file, go ahead and click on Save File.
 <br/><br/>
@@ -65,7 +65,7 @@ A dialog will appear for a few moments as it set things up. After a little while
 
 <br/><br/>
 <p align="center">
-<img width="700" height="556" src="images\videos\VirtualBox\Windows10_License.jpg" title="License Agreement">
+<img width="500" height="397" src="images\videos\VirtualBox\Windows10_License.jpg" title="License Agreement">
 </p>
 <br/><br/>
 
@@ -75,7 +75,7 @@ Again, you may get a brief pause as the tool sets a few more things up.
 
 <br/><br/>
 <p align="center">
-<img width="700" height="554" src="images\videos\VirtualBox\Windows10_Download_Choose.jpg" title="Choose Installation Method Dialog">
+<img width="500" height="395" src="images\videos\VirtualBox\Windows10_Download_Choose.jpg" title="Choose Installation Method Dialog">
 </p>
 <br/><br/>
 
@@ -87,7 +87,7 @@ Double check to make sure you chose the Create installation media option and cli
 
 <br/><br/>
 <p align="center">
-<img width="700" height="553" src="images\videos\VirtualBox\Windows10_Select_lang.jpg" title="Select Language">
+<img width="500" height="395" src="images\videos\VirtualBox\Windows10_Select_lang.jpg" title="Select Language">
 </p>
 <br/><br/>
 
@@ -98,7 +98,7 @@ Click on Next.
 
 <br/><br/>
 <p align="center">
-<img width="700" height="552" src="images\videos\VirtualBox\Windows10_Select_Media.jpg" title="Select Media">
+<img width="500" height="394" src="images\videos\VirtualBox\Windows10_Select_Media.jpg" title="Select Media">
 </p>
 <br/><br/>
 
@@ -110,7 +110,7 @@ Choose a location to store the ISO image, ensure the location you choose has ple
 
 <br/><br/>
 <p align="center">
-<img width="700" height="552" src="images\videos\VirtualBox\Windows10_Downloading.jpg" title="Windows 10 Download Tool">
+<img width="500" height="394" src="images\videos\VirtualBox\Windows10_Downloading.jpg" title="Windows 10 Download Tool">
 </p>
 <br/><br/>
 
@@ -118,19 +118,27 @@ The image will begin the downloading process, depending on your Internet connect
 
 <br/><br/>
 <p align="center">
-<img width="700" height="551" src="images\videos\VirtualBox\Windows10_Finish.jpg" title="Windows 10 Download Tool Finish">
+<img width="500" height="393" src="images\videos\VirtualBox\Windows10_Finish.jpg" title="Windows 10 Download Tool Finish">
 </p>
 <br/><br/>
 
 Once the download has completed you will see the Burn ISO file to DVD finish screen. Since we are just interested in the ISO image for our VB install, you just go ahead and click finish.
 
 While you can burn the image to a DVD if you so choose, if you want a copy of Windows for re-imaging a physical machine, you would be better served running the tool again and choosing a USB image.
+<br/><br/>
 
 ### Download and Install VirtualBox Software
+<br/><br/>
 
 We will also need the VirtualBox software from Oracle.
 
-Go to https://www.virtualbox.org/ and click on Download VirtualBox 6.1 (as of this writing) to go to the download page to begin downloading the Virtualbox software.
+Go to [https://www.virtualbox.org/](https://www.virtualbox.org/) and click on Download VirtualBox 6.1 (as of this writing) to go to the download page to begin downloading the Virtualbox software.
+
+<br/><br/>
+<p align="center">
+<img width="700" height="421" src="images\videos\VirtualBox\VB-Home-2.jpg" title="Windows 10 Download Tool Finish">
+</p>
+<br/><br/>
 
 Select your host platform, in this example I am using Windows so we select Windows hosts.
 
