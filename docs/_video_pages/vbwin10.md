@@ -50,9 +50,8 @@ There are also a few terms I wish to clarify: VM, VB, host system and guest syst
 
 - The ‘guest system’ then is the Virtual Machine that you will be running using the VB software, in this case the virtual Windows 10 system we will be installing.
 
-<p align="center">  
+
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
-</p>
 
 <br/>
 ## Download Windows 10 ISO
@@ -136,7 +135,7 @@ Once the download has completed you will see the Burn ISO file to DVD finish scr
 While you can burn the image to a DVD if you so choose, if you want a copy of Windows for re-imaging a physical machine, you would be better served running the tool again and choosing a USB image.
 <br/><br/>
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 <br/><br/>
 
 ## Download and Install VirtualBox Software
@@ -225,7 +224,7 @@ It has the option to Launch the Oracle VM VirtualBox after installation checked 
 
 Click on Finish.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/>
 ## Create a Virtual Machine
@@ -295,7 +294,7 @@ Once done adjusting these settings to meet your needs, click on Create.
 
 This will take you back to the home screen. You now have a Virtual Machine that is the equivalent to a bare metal PC. At this stage it still needs an OS installed to be useful.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/>
 ## Configuring Virtual Machine for Windows Install
@@ -375,7 +374,7 @@ The rest of the settings should be fine for now. We will look at setting up Shar
 
 You can now click on OK to leave the settings window and save your changes.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/><br/>
 
@@ -480,7 +479,7 @@ Assuming everything is ok we can finish up with a few other settings.
 
 The first thing you will probably want to do is change the display settings by right clicking on the guest desktop and choose Display Settings. Choose a resolution that works for you. Note on a 4k host monitor you might have some issues with limited resolution choices until we install guest additions, which is the next step.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/><br/>
 
@@ -528,7 +527,7 @@ You may get prompted to install a device driver from Oracle, go ahead and click 
 </p>
 When the process is finished you will be prompted to reboot the VM. Go ahead and do so now by clicking on Finish. This will reboot the VM.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/><br/>
 
@@ -561,7 +560,7 @@ If this all is working correctly you should now be setup to easily share files b
 
 One precaution, if you intend this VM to be used as a sandbox to test possibly dubious or infected software, I would recommend against using the shared folders feature.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/><br/>
 
@@ -574,6 +573,6 @@ Give it a name and description and click on OK. Now you can restore your VM to t
 
 If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your program are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
 
-<p align="center">[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)</p>
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
 
 <br/><br/>
