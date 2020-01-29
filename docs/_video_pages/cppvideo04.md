@@ -11,7 +11,7 @@ permalink: /cppvideo04
 This is a short video that quickly goes over how we can execute our programs outside of the CodeBlocks IDE.
 
 <p align="center">
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SrhMH-j5vXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/SrhMH-j5vXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </p>
 
 Up until now we have been running our programs inside the CodeBlcoks IDE, which is fine for quick examples and testing. However, it is a good idea to check the programs functionality on its own. The first time you run one of these example programs on its own, you may be surprised to find it open and closes right away before you can even see any output on the console.
