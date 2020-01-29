@@ -24,6 +24,7 @@ This is a rather long and thorough guide, so I have included an index of the maj
 [Installing Windows 10 on your Virtual Machine](#installing-windows-10-on-your-virtual-machine)<br/>
 [Installing Guest Additions](#installing-guest-additions)<br/>
 [Create a Shared Folder](#create-a-shared-folder)<br/>
+[Drag and Drop](#drag-and-drop)
 [Create a Initial Snapshot Image](#create-a-initial-snapshot-image)<br/>
 
 
@@ -541,13 +542,13 @@ When the process is finished you will be prompted to reboot the VM. Go ahead and
 ## Create a Shared Folder
 <br/>
 
-Now is a good time to setup shared folders. On your host PC, create a new shared folder somewhere. I usually do this right off of my C drive or other drive.
+Now is a good time to setup shared folders. On your host PC, using Windows Explorer create a new shared folder somewhere. I usually do this right off of my C drive or other drive.
 
 <br/><br/><br/>
 <p align="center">
 <img width="500" height="94" src="images\videos\VirtualBox\VM_Shared.jpg" title="Shared Folder">
 </p>
-In this example I am creating a folder called VM_Shared on my D: drive, so D:\VM_Shared.
+In this example I created a new folder called VM_Shared on my D: drive, so in my case D:\VM_Shared.
 
 <br/><br/><br/>
 <p align="center">
@@ -565,7 +566,7 @@ Then in the window that opens click on the little folder with the green + sign o
 <p align="center">
 <img width="600" height="488" src="images\videos\VirtualBox\VM_Shared_Folder_Settings3.jpg" title="Shared Folder Settings">
 </p>
-In the Add Share window that opens click on the down arrow by folder path and click on other.
+In the Add Share window that opens click on the down arrow by folder path and click on Other.
 
 Browse to the VM_Shared folder you just created. Note that this dialog is actually browsing your host system file structure.
 
@@ -573,7 +574,9 @@ Browse to the VM_Shared folder you just created. Note that this dialog is actual
 <p align="center">
 <img width="600" height="489" src="images\videos\VirtualBox\VM_Shared_Folder_Settings4.jpg" title="Shared Folder Settings">
 </p>
-Uncheck Read-only, check Auto-mount and Make Permanent so the shared folder remains intact on successive reboots. You don’t need to worry about the Mount point as the system will automatically take care of that.
+Uncheck Read-only, check Auto-mount and Make Permanent so the shared folder remains intact on successive reboots.
+
+You don’t need to worry about the Mount point as the system will automatically take care of that, by default it maps to "Z".
 
 Click on OK when finished with these settings, then OK again.
 
@@ -600,14 +603,78 @@ One precaution, if you intend this VM to be used as a sandbox to test possibly d
 
 <br/><br/>
 
+## Drag and Drop
+
+When we installed the guest additions package we also have access to another feature similar to shared folders for file sharing, and that is Drag and Drop.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="308" src="images\videos\VirtualBox\VM-Drag-and-Drop.jpg" title="Drag and Drop">
+</p>
+To activate the Drag and Drop feature, go to the VM menu at the top and select Devices -> Drag and Drop. By default this feature is disabled.
+
+You can choose to allow drag and drop to functions in one of three modes.<br/><br/>
+Host to Guest - Allows dragging of files from host to guest, but not the reverse.<br/>
+Guest to Host - Allows dragging of files from guest to host, but not the reverse.<br/>
+Bidirectional - Allows dragging of files from host to guest, or guest to host.<br/>
+
+Set it to Bidirectional and you can drag and drop files back and forth easily.
+
+Do be careful with this though, as was the case with shared folders if you intend to use the VM to test potentially dangerous software you may want to keep this feature disabled, or limit it to host to guest mode only.
+<br/><br/>
+
+Another feature is the Shared Clipboard, that you activate and setup the same way as Drag and Drop.
+
+Shared Clipboard, as its name implies, allows the sharing of clipboard data between the guest and host systems. When enabling this feature, keep in mind the warnings as above to keep your host secured.
+
+[Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
+
+<br/><br/>
+
 ## Create a Initial Snapshot Image
 <br/>
 
-Now at this point, you may want to take an initial snapshot of your installation as a baseline of a fresh install. To do this simply go up to the VM window menu and select Machine → Take Snapshot
 
+<br/><br/><br/>
+<p align="center">
+<img width="400" height="341" src="images\videos\VirtualBox\VM-Take-Snapshot.jpg" title="Take Snapshot">
+</p>
+Now at this point, you may want to take an initial snapshot of your installation as a baseline of a fresh install. To do this simply go up to the VM window menu and select Machine → Take Snapshot.
+
+<br/><br/><br/>
+<p align="center">
+<img width="400" height="283" src="images\videos\VirtualBox\VM-Take-Snapshot2.jpg" title="Take Snapshot">
+</p>
 Give it a name and description and click on OK. Now you can restore your VM to the present state if anything happens later on.
 
-If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your program are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
+<br/><br/><br/>
+<p align="center">
+<img width="250" height="125" src="images\videos\VirtualBox\VM-Take-Snapshot3.jpg" title="Take Snapshot">
+</p>
+If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your programw are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="287" src="images\videos\VirtualBox\VM-Restore-Snapshot.jpg" title="Restore Snapshot">
+</p>
+To restore your VM to a previous state using snapshots, the VM needs to be first powered down.
+
+From within the Oracle VM VirtualBox Manager, left click on the 3 ellipsis to the right of your VM's name as shown in the image above, and select "Snapshots" to display the snapshots interface.
+
+From within the snapshots interface you should see the snapshot you took previously, along with a entry just below that in a tree like structure showing the current state. Even if you do not make any changes, the current state will always be slightly different as Windows performs processes in the background.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="286" src="images\videos\VirtualBox\VM-Restore-Snapshot2.jpg" title="Restore Snapshot">
+</p>
+To restore your VM to the previous state of when a snapshot was taken, highlight the snapshot you want and click on Restore, as shown in the image above.
+
+Notice that you will get a dialog indicating what will happen if you continue the restore process, and you are even offered to make another snapshot of the current state of your VM with a checkbox.
+
+To restore, simply click on Restore and your machine will be brought back to the point is was when you took the snapshot.
+
+The selection highlighted in the snapshot interface will change to current state and you can go ahead and click start to return to your VM as it was when you took the snapshot.
+
 <br/><br/>
 
 [Back to Top](#this-is-the-companion-page-for-the-virtualbox-windows-10-video)
