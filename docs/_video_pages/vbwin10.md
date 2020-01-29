@@ -153,13 +153,13 @@ Once you have your folder changed, or if you are using the default path, click o
 
 <br/><br/><br/>
 <p align="center">
-<img width="600" height="470" src="images\videos\VirtualBox\VB-Custom-Setup2.jpg" title="VirtualBox Custom Setup 2">
+<img width="600" height="470" src="images\videos\VirtualBox\VB-Custom-Setup-2.jpg" title="VirtualBox Custom Setup 2">
 </p>
 The next screen allows you to choose from the following options:
-    Create a start menu entry
-    Create a Desktop shortcut
-    Create a shortcut in the Quick Launch bar
-    Register file associations
+-    Create a start menu entry  
+-    Create a Desktop shortcut  
+-    Create a shortcut in the Quick Launch bar  
+-    Register file associations  
 
 Pick which ones you want to enable, but I would recommend enabling at least the last choice to associate file extensions.
 
@@ -205,6 +205,7 @@ Click on Finish.
 <br/>
 ## Create a Virtual Machine
 <br/><br/>
+If you are following along in the guide step by step and you left the box checked in the previous step you should already have the screen shown below on your PC. If not, or if you unchecked the box, find the VirtualBox icon or executable and launch the program at this time.
 
 <p align="center">
 <img width="700" height="444" src="images\videos\VirtualBox\VB-Welcome.jpg" title="VirtualBox Welcome">
@@ -218,7 +219,7 @@ Give your VM a name, such as Win10.
 
 Choose the installation folder, I chose a folder right off my C: drive named VirtualBox_VMs.
 
-Choose Version, in this case Windows 10.
+Choose Version, in this case Windows 10 (64-bit).
 
 Click Next.
 
@@ -226,11 +227,13 @@ Click Next.
 <p align="center">
 <img width="700" height="447" src="images\videos\VirtualBox\VB-Memory-Size.jpg" title="VirtualBox Memory">
 </p>
-Set memory size. I chose 4 GB in this example.
+Set the memory size. I chose 4 GB in this example.
 
-Choose no more than ½ of your actual physical RAM. I found 4-8 GB works well in most cases, you can get by with as little as 2 GB, but depending on what applications you are planning on running it can get a bit sluggish.
+Choose no more than ½ of your actual physical RAM to prevent having issues on your host system. I found that 4-8 GB seems to be the sweet spot and works well in most cases.
 
-Click Next.
+You can get by with as little as 2 GB, but depending on what applications you are planning on running it can get a bit sluggish with too little RAM.
+
+Once you have the memory size set, Click Next.
 
 <br/><br/><br/>
 <p align="center">
@@ -244,7 +247,7 @@ Click on Create.
 <p align="center">
 <img width="700" height="445" src="images\videos\VirtualBox\VB-Hard-Drive2.jpg" title="VirtualBox Create a Virtual HD">
 </p>
-Hard disk file type leave at VDI.
+For Hard disk file type you can leave it at VDI for this example. The other options are for compatibility with other VM's.
 
 Click on Next.
 
@@ -274,10 +277,19 @@ First though, we want to go into the settings and review and adjust anything we 
 
 Click on Settings.
 
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="443" src="images\videos\VirtualBox\Win10_Settings.jpg" title="VirtualBox Win10 VM Settings">
+</p>
+
 Review the basic settings under general, they should match what you selected earlier.
 
-Click on system.
+Click on system in the left pane.
 
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="494" src="images\videos\VirtualBox\VB-System-MB.jpg" title="VirtualBox Win10 VM System CPU">
+</p>
 Under the motherboard tab, verify the memory allocation, you can change it here if you need to.
 
 I also uncheck Floppy from the boot order menu, but leave Optical and Hard Disk checked.
@@ -287,11 +299,21 @@ Leave PIIX3 under chipset, and you can choose PS/2 for mouse unless you are usin
 Also leave Enable I/O APIC checked.
 
 Click on the Processor tab
+
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="446" src="images\videos\VirtualBox\VB-System-CPU.jpg" title="VirtualBox Win10 VM Display Settings">
+</p>
 If you have more than one core, you can increase it here. Like with memory I would advise to choose no more than ½ of your actual cores. I usually choose 2 cores on a multi-core (4+ core) host.
 
 You can leave the execution cap at 100% as long as you are not using all of your physical cores. If you for some reason are using a single or dual core host machine, you may want to reduce this a bit just to be sure you always leave a bit of processing power for the actual host.
 
 Leave everything at the default settings on the acceleration tab.
+
+<br/><br/><br/>
+<p align="center">
+<img width="700" height="446" src="images\videos\VirtualBox\Win10_Settings_Display.jpg" title="VirtualBox Win10 VM Display Settings">
+</p>
 
 Under Display, ensure that Video Memory is set to 128 MB and VboxSVGA is selected. You can leave 3D acceleration unchecked unless you plan to use it in some way, but most 3D applications don’t work too well in a VM environment.
 
