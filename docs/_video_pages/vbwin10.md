@@ -15,6 +15,13 @@ permalink: /vbwin10
 The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Windows 10 Virtual Machine installation.
 <br/><br/>
 
+This is a rather long and thorough guide, so I have include an index of major topics:
+[Download Windows 10 ISO](##download-windows-10-iso)
+
+
+<br/><br/>
+## Recommendations and Key Terms
+<br/><br/>
 Before we start, I want to quickly go over a few items:
 
 To follow along with this guide you should have a HDD (SSD preferred) with at least 200 GB of free space, but more is better. Alternatively, you could use an external drive with a similar free space capacity, it will be a bit slower but still workable.
@@ -492,8 +499,10 @@ You may get prompted to install a device driver from Oracle, go ahead and click 
 <img width="600" height="467" src="images\videos\VirtualBox\Win10_VM_Guest_Additons5.jpg" title="VirtualBox Guest Additions Reboot">
 </p>
 When the process is finished you will be prompted to reboot the VM. Go ahead and do so now by clicking on Finish. This will reboot the VM.
+<br/><br/>
 
 ## Create a Shared Folder
+<br/><br/>
 
 Now is a good time to setup shared folders. On your host PC, create a new shared folder somewhere. I usually do this right off of my C drive or other drive.
 
@@ -520,8 +529,10 @@ Now on your host system, open up your file explorer and open the VM_Shared folde
 If this all is working correctly you should now be setup to easily share files between your host and guest OS.
 
 One precaution, if you intend this VM to be used as a sandbox to test possibly dubious or infected software, I would recommend against using the shared folders feature.
+<br/><br/>
 
 ## Create a Initial Snapshot Image
+<br/><br/>
 
 Now at this point, you may want to take an initial snapshot of your installation as a baseline of a fresh install. To do this simply go up to the VM window menu and select Machine → Take Snapshot
 
