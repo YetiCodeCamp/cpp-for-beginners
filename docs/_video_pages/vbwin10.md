@@ -5,16 +5,24 @@ permalink: /vbwin10
 
 ## This is the companion page for the VirtualBox Windows 10 Video
 
+<br/><br/>
+<p align="center">
+<iframe width="560" height="315" src="" data-src="https://www.youtube.com/embed/_cWUb7xZ7Rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+<br/><br/>
 
-The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Windows 10 VM installation.
+
+The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Windows 10 Virtual Machine installation.
+<br/>
 
 Before we start, I want to quickly go over a few items.
 
-To follow along with this guide you should have a HDD (SSD preferred) with at least 200 GB free, but more is better. Alternatively, you could use an external drive with similar free capacity, it will be a bit slower but still workable.
+To follow along with this guide you should have a HDD (SSD preferred) with at least 200 GB of free space, but more is better. Alternatively, you could use an external drive with similar free capacity, it will be a bit slower but still workable.
 
 If you do not already have a Windows ISO image file, you will also need a high speed Internet connection as we will be downloading a ~4 GB Windows ISO image file.
 
 Finally, if you wish to make your Windows 10 VM a more permanent installation, you will also need to have a valid Windows 10 Product key. This is optional as you can also take a snapshot of your finished VM install and simply revert back to its initial state once the grace period is over.
+<br/>
 
 There are also a few terms I wish to clarify: VM, VB, host system and guest system.
 
@@ -26,27 +34,26 @@ There are also a few terms I wish to clarify: VM, VB, host system and guest syst
 
 - The ‘guest system’ then is the Virtual Machine that you will be running within the VB software, in this case the virtual Windows 10 system.
 
+<br/>
 ### Download Windows 10 ISO
+<br/>
 
 To begin we will need to get a Windows 10 ISO image.
 
-Go to https://www.microsoft.com/en-us/software-download/windows10.
+Go to the [Windows 10 Download Tool](https://www.microsoft.com/en-us/software-download/windows10) page.
 
 <br/><br/>
 <p align="center">
-<img width="1000" height="603" src="images\videos\VirtualBox\Windows10_Download_Tool.jpg" title="Windows 10 Download Tool">
+<img width="800" height="482" src="images\videos\VirtualBox\Windows10_Download_Tool.jpg" title="Windows 10 Download Tool">
 </p>
-<br/><br/>
-
 Under the Create Windows 10 installation media section, click on Download tool now.
 
 <br/><br/>
 <p align="center">
 <img width="600" height="265" src="images\videos\VirtualBox\Windows10_Download_Dialog.jpg" title="Confirm Download Dialog">
 </p>
-<br/><br/>
-
 You should get a popup asking you to save the file, go ahead and click on Save File.
+<br/><br/>
 
 Once the file has downloaded, open up you downloads folder and double click on the MediaCreationToolxxxx.exe to begin installation of the tool.
 
