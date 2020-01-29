@@ -77,33 +77,35 @@ Again, you may get a brief pause as the tool sets a few more things up.
 </p>
 After a little pause, you will get a screen asking “What do you want to do?”
 
-Here it is important that you choose the second option “Create installation media”.
+Here it is important that you choose the second option “Create installation media (USB flash drive, DVD, or ISO file) for another PC”.
 
-Double check to make sure you chose the Create installation media option and click on Next.
+Choosing the first option will attempt to upgrade your PC, but we only want the Windows 10 ISO image for our Virtual Machine.
+
+Double check to make sure you chose the "Create installation media ..." option and click on Next.
 
 <br/><br/><br/>
 <p align="center">
 <img width="500" height="395" src="images\videos\VirtualBox\Windows10_Select_lang.jpg" title="Select Language">
 </p>
-By default your Language, Edition and Architecture should be selected. If you uncheck the use recommend settings option for this PC checkbox you can change these values if you need to.
+By default your Language, Edition and Architecture should be pre-selected. If you uncheck the "Use recommend settings options for this PC" checkbox you can adjust these values if you need to.
 
-Click on Next.
+If everything looks ok, click on Next.
 
 <br/><br/><br/>
 <p align="center">
 <img width="500" height="394" src="images\videos\VirtualBox\Windows10_Select_Media.jpg" title="Select Media">
 </p>
-On the Choose which media to use select ISO file, as this will be the image we will use for our VirtualBox installation.
+On the Choose which media to use select ISO file, as this will be the Windows disk image we will use for our VirtualBox installation.
 
 Click on Next.
 
-Choose a location to store the ISO image, ensure the location you choose has plenty of room. The ISO image is around 4.2 GB as of this writing.  You can use the default name Windows.iso and click on Save.
+Choose a location to store the ISO image, ensuring that the location you choose has plenty of room. The ISO image is around 4.2 GB as of this writing.  You can use the default name Windows.iso and click on Save.
 
 <br/><br/><br/>
 <p align="center">
 <img width="500" height="394" src="images\videos\VirtualBox\Windows10_Downloading.jpg" title="Windows 10 Download Tool">
 </p>
-The image will begin the downloading process, depending on your Internet connection it may take some time.
+The image will begin the downloading process, depending on your Internet connection it may take some time. Once the image has been downloaded, the program will also need to convert it to an ISO. This whole process can take several minutes even with a fast connection and maybe an hour or more on a slow connection.
 
 <br/><br/><br/>
 <p align="center">
@@ -112,7 +114,7 @@ The image will begin the downloading process, depending on your Internet connect
 Once the download has completed you will see the Burn ISO file to DVD finish screen. Since we are just interested in the ISO image for our VB install, you just go ahead and click finish.
 
 While you can burn the image to a DVD if you so choose, if you want a copy of Windows for re-imaging a physical machine, you would be better served running the tool again and choosing a USB image.
-<br/>
+<br/><br/>
 
 ## Download and Install VirtualBox Software
 <br/>
@@ -121,7 +123,7 @@ We will also need to download the VirtualBox software from Oracle.
 
 Go to [https://www.virtualbox.org/](https://www.virtualbox.org/) and click on Download VirtualBox 6.1 (as of this writing) to go to the download page to begin downloading the Virtualbox software.
 
-<br/><br/>
+<br/><br/><br/>
 <p align="center">
 <img width="700" height="421" src="images\videos\VirtualBox\VB-Home-2.jpg" title="VirtualBox Download Page">
 </p>
@@ -130,6 +132,75 @@ Select your host platform, in this example I am using Windows so we select Windo
 A download dialog should appear prompting you to save the file, go ahead and save it to your downloads folder or wherever you typically download files.
 
 Once the download has finished, open up your download folder and double click on the VirtualBox-xxx.exe file to begin the installation, where xxx is the current version number. As of this writing the file is: VirtualBox-6.1.2-135663-Win.exe
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="470" src="images\videos\VirtualBox\VB-Welcome-to-Setup.jpg" title="VirtualBox Welcome to Setup">
+</p>
+The Welcome to Setup Wizard Screen will appear.
+
+Click on Next to continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="467" src="images\videos\VirtualBox\VB-Custom-Setup.jpg" title="VirtualBox Custom Setup">
+</p>
+On the Custom Setup screen, you can leave the selected components checked. It does indicate that this will use 218 MB of space on your hard drive. You may want to install this in another directory if hard drive space is tight.
+
+In my case, I created a new folder on my E Drive to install the program, named E:\VirtualBox. By default it uses the c:\Program Files\Oracle\VirtualBox\ directory.
+
+Once you have your folder changed, or if you are using the default path, click on Next.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="470" src="images\videos\VirtualBox\VB-Custom-Setup2.jpg" title="VirtualBox Custom Setup 2">
+</p>
+The next screen allows you to choose from the following options:
+    Create a start menu entry
+    Create a Desktop shortcut
+    Create a shortcut in the Quick Launch bar
+    Register file associations
+
+Pick which ones you want to enable, but I would recommend enabling at least the last choice to associate file extensions.
+
+Click on Next to continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="467" src="images\videos\VirtualBox\VB-Network.jpg" title="VirtualBox Network Warning">
+</p>
+The next screen warns you that by continuing your network may momentarily drop as VirtualBox configures its virtual network settings.
+
+This only takes a second so you will hardly notice unless you are using a wireless connection.
+
+Click on Yes to continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="451" src="images\videos\VirtualBox\VB-Install.jpg" title="VirtualBox Ready to Install">
+</p>
+
+You will then be presented with a Ready to Install screen informing you the wizard is about to start the custom installation. Now is the time to make any changes if you need.
+
+Click on Install to continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="451" src="images\videos\VirtualBox\VB-Install2.jpg" title="VirtualBox Device Driver">
+</p>
+You may get one or more install device driver prompts during installation.
+
+I usually just check the trust software from Oracle box and click on Install.
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="466" src="images\videos\VirtualBox\VB-Install-Finish.jpg" title="VirtualBox Installation Complete">
+</p>
+Once the setup process has completed, you will see a new window like above.
+
+It has the option to Launch the Oracle VM VirtualBox after installation checked by default. You can go ahead and leave it checked to continue on with the guide.
+
+Click on Finish.
 
 <br/>
 ## Create a Virtual Machine
