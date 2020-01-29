@@ -54,6 +54,16 @@
       </script>
     {% endif %}
 
+    <script>
+      function init() {
+        var vidDefer = document.getElementsByTagName('iframe');
+        for (var i=0; i<vidDefer.length; i++) {
+          if(vidDefer[i].getAttribute('data-src')) {
+            vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+          } } }
+          window.onload = init;
+    </script> 
+
     <script src="https://utteranc.es/client.js"
         repo="YetiCodeCamp/cpp-for-beginners"
         issue-term="pathname"
@@ -61,5 +71,6 @@
         crossorigin="anonymous"
         async>
     </script>
+
   </body>
 </html>

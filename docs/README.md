@@ -54,7 +54,7 @@ The rest of the series is listed below for now.
 
 ### Lesson 1 - Hello World
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/j8X-HxMxg58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/j8X-HxMxg58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 &nbsp;
 
@@ -83,21 +83,21 @@ int main()
 
 
 ### Lesson 2 - Improved Hello World
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/vGfnWS1sd0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/vGfnWS1sd0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 <br/><br/>
 
 
 
 ### Lesson 2.1 - Improved Hello World (part 2)
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/auRpqlvHmDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/auRpqlvHmDo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 <br/><br/>
 
 
 
 ### Lesson 3 - Variables and Functions
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NGI_fB9uP0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/NGI_fB9uP0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 &nbsp;
 
@@ -153,7 +153,7 @@ The 'if' statement is used to execute a block of C++ code if a condition evaluat
 
 
 ### Lesson 4 - Running Executables outside of CodeBlocks
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/SrhMH-j5vXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/SrhMH-j5vXE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 <br/><br/>
 
@@ -161,6 +161,6 @@ The 'if' statement is used to execute a block of C++ code if a condition evaluat
 
 
 ### Lesson 5 - Blocks, Scopes, and the Scope Resolution Operator
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_NsGvVgLv2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+<iframe width="560" height="315" src="" data-src="https://www.youtube-nocookie.com/embed/_NsGvVgLv2U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 <br/><br/>
