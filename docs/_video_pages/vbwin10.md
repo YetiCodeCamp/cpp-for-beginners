@@ -24,8 +24,8 @@ This is a rather long and thorough guide, so I have included an index of the maj
 [Installing Windows 10 on your Virtual Machine](#installing-windows-10-on-your-virtual-machine)<br/>
 [Installing Guest Additions](#installing-guest-additions)<br/>
 [Create a Shared Folder](#create-a-shared-folder)<br/>
-[Drag and Drop](#drag-and-drop)
-[Create a Initial Snapshot Image](#create-a-initial-snapshot-image)<br/>
+[Drag and Drop](#drag-and-drop)<br/>
+[Create an Initial Snapshot Image](#create-a-initial-snapshot-image)<br/>
 
 
 <br/><br/>
@@ -494,6 +494,16 @@ The first thing you will probably want to do is change the display settings by r
 <br/>
 
 The next thing we want to do is to install the Guest Additions CD.
+
+Guest Additions bring additional functionality to our VM with some of the main features listed below:<br/><br/>
+- Shared folders: As its name implies, this feature allows you to share folders between the host and the guest systems. You configure VirtualBox to use a specified directory on the host computer to act as a shared folder, and VB will make the directory appear to the guest operating system as it were an network share.
+- Better mouse pointer integration: You no longer need to press any key to “free” the cursor from the Guest OS.
+- Shared Clipboard: You can share data between the guest and the host operating systems using the clipboard.
+- Drag and Drop: You are able to drag and drop files between the host and the guest OS.
+- Improved video drivers: The custom video drivers that are installed with Guest Additions provide you with additional high and non-standard video modes, as well as improved video performance. It also allows you to resize the virtual machine’s window. If you have a 4K monitor, these drivers will resolve most tissues you may have had with video scaling.
+- Time synchronization: The guest system's time is synchronized the time with that of the host machine regularly.
+
+For a complete list, refer to the VirtualBox official documentation, available at: [https://www.virtualbox.org/manual/ch04.html](https://www.virtualbox.org/manual/ch04.html)
 
 <br/><br/><br/>
 <p align="center">
