@@ -669,7 +669,7 @@ If you plan to install additional software on your VM, you may want to wait and 
 </p>
 To restore your VM to a previous state using snapshots, the VM needs to be first powered down.
 
-From within the Oracle VM VirtualBox Manager, left click on the 3 ellipsis to the right of your VM's name as shown in the image above, and select "Snapshots" to display the snapshots interface.
+From within the Oracle VM VirtualBox Manager, left click on the 3 line "hamburger" menu to the right of your VM's name as shown in the image above, and select "Snapshots" to display the snapshots interface.
 
 From within the snapshots interface you should see the snapshot you took previously, along with a entry just below that in a tree like structure showing the current state. Even if you do not make any changes, the current state will always be slightly different as Windows performs processes in the background.
 
