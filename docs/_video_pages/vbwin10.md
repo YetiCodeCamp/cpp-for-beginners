@@ -661,7 +661,7 @@ Give it a name and description and click on OK. Now you can restore your VM to t
 <p align="center">
 <img width="250" height="125" src="images\videos\VirtualBox\VM-Take-Snapshot3.jpg" title="Take Snapshot">
 </p>
-If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your programw are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
+If you plan to install additional software on your VM, you may want to wait and take your snapshot after all your programs are setup and running, or you can even have multiple snapshots at different points, keeping in mind they do each take up some space on your host hard drive.
 
 <br/><br/><br/>
 <p align="center">
