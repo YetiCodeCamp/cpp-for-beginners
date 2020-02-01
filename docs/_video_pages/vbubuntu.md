@@ -2,7 +2,8 @@
 title: VirtualBox - Ubuntu
 permalink: /vbubuntu
 ---
-<a name="top"></a>  
+<a name="top"></a>
+
 ## This is the companion page for the VirtualBox Ubuntu Video
 
 <br/><br/>
@@ -51,7 +52,7 @@ There are also a few terms I wish to clarify: VM, VB, host system and guest syst
 - The ‘guest system’ then is the Virtual Machine that you will be running using the VB software, in this case the virtual Ubuntu system we will be installing.
 <br/><br/>
 
-[Back to Top](#this-is-the-companion-page-for-the-virtualbox-ubuntu-video)
+[Back to Top](#top)
 
 <br/>
 
@@ -144,7 +145,7 @@ Click on Finish.
 
 <br/><br/>
 
-[Back to Top](#this-is-the-companion-page-for-the-virtualbox-ubuntu-video)
+[Back to Top](#top)
 
 <br/>
 ## Create a New Virtual Machine
@@ -211,7 +212,7 @@ Choose the option that serves you best and then click on Next.
 
 <br/><br/><br/>
 <p align="center">
-<img width="700" height="446" src="images\videos\VBUbuntu\File_Location_and_Size.jpg" title="VirtualBox File Location and Size">
+<img width="500" height="446" src="images\videos\VBUbuntu\File_Location_and_Size.jpg" title="VirtualBox File Location and Size">
 </p>
 File location and size. This is where your Virtual Machines hard drive will live. I created a folder on an separate SDD, the E: drive for this demonstration: E:\Ubuntu_VM_Image.
 I also increased the recommended size from 25 GB to 120 GB, so I have plenty of room to work with.
@@ -221,7 +222,7 @@ Once you are done adjusting these settings to meet your needs, click on Create.
 This will take you back to the home screen. You now have a Virtual Machine that is the equivalent to a bare metal PC. At this stage it still needs an OS installed on it to be useful.
 <br/><br/>
 
-[Back to Top](#this-is-the-companion-page-for-the-virtualbox-ubuntu-video)
+[Back to Top](#top)
 
 <br/>
 ## Configuring the Virtual Machine for a Ubuntu Install
@@ -302,10 +303,220 @@ The rest of the settings should be fine for now. We will look at setting up Shar
 You can now click on OK to leave the settings window and save your changes.
 <br/><br/>
 
-[Back to Top](#this-is-the-companion-page-for-the-virtualbox-ubuntu-video)
 
 [Back to Top](#top)
 
 <br/><br/>
 
 ## Installing Ubuntu on your Virtual Machine
+
+<br/><br/><br/>
+<p align="center">
+<img width="600" height="356" src="images\videos\VBUbuntu\VM_Ubuntu_Start.jpg" title="VirtualBox Ubuntu Start">
+</p>
+With the settings we made above in place, you can now go ahead and click on start to start the Ubuntu Virtual Machine.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="441" src="images\videos\VBUbuntu\VM_Ubuntu_Select_Startup_Disk.jpg" title="VirtualBox Select Start-up Disk">
+</p>
+You may get a prompt right away asking you to select the start-up disk.
+
+Confirm that the ubuntu-18.04.3-desktop-amd64.iso image we configured earlier is the file selected, change if need be, and click on Start to begin.
+
+The Virtual Machine will now start and boot off the ISO image to begin the Ubuntu installation process.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="423" src="images\videos\VBUbuntu\VM_Ubuntu_Install_Welcome.jpg" title="VirtualBox Ubuntu Install Welcome">
+</p>
+After a few moments, you should see the Install screen shown above.
+
+Confirm the installation instruction language and click on the Install Ubuntu button to install to the Virtual Machine.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="424" src="images\videos\VBUbuntu\VM_Ubuntu_Install_Keyboard.jpg" title="Keyboard Layout">
+</p>
+The Setup process will begin. After a short wait you will be asked to confirm your keyboard layout and language.
+
+Adjust if needed and click on Continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="422" src="images\videos\VBUbuntu\VM_Ubuntu_Install_Updates.jpg" title="Updates and other Software">
+</p>
+On this next screen you are asked which type of installation you want. Choose the default "Normal installation" unless you need a minimal install for some reason.
+
+Also it is probably a good idea to leave Download updates while installing Ubuntu checked, unless you have limited Internet connectivity.
+
+You can also optionally select Install third-party software if this will be a more permanent Ubuntu install and you want access to the additional features.
+
+Click on continue after you selected the options you want.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="424" src="images\videos\VBUbuntu\VM_Ubuntu_Installation_Type.jpg" title="Installation Type">
+</p>
+The Ubuntu installer will then inform you there is no detected operating system. This is because we allocated an empty 120 GB of a virtual hard drive the VM is using.
+
+Choose the Erase disk and install Ubuntu option (default). Again, you can disregard the warning as this is referring to the empty 120 GB partition we created earlier and not your host file system which is completely safe.
+
+Leave the other options unchecked at this point unless you know what you are doing.
+
+Click on Install Now.
+
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="422" src="images\videos\VBUbuntu\VM_Ubuntu_Disk_Changes.jpg" title="Confirm Disk Changes">
+</p>
+You will then be presented with a summary of the proposed disk changes. This indicates how the 120 GB VDI will be partitioned for Ubuntu.
+
+Accept the proposed changes by clicking on Continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="421" src="images\videos\VBUbuntu\VM_Ubuntu_Location.jpg" title="Location">
+</p>
+You will then be asked to confirm your location.
+
+Change this if you need to, but the setup program usually can autodetect this. This is used to set your time and date.
+
+Click on Continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="418" src="images\videos\VBUbuntu\VM_Ubuntu_User_Account.jpg" title="User Account">
+</p>
+Next you will be asked to create a user account.
+
+Enter the name you wish to use on the machine and also set a password. You can also choose to log in automatically, bypassing the normal login screen.
+
+Depending on how secure you want this installation to be, choose the appropriate option. Since for me this will just be used for demonstration purposes, I am going to choose automatic login to make life easier.
+
+Click on Continue when done.
+
+At this point the actually installation process will begin installing the files needed. Depending on how you configured the VM with CPU, memory, and if you are on a SSD or not, this can take anywhere from 10 to 30 minutes.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="423" src="images\videos\VBUbuntu\VM_Ubuntu_Restart.jpg" title="Ubuntu Restart Now">
+</p>
+After the installation process has completed, you will be prompted to restart the VM.
+
+Click on Restart Now to complete the process.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="423" src="images\videos\VBUbuntu\VM_Ubuntu_Click_Enter.jpg" title="Ubuntu Click Enter">
+</p>
+When the Virtual Machine reboots, it will display a screen similar to the one above. It may also have a flashing effect and you may think something is wrong.
+
+However, if you read the dialog it is simply waiting for you to confirm the installation media has been removed.
+
+You can just go ahead and click enter here to continue.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="423" src="images\videos\VBUbuntu\VM_Ubuntu_Welcome.jpg" title="Ubuntu What's New">
+</p>
+After a few moments you will be prompted login, or you will be brought straight to your Ubuntu desktop, depending on how you setup the auto logon option earlier.
+
+On the initial login, you will see a what's new dialog, you can go ahead and click the green next button at the top, go through the screens and finally click on Done to dismiss.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="301" src="images\videos\VBUbuntu\VM_Ubuntu_Screen_Resolution.jpg" title="Set Screen Resolution">
+</p>
+At this point you will probably want to set the Ubuntu VM's screen resolution to a more usable size.
+
+To do this, click on the apps menu in the bottom left of the screen, then click on the setting icon (gear and wrench), then scroll down in the menu that appears and select Devices.
+
+The first entry in this menu is Displays, and over on the right you can choose a new resolution.
+
+If your initial VM window is very small like mine, you will need to double click on the Title bar of the screen resolution window to free it, and you can drag it over to the left to access the apply button.
+
+Click on apply, and then click on Keep Changes if the screen resolution is acceptable.
+
+Now you should have a more usable screen area to work with.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="173" src="images\videos\VBUbuntu\Software_Updater.jpg" title="Software Updater">
+</p>
+If your host is connected to the Internet, your VM will also have a Internet and by now you will likely see a Software Updater prompt similar to the one shown above.
+
+This is offering to Update your Ubuntu installation with any software patches released since the version on the ISO image was released. It is probably a good idea to allow these updates, so click on Install Now.
+
+The process will collapse the window, but it can be reopened by clicking on the "A" icon  over on the right, and then clicking on details to expand the window. Depending on your connection, this can take a few minutes.
+
+It is probably best to allow this update to complete before moving on. You will be prompted to restart once the updates have completed.
+<br/><br/>
+
+[Back to Top](#top)
+
+## Installing Guest Additions
+<br/>
+
+The next thing we want to do is to install the Guest Additions CD.
+
+Guest Additions bring additional functionality to our VM with some of the main features listed below:<br/><br/>
+- Shared folders: As its name implies, this feature allows you to share folders between the host and the guest systems. You configure VirtualBox to use a specified directory on the host computer to act as a shared folder, and VB will make the directory appear to the guest operating system as it were an network share.
+- Better mouse pointer integration: You no longer need to press any key to “free” the cursor from the Guest OS.
+- Shared Clipboard: You can share data between the guest and the host operating systems using the clipboard.
+- Drag and Drop: You are able to drag and drop files between the host and the guest OS.
+- Improved video drivers: The custom video drivers that are installed with Guest Additions provide you with additional high and non-standard video modes, as well as improved video performance. It also allows you to resize the virtual machine’s window. If you have a 4K monitor, these drivers will resolve most tissues you may have had with video scaling.
+- Time synchronization: The guest system's time is synchronized the time with that of the host machine regularly.
+
+For a complete list, refer to the VirtualBox official documentation, available at: [https://www.virtualbox.org/manual/ch04.html](https://www.virtualbox.org/manual/ch04.html)
+
+In order to install guest additions on Ubuntu, we will first need to install the gcc compiler.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="311" src="images\videos\VBUbuntu\Terminal.jpg" title="Terminal">
+</p>
+To do this, first open up the Terminal by pressing the Ctrl+Alt+T shortcut keys at the same time, or go through the Apps menu and search for Terminal.
+
+In the terminal windows type the following command and press enter:
+```sh
+sudo apt update
+```
+You will then be prompted to enter your password, go ahead and type in your password and press enter.
+
+If you are new to Linux, the first word in the above command sudo stands for Super User Do, it allows us, as a regular user, to perform administrative commands from our user account.
+
+Linux is more secure by default than Windows, so you need to use a privileged account to perform any actions that will change the system and sudo temporarily elevates our user account to Super User privilege's for the session.
+
+This command is going to update the apt utility. APT is Ubuntu’s Advanced Packaging Tool, which we can use to update and install software packages.
+
+By running the update we are updating the APT package index which is a list of packages that are available within the repository.
+
+Once the command completes, indicates by the prompt returning, we need to run another command to install the gcc compiler.
+
+In the terminal window type the following command and press enter:
+```sh
+sudo apt install build-essential dkms linux-headers-generic
+```
+You will not need to enter your password this time, as Ubuntu will remember for the duration of the session.
+
+After a few moments, you will be informed the changes will consume ~200 additional MB of disk space and do you want to continue? Press Y for yes and then press enter to continue the installation.
+
+The install will take a minute or two and you will know it has completed when the command prompt returns.
+
+When it is finished, you can confirm that the gcc compiler was successfully installed by typing the following in the terminal and pressing enter:
+```sh
+gcc --version
+```
+You should see now some test in the terminal with the gcc version information.
+
+Type in exit and press enter to exit the terminal window.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="332" src="images\videos\VBUbuntu\Insert_Guest_Additons_CD.jpg" title="Insert Guest Additions CD">
+</p>
+Go up to devices at the top of your VM Window and choose Insert Guest Additions CD.
+
+<br/><br/>
