@@ -16,7 +16,8 @@ permalink: /vbubuntu
 The video and this guide will walk you through step-by-step of setting up a VirtualBox Virtual Machine on your computer and using it to install a fresh Ubuntu Virtual Machine installation.
 <br/><br/>
 
-This is a rather long and thorough guide, so I have included an index of the major topics:<br/>
+This is a rather long and thorough guide, so I have included an index to the major topics:<br/>
+
 [Recommendations and Key Terms](#recommendations-and-key-terms)<br/>
 [Download Ubuntu ISO](#download-ubuntu-iso)<br/>
 [Download and Install VirtualBox Software](#download-and-install-virtualbox-software)<br/>
@@ -435,9 +436,9 @@ To do this, click on the apps menu in the bottom left of the screen, then click 
 
 The first entry in this menu is Displays, and over on the right you can choose a new resolution.
 
-If your initial VM window is very small like mine, you will need to double click on the Title bar of the screen resolution window to free it, and you can drag it over to the left to access the apply button.
+If your initial VM window is very small like mine, you will need to double click on the title bar of the screen resolution window to free it, and you can drag it over to the left to access the apply button.
 
-Click on apply, and then click on Keep Changes if the screen resolution is acceptable.
+Click on apply, and then click on Keep Changes if the screen resolution you chose is acceptable.
 
 Now you should have a more usable screen area to work with.
 
@@ -445,7 +446,7 @@ Now you should have a more usable screen area to work with.
 <p align="center">
 <img width="500" height="173" src="images\videos\VBUbuntu\Software_Updater.jpg" title="Software Updater">
 </p>
-If your host is connected to the Internet, your VM will also have a Internet and by now you will likely see a Software Updater prompt similar to the one shown above.
+If your host is connected to the Internet, your VM will also have a Internet connection at this time, and by now you will likely see a Software Updater prompt similar to the one shown above.
 
 This is offering to Update your Ubuntu installation with any software patches released since the version on the ISO image was released. It is probably a good idea to allow these updates, so click on Install Now.
 
@@ -455,6 +456,7 @@ It is probably best to allow this update to complete before moving on. You will 
 <br/><br/>
 
 [Back to Top](#top)
+<br/><br/>
 
 ## Installing Guest Additions
 <br/>
@@ -470,6 +472,7 @@ Guest Additions bring additional functionality to our VM with some of the main f
 - Time synchronization: The guest system's time is synchronized the time with that of the host machine regularly.
 
 For a complete list, refer to the VirtualBox official documentation, available at: [https://www.virtualbox.org/manual/ch04.html](https://www.virtualbox.org/manual/ch04.html)
+<br/><br/>
 
 In order to install guest additions on Ubuntu, we will first need to install the gcc compiler.
 
@@ -478,6 +481,7 @@ In order to install guest additions on Ubuntu, we will first need to install the
 <img width="500" height="311" src="images\videos\VBUbuntu\Terminal.jpg" title="Terminal">
 </p>
 To do this, first open up the Terminal by pressing the Ctrl+Alt+T shortcut keys at the same time, or go through the Apps menu and search for Terminal.
+<br/><br/>
 
 In the terminal windows type the following command and press enter:
 ```sh
@@ -494,6 +498,7 @@ This command is going to update the apt utility. APT is Ubuntu’s Advanced Pack
 By running the update we are updating the APT package index which is a list of packages that are available within the repository.
 
 Once the command completes, indicates by the prompt returning, we need to run another command to install the gcc compiler.
+<br/><br/>
 
 In the terminal window type the following command and press enter:
 ```sh
@@ -504,6 +509,7 @@ You will not need to enter your password this time, as Ubuntu will remember for 
 After a few moments, you will be informed the changes will consume ~200 additional MB of disk space and do you want to continue? Press Y for yes and then press enter to continue the installation.
 
 The install will take a minute or two and you will know it has completed when the command prompt returns.
+<br/><br/>
 
 When it is finished, you can confirm that the gcc compiler was successfully installed by typing the following in the terminal and pressing enter:
 ```sh
@@ -518,5 +524,85 @@ Type in exit and press enter to exit the terminal window.
 <img width="500" height="332" src="images\videos\VBUbuntu\Insert_Guest_Additons_CD.jpg" title="Insert Guest Additions CD">
 </p>
 Go up to devices at the top of your VM Window and choose Insert Guest Additions CD.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="136" src="images\videos\VBUbuntu\Auto_Run.jpg" title="Auto Run Software">
+</p>
+After a moment or two, you should get a prompt as shown in the image above.
+
+When we virtually inserted the Guest Additions CD , just like inserting a physical CD, Ubuntu executes any autorun software on the CD.
+
+Go ahead and click on Run to start the Guest Additions installation.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="301" src="images\videos\VBUbuntu\Authenticate.jpg" title="Auto Run Software">
+</p>
+You will then be prompted for your user account's password, go ahead and enter it and click on Authenticate.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="335" src="images\videos\VBUbuntu\Reboot.jpg" title="Reboot">
+</p>
+When the installation has completed, your screen should appear similar to the one above.
+
+Press Enter to close the window and then you need to restart Ubuntu.
+
+Once the system has rebooted we can move on to configuring Shared Folders.
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="292" src="images\videos\VBUbuntu\Shared_Folders.jpg" title="Shared Folders">
+</p>
+Go up to the VM window and click on Devices->Shared Folders->Shared Folder Settings
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="410" src="images\videos\VBUbuntu\Shared_Folders2.jpg" title="Shared Folders">
+</p>
+In the Shared Folders window, click the folder with the green arrow over on the right.
+
+In the new window that appears, click the dropdown arrow in Folder Path, then click on other.
+
+Navigate to a folder on your host system that you want to share with the guest, select it and then click on Select Folder. In my example I am sharing a new folder I created named: Ubuntu_VM_Shared.
+
+Check the Auto-mount and Make Permanent checkbox's to enable this share to be automatically mounted whenever the VM restarts. You can leave Read-only unchecked and Mount point can be left blank.
+
+Click on Ok to exit the Add Share dialog, then click on Ok to exit the Shared Folders window.
+
+Notice now you should have a new shared folder icon on your desktop with a name like: sf_Ubuntu_VM_Shared.
+
+We now need to add our user account to the vboxsf group that VirtualBox created when we first installed Ubuntu.
+
+To do this open up the terminal, you can use the start menu or the Ctrl-Alt-T shortcut.
+
+Type in: sudo adduser [username] vboxsf
+```sh
+sudo adduser dev vboxsf
+```
+My username is dev, so substitute your own username here. Press enter, and you will need to provide your password again since this is a new terminal session.
+
+You should see some message to the effect you were added to the group. To verify this type:
+```sh
+id dev
+```
+again using your own username instead of dev. You should now see the groups your username belongs to, and we can see vboxsf is now one of them.
+
+We can also enable drag and drop to allow dragging and dropping of files from the host to the guest OS.
+
+We have three options, Host to Guest, Guest to Host, and Bi-directional. They work as their names suggest, for instance host to guest you can drag and drop a file from the host computer to the guest OS, but not the other way around. The same with guest to host but in reverse, and finally bidirectional which enables drag and drop in both directions.
+
+Under devices we can also setup clipboard sharing with the same choices.
+
+Ok, now that we have our installation setup with the basics, at least for the VM functionality, we can take a snapshot of our initial image.
+
+To do that we simply go up to the VM windows and select Machine and click on take Snapshot.
+
+Give it a name and description if you wish, I am just going to call it initial snapshot, then click on OK.
+
+The VM will automatically write the current state of the machine to disk and we can restore to this point in the future if we wish.
+
+
+
 
 <br/><br/>
