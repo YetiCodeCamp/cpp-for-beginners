@@ -26,8 +26,7 @@ This is a rather long and thorough guide, so I have included an index to the maj
 [Installing Ubuntu on your Virtual Machine](#installing-ubuntu-on-your-virtual-machine)<br/>
 [Installing Guest Additions](#installing-guest-additions)<br/>
 [Create a Shared Folder](#create-a-shared-folder)<br/>
-[Drag and Drop](#drag-and-drop)<br/>
-[Create an Initial Snapshot Image](#create-a-initial-snapshot-image)<br/>
+[Create an Initial Snapshot Image](#create-an-initial-snapshot-image)<br/>
 
 
 <br/><br/>
@@ -550,6 +549,12 @@ When the installation has completed, your screen should appear similar to the on
 Press Enter to close the window and then you need to restart Ubuntu.
 
 Once the system has rebooted we can move on to configuring Shared Folders.
+<br/><br/>
+
+[Back to Top](#top)
+<br/><br/>
+
+## Create a Shared Folder
 <br/><br/><br/>
 <p align="center">
 <img width="500" height="292" src="images\videos\VBUbuntu\Shared_Folders.jpg" title="Shared Folders">
@@ -562,7 +567,7 @@ Go up to the VM window and click on Devices->Shared Folders->Shared Folder Setti
 </p>
 In the Shared Folders window, click the folder with the green arrow over on the right.
 
-In the new window that appears, click the dropdown arrow in Folder Path, then click on other.
+In the new 'Add Share' window that appears, click the dropdown arrow in Folder Path, then click on other.
 
 Navigate to a folder on your host system that you want to share with the guest, select it and then click on Select Folder. In my example I am sharing a new folder I created named: Ubuntu_VM_Shared.
 
@@ -593,6 +598,12 @@ We can also enable drag and drop to allow dragging and dropping of files from th
 We have three options, Host to Guest, Guest to Host, and Bi-directional. They work as their names suggest, for instance host to guest you can drag and drop a file from the host computer to the guest OS, but not the other way around. The same with guest to host but in reverse, and finally bidirectional which enables drag and drop in both directions.
 
 Under devices we can also setup clipboard sharing with the same choices.
+<br/><br/>
+
+[Back to Top](#top)
+<br/><br/>
+
+## Create an Initial Snapshot Image
 
 Ok, now that we have our installation setup with the basics, at least for the VM functionality, we can take a snapshot of our initial image.
 
