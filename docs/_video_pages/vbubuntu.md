@@ -563,18 +563,34 @@ Go up to the VM window and click on Devices->Shared Folders->Shared Folder Setti
 
 <br/><br/><br/>
 <p align="center">
-<img width="500" height="410" src="images\videos\VBUbuntu\Shared_Folders2.jpg" title="Shared Folders">
+<img width="500" height="248" src="images\videos\VBUbuntu\Shared_Folder_New.jpg" title="Shared Folders">
 </p>
 In the Shared Folders window, click the folder with the green arrow over on the right.
 
+<br/><br/><br/>
+<p align="center">
+<img width="300" height="266" src="images\videos\VBUbuntu\Add_Share.jpg" title="Add Share">
+</p>
 In the new 'Add Share' window that appears, click the dropdown arrow in Folder Path, then click on other.
 
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="277" src="images\videos\VBUbuntu\Select_Folder.jpg" title="Select Folder">
+</p>
 Navigate to a folder on your host system that you want to share with the guest, select it and then click on Select Folder. In my example I am sharing a new folder I created named: Ubuntu_VM_Shared.
 
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="410" src="images\videos\VBUbuntu\Shared_Folders2.jpg" title="Shared Folders">
+</p>
 Check the Auto-mount and Make Permanent checkbox's to enable this share to be automatically mounted whenever the VM restarts. You can leave Read-only unchecked and Mount point can be left blank.
 
 Click on Ok to exit the Add Share dialog, then click on Ok to exit the Shared Folders window.
 
+<br/><br/><br/>
+<p align="center">
+<img width="300" height="416" src="images\videos\VBUbuntu\Shared_Folder_Icon.jpg" title="New Shared Folders Icon">
+</p>
 Notice now you should have a new shared folder icon on your desktop with a name like: sf_Ubuntu_VM_Shared.
 
 We now need to add our user account to the vboxsf group that VirtualBox created when we first installed Ubuntu.
@@ -587,11 +603,21 @@ sudo adduser dev vboxsf
 ```
 My username is dev, so substitute your own username here. Press enter, and you will need to provide your password again since this is a new terminal session.
 
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="157" src="images\videos\VBUbuntu\Add_User.jpg" title="Add User to vboxsf Group">
+</p>
+
 You should see some message to the effect you were added to the group. To verify this type:
 ```sh
 id dev
 ```
-again using your own username instead of dev. You should now see the groups your username belongs to, and we can see vboxsf is now one of them.
+again using your own username instead of dev. You should now see the groups your username belongs to, and we can see vboxsf is now one of them, as shown in the above image.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="330" src="images\videos\VBUbuntu\Drag_Drop_Clipboard.jpg" title="Clipboard - Drag and Drop">
+</p>
 
 We can also enable drag and drop to allow dragging and dropping of files from the host to the guest OS.
 
@@ -605,9 +631,19 @@ Under devices we can also setup clipboard sharing with the same choices.
 
 ## Create an Initial Snapshot Image
 
+<br/><br/><br/>
+<p align="center">
+<img width="300" height="244" src="images\videos\VBUbuntu\Take_Snapshot.jpg" title="Take Snapshot">
+</p>
+
 Ok, now that we have our installation setup with the basics, at least for the VM functionality, we can take a snapshot of our initial image.
 
 To do that we simply go up to the VM windows and select Machine and click on take Snapshot.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="329" src="images\videos\VBUbuntu\Take_Snapshot_Save.jpg" title="Snapshot Description and Save">
+</p>
 
 Give it a name and description if you wish, I am just going to call it initial snapshot, then click on OK.
 
