@@ -649,6 +649,45 @@ Give it a name and description if you wish, I am just going to call it initial s
 
 The VM will automatically write the current state of the machine to disk and we can restore to this point in the future if we wish.
 
+To restore the image to when the snapshot was taken, the Virtual Machine must first be powered off.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="308" src="images\videos\VBUbuntu\Snapshot_Menu.jpg" title="Snapshot Menu">
+</p>
+
+Once it is powered down, go into the VirtualBox Manager, select the VM you wish to restore, and left click on the hamburger menu (3 lines) to the right of the VM's name.
+
+You will see a menu with 3 selections: Details, Snapshots, and Logs. Select the Snapshot item to open the Snapshots interface.
+
+<br/><br/><br/>
+<p align="center">
+<img width="500" height="296" src="images\videos\VBUbuntu\Restore_Snapshot.jpg" title="Restore Snapshot">
+</p>
+
+Near the top of the Snapshot window that opens, you will see the Initial Snapshot image you save earlier. Notice also that just underneath it will be the current state of the machine.
+
+To restore the VM to the Initial Image Snapshot, highlight the Initial Image name as shown by \#1 above.
+
+Then click on the Restore button along the top of the windows as shown by \#2 above.
+
+Notice, there is a checkbox allowing you to take another snapshot of the current image if you so choose. This can be useful if its been awhile since the snapshot image you are restoring to was taken, as you can "revert your revert" if needed.
+
+Make your selection and then click on Restore to finalize the image restoration process.
+
+Depending on how much was changed the restoration process usually completes almost immediately.
+
+Once it has finished you can then restart the Virtual Machine with your image restored back at the point the snapshot was created.
+
+<br/><br/><br/>
+<p align="center">
+<img width="250" height="134" src="images\videos\VBUbuntu\Restore_Dialog.jpg" title="Restore Dialog">
+</p>
+
+As the machine restarts, you will see a brief dialog indicating that the image is being restored from the snapshot image.
+
+Once the VM is back online, you should notice it has been reverted back to the point you created the snapshot.
+
 
 
 
