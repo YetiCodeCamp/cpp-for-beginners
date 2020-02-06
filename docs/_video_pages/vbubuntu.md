@@ -467,7 +467,7 @@ Guest Additions bring additional functionality to our VM with some of the main f
 - Better mouse pointer integration: You no longer need to press any key to “free” the cursor from the Guest OS.
 - Shared Clipboard: You can share data between the guest and the host operating systems using the clipboard.
 - Drag and Drop: You are able to drag and drop files between the host and the guest OS.
-- Improved video drivers: The custom video drivers that are installed with Guest Additions provide you with additional high and non-standard video modes, as well as improved video performance. It also allows you to resize the virtual machine’s window. If you have a 4K monitor, these drivers will resolve most tissues you may have had with video scaling.
+- Improved video drivers: The custom video drivers that are installed with Guest Additions provide you with additional high and non-standard video modes, as well as improved video performance. It also allows you to resize the virtual machine’s window. If you have a 4K monitor, these drivers will resolve most issues you may have had with video scaling.
 - Time synchronization: The guest system's time is synchronized the time with that of the host machine regularly.
 
 For a complete list, refer to the VirtualBox official documentation, available at: [https://www.virtualbox.org/manual/ch04.html](https://www.virtualbox.org/manual/ch04.html)
@@ -649,6 +649,8 @@ Give it a name and description if you wish, I am just going to call it initial s
 
 The VM will automatically write the current state of the machine to disk and we can restore to this point in the future if we wish.
 
+### Restoring a Snapshot Image
+
 To restore the image to when the snapshot was taken, the Virtual Machine must first be powered off.
 
 <br/><br/><br/>
@@ -656,7 +658,7 @@ To restore the image to when the snapshot was taken, the Virtual Machine must fi
 <img width="500" height="308" src="images\videos\VBUbuntu\Snapshot_Menu.jpg" title="Snapshot Menu">
 </p>
 
-Once it is powered down, go into the VirtualBox Manager, select the VM you wish to restore, and left click on the hamburger menu (3 lines) to the right of the VM's name.
+Once the VM is powered down, go into the VirtualBox Manager, select the VM you wish to restore, and left click on the hamburger menu (3 lines) to the right of the VM's name.
 
 You will see a menu with 3 selections: Details, Snapshots, and Logs. Select the Snapshot item to open the Snapshots interface.
 
@@ -665,7 +667,7 @@ You will see a menu with 3 selections: Details, Snapshots, and Logs. Select the 
 <img width="500" height="296" src="images\videos\VBUbuntu\Restore_Snapshot.jpg" title="Restore Snapshot">
 </p>
 
-Near the top of the Snapshot window that opens, you will see the Initial Snapshot image you save earlier. Notice also that just underneath it will be the current state of the machine.
+Near the top of the Snapshot window that opens, you will see the Initial Snapshot image you saved earlier. Notice also that just underneath it will be the current state of the machine.
 
 To restore the VM to the Initial Image Snapshot, highlight the Initial Image name as shown by \#1 above.
 
@@ -675,7 +677,7 @@ Notice, there is a checkbox allowing you to take another snapshot of the current
 
 Make your selection and then click on Restore to finalize the image restoration process.
 
-Depending on how much was changed the restoration process usually completes almost immediately.
+Depending on how much the VM has changed since the snapshot, the restoration process usually completes almost immediately.
 
 Once it has finished you can then restart the Virtual Machine with your image restored back at the point the snapshot was created.
 
@@ -688,7 +690,9 @@ As the machine restarts, you will see a brief dialog indicating that the image i
 
 Once the VM is back online, you should notice it has been reverted back to the point you created the snapshot.
 
+<br/><br/>
 
+[Back to Top](#top)
 
 
 <br/><br/>
